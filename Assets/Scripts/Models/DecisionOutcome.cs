@@ -5,7 +5,7 @@ namespace Models
     [System.Serializable]
     public class DecisionOutcome
     {
-        public int outcomeId;
+        public string outcomeId;
         public SerializableDictionary<Faction, int> factionAffection;
     }
 }
