@@ -6,8 +6,8 @@ using UnityEngine;
 [System.Serializable]
 public class LocalizedText
 {
-    [SerializeField, LabelWidth(30)] private string en;
-    [SerializeField, LabelWidth(30)] private string tr;
+    [SerializeField, LabelWidth(30), TextArea(1, 3)] private string en;
+    [SerializeField, LabelWidth(30), TextArea(1, 3)] private string tr;
 
     public string GetText(CultureInfo culture)
     {
