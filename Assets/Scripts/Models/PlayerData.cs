@@ -8,4 +8,10 @@ public static class PlayerData
         get => PlayerPrefs.GetString(nameof(CurrentCulture), "en-US");
         set => PlayerPrefs.SetString(nameof(CurrentCulture), value);
     }
+    
+    public static string Flags
+    {
+        get => PlayerPrefs.GetString(nameof(Flags), "");
+        set => PlayerPrefs.SetString(nameof(Flags), value);
+    }
 }
