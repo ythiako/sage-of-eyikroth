@@ -12,43 +12,33 @@ public class GameTextDisplay : MonoBehaviour
     [NonSerialized] public Action Opened;
     [NonSerialized] public Action Closed;
     
-    [SerializeField] private Button button;
     [SerializeField] private TextAnimatorPlayer textPlayer;
 
     private bool _isOpen;
     private bool _isComplete;
+    private bool _isAnimating;
     private LocalizedText _currentText;
+
+    public bool CanContinue => !_isComplete && _isOpen && !_isAnimating;
 
     private void OnEnable()
     {
-        button.onClick.AddListener(OnButtonClicked);
         textPlayer.onTextShowed.AddListener(OnTextPlayerShowed);
 
+        _isAnimating = true;
+        
         transform.localScale = Vector3.zero;
         transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
         {
             _isOpen = true;
+            _isAnimating = false;
+            
             textPlayer.ShowText(_currentText.GetText(LanguageController.GetCurrentCulture()));
             textPlayer.StartShowingText();
             Opened?.Invoke();
         });
     }
-
-    public void Close()
-    {
-        button.onClick.RemoveListener(OnButtonClicked);
-        textPlayer.onTextShowed.RemoveListener(OnTextPlayerShowed);
-        
-        transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
-        {
-            gameObject.SetActive(false);
-            _isOpen = false;
-            Closed?.Invoke();
-        });
-    }
-
-    [Button]
+    
     public void DisplayText(LocalizedText text)
     {
         _isComplete = false;
@@ -64,7 +54,7 @@ public class GameTextDisplay : MonoBehaviour
             gameObject.SetActive(true);
     }
 
-    private void OnButtonClicked()
+    public void Continue()
     {
         if (_isComplete)
         {
@@ -76,6 +66,23 @@ public class GameTextDisplay : MonoBehaviour
             textPlayer.SkipTypewriter();
             Debug.Log("Skip typewriter");
         }
+    }
+
+    public void Close()
+    {
+        textPlayer.onTextShowed.RemoveListener(OnTextPlayerShowed);
+
+        _isAnimating = true;
+        
+        transform.localScale = Vector3.zero;
+        transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
+        {
+            _isOpen = false;
+            _isAnimating = false;
+            
+            gameObject.SetActive(false);
+            Closed?.Invoke();
+        });
     }
 
     private void OnTextPlayerShowed()
