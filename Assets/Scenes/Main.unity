@@ -232,8 +232,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375154759}
+  - component: {fileID: 375154760}
   m_Layer: 0
-  m_Name: DecisionStage
+  m_Name: DecisionPhase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,6 +254,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375154760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375154758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7b71c82e8a4f0d9e19ff72e08b3bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageVirtualCamera: {fileID: 0}
+  director: {fileID: 0}
+  textInputMediator: {fileID: 0}
+  leftTextDisplay: {fileID: 0}
+  rightTextDisplay: {fileID: 0}
+  leftCharacterRoot: {fileID: 0}
+  rightCharacterRoot: {fileID: 0}
+  leftDecision: {fileID: 0}
+  rightDecision: {fileID: 0}
+  optionalDecisions: []
 --- !u!1 &534092459
 GameObject:
   m_ObjectHideFlags: 0

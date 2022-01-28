@@ -22,4 +22,14 @@ public static class PlayerData
             PlayerPrefs.Save();
         }
     }
+
+    public static string Standings
+    {
+        get => PlayerPrefs.GetString(nameof(Standings), "");
+        set
+        {
+            PlayerPrefs.SetString(nameof(Standings), value);
+            PlayerPrefs.Save();
+        }
+    }
 }
