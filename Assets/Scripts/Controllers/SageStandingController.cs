@@ -27,6 +27,13 @@ public static class SageStandingController
         }
     }
 
+    public static int GetStanding(Faction faction)
+    {
+        if (_standings.TryGetValue(faction, out var standing))
+            return standing;
+        return default;
+    }
+
     public static void SetStanding(Faction faction, int standing)
     {
         _standings[faction] = standing;

@@ -93,7 +93,14 @@ public class DecisionPhaseController : MonoBehaviour
     {
         leftDecision.gameObject.SetActive(false);
         rightDecision.gameObject.SetActive(false);
+
+        foreach (var outcome in decision.outcomes)
+        {
+            var currentStanding = SageStandingController.GetStanding(outcome.Key);
+            SageStandingController.SetStanding(outcome.Key, currentStanding + outcome.Value);
+        }
         
+        SageStandingController.SaveStanding();
         GlobalFlagsController.SetFlag(decision.id);
         DecisionMade?.Invoke(decision);
     }
