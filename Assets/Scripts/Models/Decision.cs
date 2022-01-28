@@ -6,8 +6,8 @@ using UnityEngine;
 [System.Serializable]
 public class Decision
 {
-    public string id;
-    public string unlockingFlag;
+    [LabelWidth(30)] public string id;
+    [LabelWidth(120)] public string unlockingFlag;
     public LocalizedText text;
     public SerializableDictionary<Faction, int> outcomes;
 

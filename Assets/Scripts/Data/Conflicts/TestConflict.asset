@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: TestConflict
+  m_EditorClassIdentifier: 
+  id: testConflict
+  genericConflict: 0
+  descriptionLines:
+  - faction: 1
+    line:
+      en: 
+      tr: 
+  - faction: 1
+    line:
+      en: 
+      tr: 
+  - faction: 0
+    line:
+      en: 
+      tr: 
+  - faction: 0
+    line:
+      en: 
+      tr: 
+  aSummary:
+    faction: 1
+    line:
+      en: 
+      tr: 
+  aDecision:
+    id: testConflictSideWithHumans
+    unlockingFlag: 
+    text:
+      en: Humans should have it their way!
+      tr: Insanlar istediklerini yapabilirler
+    outcomes:
+      m_keys: 0000000001000000
+      m_values: ecffffff0a000000
+  bSummary:
+    faction: 0
+    line:
+      en: 
+      tr: 
+  bDecision:
+    id: testConflictSideWithElves
+    unlockingFlag: 
+    text:
+      en: Elves should have it their way!
+      tr: Elfler istediklerini yapabilirler
+    outcomes:
+      m_keys: 0000000001000000
+      m_values: 0a000000ecffffff
+  optionalDecisions:
+  - id: testConflictCompromiseA
+    unlockingFlag: orcishPlainsEmptySpaceInvestigated
+    text:
+      en: Plains the orcs live on have a lot of space, they might share it with humans.
+      tr: Orklarin yasadigi duzluklerde bol bol bos arazi var, belki onlar bunu insanlarla
+        paylasabilir.
+    outcomes:
+      m_keys: 000000000100000003000000
+      m_values: 0500000005000000fbffffff
+  outcomeDialogue:
+    m_keys:
+    - testConflictSideWithElves
+    - testConflictSideWithHumans
+    - testConflictCompromiseA
