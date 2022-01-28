@@ -71,6 +71,38 @@ MonoBehaviour:
       m_values: 0500000005000000fbffffff
   outcomeDialogue:
     m_keys:
-    - testConflictSideWithElves
     - testConflictSideWithHumans
+    - testConflictSideWithElves
     - testConflictCompromiseA
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 1
+        line:
+          en: 
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 1
+        line:
+          en: 
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 1
+        line:
+          en: 
+          tr: 
+      - faction: 3
+        line:
+          en: 
+          tr: 

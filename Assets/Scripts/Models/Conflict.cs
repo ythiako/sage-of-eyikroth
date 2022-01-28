@@ -18,7 +18,7 @@ namespace Models
         [HorizontalGroup("Sides"), BoxGroup("Sides/Side B"), InlineProperty, HideLabel] public Decision bDecision;
         
         public List<Decision> optionalDecisions;
-        public SerializableDictionary<string, List<DialogueLine>> outcomeDialogue;
+        public SerializableDictionary<string, DialogueLines> outcomeDialogue;
     }
 
     [System.Serializable]
@@ -28,5 +28,12 @@ namespace Models
         
         [InlineProperty, HideLabel, BoxGroup("Line")]
         public LocalizedText line;
+    }
+
+    [System.Serializable]
+    public class DialogueLines
+    {
+        [InlineProperty, HideLabel]
+        public List<DialogueLine> lines;
     }
 }
