@@ -9,15 +9,18 @@ using UnityEngine.UI;
 public class GameTextDisplay : MonoBehaviour
 {
     [NonSerialized] public Action Next;
+    [NonSerialized] public Action Shown;
     [NonSerialized] public Action Opened;
     [NonSerialized] public Action Closed;
-    
+
     [SerializeField] private TextAnimatorPlayer textPlayer;
 
     private bool _isOpen;
     private bool _isComplete;
     private bool _isAnimating;
     private LocalizedText _currentText;
+
+    public bool ShownText => _isComplete;
 
     public bool CanContinue => !_isComplete && _isOpen && !_isAnimating;
 
@@ -88,5 +91,6 @@ public class GameTextDisplay : MonoBehaviour
     private void OnTextPlayerShowed()
     {
         _isComplete = true;
+        Shown?.Invoke();
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TextAnimatorInputBehaviour : MonoBehaviour
 {
     [SerializeField] private Button button;
-
+    
     private GameTextDisplay[] _gameTextDisplays;
 
     private void Awake()
