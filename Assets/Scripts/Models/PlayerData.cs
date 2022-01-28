@@ -6,12 +6,20 @@ public static class PlayerData
     public static string CurrentCulture
     {
         get => PlayerPrefs.GetString(nameof(CurrentCulture), "en-US");
-        set => PlayerPrefs.SetString(nameof(CurrentCulture), value);
+        set
+        {
+            PlayerPrefs.SetString(nameof(CurrentCulture), value);
+            PlayerPrefs.Save();
+        }
     }
     
     public static string Flags
     {
         get => PlayerPrefs.GetString(nameof(Flags), "");
-        set => PlayerPrefs.SetString(nameof(Flags), value);
+        set
+        {
+            PlayerPrefs.SetString(nameof(Flags), value);
+            PlayerPrefs.Save();
+        }
     }
 }

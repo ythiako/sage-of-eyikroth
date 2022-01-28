@@ -7,7 +7,9 @@ using UnityEngine;
 public class Decision
 {
     public string id;
-    public bool unlocked;
+    public string unlockingFlag;
     public LocalizedText text;
     public SerializableDictionary<Faction, int> outcomes;
+
+    public bool IsUnlocked => string.IsNullOrWhiteSpace(unlockingFlag) || GlobalFlagsController.IsFlagSet(unlockingFlag);
 }
