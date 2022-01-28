@@ -48,8 +48,9 @@ public class DecisionPhaseController : MonoBehaviour
         textInputMediator.enabled = false;
         leftTextDisplay.gameObject.SetActive(false);
         rightTextDisplay.gameObject.SetActive(false);
-        
-        // Spawn faction representatives
+
+        _leftRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.aSummary.faction), leftCharacterRoot);
+        _rightRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.bSummary.faction), rightCharacterRoot);
         
         director.Play();
     }
@@ -95,6 +96,18 @@ public class DecisionPhaseController : MonoBehaviour
         
         GlobalFlagsController.SetFlag(decision.id);
         DecisionMade?.Invoke(decision);
+    }
+
+    public void Dispose()
+    {
+        Destroy(_leftRepresentative);
+        Destroy(_rightRepresentative);
+        
+        leftTextDisplay.Next = null;
+        rightTextDisplay.Next = null;
+        
+        leftTextDisplay.Closed = null;
+        rightTextDisplay.Closed = null;
     }
 
     private void DisplayDecisions()
