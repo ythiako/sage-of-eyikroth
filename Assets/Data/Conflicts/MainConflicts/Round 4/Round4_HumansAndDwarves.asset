@@ -17,96 +17,90 @@ MonoBehaviour:
   descriptionLines:
   - faction: 1
     line:
-      en: Our tools are getting old and useless. We cannot meet our fuel quota for
-        winter.
+      en: Our mines recently caved in because of some earthquake, although we don't
+        know why. Our economy is plummeting because of it!
       tr: 
-  - faction: 1
+  - faction: 5
     line:
-      en: We can't let our homesteads freezing to death, help us!
-      tr: 
-  - faction: 2
-    line:
-      en: Humans tried to break into our storage and steal our tools! This is outrageous.
-      tr: 
-  - faction: 2
-    line:
-      en: They even stole our high powered crossbows. They should be put in their
-        places
+      en: Humans are cheating on trading. We ask o' them valuable gems and minerals,
+        but all they feed tae us are brass and rubies!
       tr: 
   aSummary:
     faction: 1
     line:
-      en: Let us get new tools from gnomes!
+      en: We need our mines cleared so we can mine it again!
       tr: 
   aDecision:
-    id: Round3_SideWithHumans
+    id: Round4_SideWithHumans
     unlockingFlag: 
     text:
-      en: Stealing is bad.
+      en: Dwarves will help you
       tr: 
     outcomes:
-      m_keys: 0100000002000000
+      m_keys: 0100000005000000
       m_values: 0a000000f6ffffff
   bSummary:
-    faction: 2
+    faction: 5
     line:
-      en: These tools are ours!
+      en: We demand payment NOW!
       tr: 
   bDecision:
-    id: Round3_SideWithGnomes
+    id: Round4_SideWithDwarves
     unlockingFlag: 
     text:
-      en: But humans need help.
+      en: Receive compensation
       tr: 
     outcomes:
-      m_keys: 0100000002000000
+      m_keys: 0100000005000000
       m_values: f6ffffff0a000000
   optionalDecisions:
-  - id: Round3_LetElvesHandle
-    unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
+  - id: Round4_LetGnomesHandle
+    unlockingFlag: HumansAndDwarves_OptionalDecision_Round4
     text:
-      en: Elves can teach magic
+      en: Gnomes can clear the mines
       tr: 
     outcomes:
-      m_keys: 0100000002000000
+      m_keys: 0100000005000000
       m_values: 0a0000000a000000
   outcomeDialogue:
     m_keys:
-    - Round3_SideWithGnomes
-    - Round3_SideWithHumans
-    - Round3_LetElvesHandle
+    - Round4_LetGnomesHandle
+    - Round4_SideWithDwarves
+    - Round4_SideWithHumans
     m_values:
     - lines:
-      - faction: 0
+      - faction: 5
         line:
-          en: 
+          en: There! Now ye won't step out o' trading with us, ya pansies!
           tr: 
-      - faction: 0
+      - faction: 1
         line:
-          en: 
-          tr: 
-    - lines:
-      - faction: 0
-        line:
-          en: 
-          tr: 
-      - faction: 0
-        line:
-          en: 
+          en: No need for harsh words, master dwarf. You'll get your minerals soon
+            enough.
           tr: 
     - lines:
-      - faction: 0
+      - faction: 5
         line:
-          en: 
+          en: Hah, wha' 'bout it! Justice served, cold 'n hard!
           tr: 
-      - faction: 0
+      - faction: 1
         line:
-          en: 
+          en: This is hardly fair, elder sage! We'll see you afterwards...
+          tr: 
+    - lines:
+      - faction: 5
+        line:
+          en: Wh-Wha' do you mean "we'll help them"?! They owe us!
+          tr: 
+      - faction: 1
+        line:
+          en: If you help us, you oaf, you'll get your minerals anyway. Some honorable
+            dwarf you are...
           tr: 
   regionalTips:
-  - faction: 0
-    unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
+  - faction: 2
+    unlockingFlag: HumansAndDwarves_OptionalDecision_Round4
     line:
-      en: How are our lands easy to maintain? We can modify our wooden houses to
-        our will, and heal them at will.
+      en: Our recent readings of the land tells us that some cave-ins have imbued
+        iron in them. If we got them, it'd be a great addition to our research.
       tr: 

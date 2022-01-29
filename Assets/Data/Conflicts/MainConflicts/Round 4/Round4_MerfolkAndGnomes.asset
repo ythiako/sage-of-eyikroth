@@ -15,102 +15,100 @@ MonoBehaviour:
   id: Round4_MerfolkAndGnomes
   genericConflict: 0
   descriptionLines:
-  - faction: 3
+  - faction: 4
     line:
-      en: A border outpost was ravaged and we found Dwarven tools and weapons on
-        site.
+      en: A tool called 'world enlarger' was given to us by gnomes. But whoever used
+        it disappeared.
       tr: 
-  - faction: 3
+  - faction: 4
     line:
-      en: This means war! We will attack them if no proof of safety is offered!
+      en: There is no wonder that gnomes did this to cull our numbers! Bring us our
+        deceased people!
       tr: 
-  - faction: 5
+  - faction: 2
     line:
-      en: Some o' our men went missing, telling tha' they want tae build a better
-        home.
+      en: Merfolk keep sending attackers to our village from our shores. I don't
+        know how they do it.
       tr: 
-  - faction: 5
+  - faction: 2
     line:
-      en: Our lads were pretty drunk by tha' time we spoke! You have tae find our
-        lads!
+      en: But they need to go before we bomb their place up and make them fish food.
       tr: 
   aSummary:
-    faction: 3
+    faction: 4
     line:
-      en: We want dwarven blood and a war!
+      en: We want our missing people back!
       tr: 
   aDecision:
-    id: Round3_SideWithOrcs
+    id: Round4_SideWithMerfolk
     unlockingFlag: 
     text:
-      en: War you will get!
+      en: Deliver their people back!
       tr: 
     outcomes:
-      m_keys: 0300000005000000
+      m_keys: 0400000002000000
       m_values: 0a000000f6ffffff
   bSummary:
-    faction: 5
+    faction: 2
     line:
-      en: Our men are missing, orcs have kidnapped them!
+      en: If they keep attacking us, we'll blast them to pieces!
       tr: 
   bDecision:
-    id: Round3_SideWithDwarves
+    id: Round4_SideWithGnomes
     unlockingFlag: 
     text:
-      en: We need to find them!
+      en: They deserve a bomb!
       tr: 
     outcomes:
-      m_keys: 0300000005000000
+      m_keys: 0400000002000000
       m_values: f6ffffff0a000000
   optionalDecisions:
-  - id: Round3_LetMerfolkHandle
-    unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
+  - id: Round4_LetElvesHandle
+    unlockingFlag: MerfolkAndGnomes_OptionalDecision_Round4
     text:
-      en: They're at the shores
+      en: Use the special potion
       tr: 
     outcomes:
-      m_keys: 0500000003000000
+      m_keys: 0200000004000000
       m_values: 0a0000000a000000
   outcomeDialogue:
     m_keys:
-    - Round3_SideWithOrcs
-    - Round3_LetMerfolkHandle
-    - Round3_SideWithDwarves
+    - Round4_SideWithGnomes
+    - Round4_SideWithMerfolk
+    - Round4_LetElvesHandle
     m_values:
     - lines:
-      - faction: 3
+      - faction: 2
         line:
-          en: The battle is upon us! Watch your back, little hairball!
+          en: Alright! Hear that, fish guy! Now we're gonna make you fly!
           tr: 
-      - faction: 5
+      - faction: 4
         line:
-          en: HAIRBALL? THAT DOES IT YE WRINKLED GREEN POT'O MEAT! AH'LL CUT THROUGH
-            YE SKULL!
-          tr: 
-    - lines:
-      - faction: 3
-        line:
-          en: Hah! What a joke! I apologize for our outburst. I will send them back
-            to their mountains safely.
-          tr: 
-      - faction: 5
-        line:
-          en: Ach! What a laugh! Those lads sure earned themselves a good whopping!
+          en: This one cannot fathom why you're ignoring your duties!
           tr: 
     - lines:
       - faction: 3
         line:
-          en: What?! How can you tell that? We have DEAD orcs on our border!
+          en: Bu-I-damnit, I'm telling you that they're attacking US!
           tr: 
       - faction: 5
         line:
-          en: Some sense, finally! Ah'm gonna gather up our lads an' form a search
-            party!
+          en: This one will stop the attacks, but we do demand to have our loved
+            ones back...
+          tr: 
+    - lines:
+      - faction: 4
+        line:
+          en: Oh. So that's why they've disappeared...
+          tr: 
+      - faction: 2
+        line:
+          en: Ah, damnit. We thought we had an inventory check. We're sorry!
           tr: 
   regionalTips:
-  - faction: 4
-    unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
+  - faction: 0
+    unlockingFlag: MerfolkAndGnomes_OptionalDecision_Round4
     line:
-      en: This one doesn't know why, but there is an old shackle made of ale bottles
-        and beer kegs near our shores.
+      en: Damn it, one of our kin used Size Enlarger potion again, and whole forest
+        is a mess once more!
       tr: 

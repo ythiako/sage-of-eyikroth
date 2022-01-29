@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round5_ElvesAndDwarves
+  m_EditorClassIdentifier: 
+  id: Round5_ElvesAndDwarves
+  genericConflict: 0
+  descriptionLines:
+  - faction: 0
+    line:
+      en: There is no end to dwarven greed! They are trying to dig under our sacred
+        grounds, disturbing the dead! Please thwart them away.
+      tr: 
+  - faction: 5
+    line:
+      en: JACKPOT! Elves 'ave been sittin' on some huge mineral beds, waiting tae
+        be mined. You have tae allow us mine it. Their burial grounds be damned!
+      tr: 
+  aSummary:
+    faction: 0
+    line:
+      en: Stop dwarves from desecrating our sacred grounds.
+      tr: 
+  aDecision:
+    id: Round5_SideWithElves
+    unlockingFlag: 
+    text:
+      en: Banish dwarven pickaxes
+      tr: 
+    outcomes:
+      m_keys: 0000000005000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 5
+    line:
+      en: We want tae tap onto those mineral beds, and we will!
+      tr: 
+  bDecision:
+    id: Round5_SideWithDwarves
+    unlockingFlag: 
+    text:
+      en: Dwarves need more minerals
+      tr: 
+    outcomes:
+      m_keys: 0000000005000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round5_LetOrcsHandle
+    unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
+    text:
+      en: Barrens have rich veins as well
+      tr: 
+    outcomes:
+      m_keys: 0000000005000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round5_SideWithElves
+    - Round5_SideWithDwarves
+    - Round5_LetOrcsHandle
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: A sound decision, elder sage. I knew we always could count on your
+            wisdom.
+          tr: 
+      - faction: 4
+        line:
+          en: What the- what kind of ram shite is that? Where're we supposed tae
+            get our iron, then?!
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: Those are our sacred catacombs, and you're letting dwarves trample
+            all over!
+          tr: 
+      - faction: 4
+        line:
+          en: Hail tae tha king, baybe! We'll get nice an' cozy in there!
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: There... hope your greed will settle down now!
+          tr: 
+      - faction: 4
+        line:
+          en: Tha's grand news! If they be alright with it, we'll start diggin!
+          tr: 
+  regionalTips:
+  - faction: 3
+    unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
+    line:
+      en: These days, dust storms lift up new veins of iron and gold, but we have
+        no tools to work the rocks. Such a shame. A dwarf would be at home in all
+        these minerals.
+      tr: 

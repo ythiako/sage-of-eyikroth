@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round5_OrcsAndGnomes
+  m_EditorClassIdentifier: 
+  id: Round5_OrcsAndGnomes
+  genericConflict: 0
+  descriptionLines:
+  - faction: 3
+    line:
+      en: Gnomes have been working on something called 'gun'. Word is, it can kill
+        any beast from a long distance.
+      tr: 
+  - faction: 3
+    line:
+      en: Our hunters could hunt much more with it. Let us get one from Gnomes.
+      tr: 
+  - faction: 2
+    line:
+      en: We've been working to quell the volcano so it wouldn't explode.
+      tr: 
+  - faction: 2
+    line:
+      en: We need a lot of firepower to close some tunnels so we can safely channel
+        the lava into open ocean.
+      tr: 
+  aSummary:
+    faction: 3
+    line:
+      en: A gun will increase our chances of survival
+      tr: 
+  aDecision:
+    id: Round5_SideWithOrcs
+    unlockingFlag: 
+    text:
+      en: Gnomes will provide
+      tr: 
+    outcomes:
+      m_keys: 0300000002000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 2
+    line:
+      en: We will need all the firepower to stop potential eruptions
+      tr: 
+  bDecision:
+    id: Round5_SideWithGnomes
+    unlockingFlag: 
+    text:
+      en: They are endangered
+      tr: 
+    outcomes:
+      m_keys: 0300000002000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round5_LetHumansHandle
+    unlockingFlag: OrcsAndGnomes_OptionalDecision_Round5
+    text:
+      en: Humans have crossbows
+      tr: 
+    outcomes:
+      m_keys: 0200000003000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round5_SideWithOrcs
+    - Round5_LetHumansHandle
+    - Round5_SideWithGnomes
+    m_values:
+    - lines:
+      - faction: 3
+        line:
+          en: Ah, a gun. I am already able to see the animals we've hunted with clean
+            shots.
+          tr: 
+      - faction: 2
+        line:
+          en: What were you thinking, giving those savages a weapon? Now we're all
+            doomed!
+          tr: 
+    - lines:
+      - faction: 3
+        line:
+          en: A crossbow? If it's faster than a bow, we certainly can use it.
+          tr: 
+      - faction: 2
+        line:
+          en: And we're safe to conduct our research with gunpowder!
+          tr: 
+    - lines:
+      - faction: 3
+        line:
+          en: Elder sage, gnomes already have immense power! They should be balanced
+            out!
+          tr: 
+      - faction: 2
+        line:
+          en: The gunpowder we've saved from some amateurs will do much better for
+            everyone's safety.
+          tr: 
+  regionalTips:
+  - faction: 1
+    unlockingFlag: OrcsAndGnomes_OptionalDecision_Round5
+    line:
+      en: Our crossbows are the only thing that keeps us safe in winter. But because
+        not many can use them, we can part ways with one. Maybe you'll find a use
+        for it.
+      tr: 

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round5_HumansAndMerfolk
+  m_EditorClassIdentifier: 
+  id: Round5_HumansAndMerfolk
+  genericConflict: 0
+  descriptionLines:
+  - faction: 1
+    line:
+      en: Merfolk shores have best fishing spots. Now that the winter has settled
+        in, we need new sources of food, and they have it.
+      tr: 
+  - faction: 1
+    line:
+      en: Problem is, they won't allow us get close to their shores.
+      tr: 
+  - faction: 4
+    line:
+      en: Our shores are contaminated with a sea creature that kills others with
+        their poison.
+      tr: 
+  - faction: 4
+    line:
+      en: While we're resistant to this corruption, we can't let anyone else get
+        close to our shores.
+      tr: 
+  aSummary:
+    faction: 1
+    line:
+      en: We want to fish on Merfolk shores.
+      tr: 
+  aDecision:
+    id: Round5_SideWithHumans
+    unlockingFlag: 
+    text:
+      en: Settle down to shore
+      tr: 
+    outcomes:
+      m_keys: 0100000004000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 4
+    line:
+      en: Humans are putting themselves in danger
+      tr: 
+  bDecision:
+    id: Round5_SideWithMerfolk
+    unlockingFlag: 
+    text:
+      en: Humans are not allowed
+      tr: 
+    outcomes:
+      m_keys: 0100000004000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round5_LetGnomesHandle
+    unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
+    text:
+      en: Fish under volcanic lake
+      tr: 
+    outcomes:
+      m_keys: 0100000004000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round5_SideWithMerfolk
+    - Round5_LetGnomesHandle
+    - Round5_SideWithHumans
+    m_values:
+    - lines:
+      - faction: 1
+        line:
+          en: But this will doom us all... damn you!
+          tr: 
+      - faction: 4
+        line:
+          en: This one's pleased to hear that you still care for all races, elder
+            sage.
+          tr: 
+    - lines:
+      - faction: 1
+        line:
+          en: They would let us? Oh, they're so merciful...
+          tr: 
+      - faction: 4
+        line:
+          en: This one is glad that humans now can feast while we heal our waters.
+          tr: 
+    - lines:
+      - faction: 1
+        line:
+          en: Thank you, merciful sage! Our people won't starve in winter, after
+            all!
+          tr: 
+      - faction: 4
+        line:
+          en: This one is worried that poison will kill humans, but you know the
+            best, elder sage.
+          tr: 
+  regionalTips:
+  - faction: 2
+    unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
+    line:
+      en: It's fortunate that there are a lot of newly opened fish pools under the
+        volcanic mountain. But it's also problematic. There's too much fish now!
+      tr: 
