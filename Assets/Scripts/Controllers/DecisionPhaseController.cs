@@ -120,8 +120,8 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
 
     public void Dispose()
     {
-        if (_leftRepresentative)    Destroy(_leftRepresentative);
-        if (_rightRepresentative)   Destroy(_rightRepresentative);
+        if (_leftRepresentative.gameObject)    Destroy(_leftRepresentative.gameObject);
+        if (_rightRepresentative.gameObject)   Destroy(_rightRepresentative.gameObject);
         
         leftTextDisplay.Next = null;
         rightTextDisplay.Next = null;
