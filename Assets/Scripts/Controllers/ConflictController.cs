@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Cinemachine;
+using DG.Tweening;
 using Models;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -37,7 +38,17 @@ namespace Controllers
 
         private int _dialogueIndex;
         private bool _allDialoguesFinished;
-        
+
+        private void OnEnable()
+        {
+            exploreButton.onClick.AddListener(OnExploreButtonClick);
+        }
+
+        private void OnDisable()
+        {
+            exploreButton.onClick.RemoveListener(OnExploreButtonClick);
+        }
+
         [Button]
         public void PrepareConflict(Conflict conflict)
         {
@@ -124,7 +135,18 @@ namespace Controllers
 
         public void OnActorsLeftScene()
         {
-            PhaseFinished?.Invoke();
+            exploreButton.gameObject.SetActive(true);
+            exploreButton.transform.localScale = Vector3.zero;
+            exploreButton.transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack);
+        }
+
+        private void OnExploreButtonClick()
+        {
+            exploreButton.onClick.RemoveListener(OnExploreButtonClick);
+            exploreButton.transform.DOScale(Vector3.zero, 0.15f).SetEase(Ease.InBack).OnComplete(() =>
+            {
+                PhaseFinished?.Invoke();
+            });
         }
 
         public void Dispose()
