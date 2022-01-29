@@ -14,42 +14,116 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Round1_DwarvesAndGnomes
   genericConflict: 0
-  descriptionLines: []
+  descriptionLines:
+  - faction: 5
+    line:
+      en: Greetin's elder sage! Ah'm here fer Taketefjell! We've been hankerin' 'round
+        that ol' dried up volcano.
+      tr: "Ba\u015Fgan, biz isteriz ki, m\xFCcevher kaz\u0131p \xE7\u0131kartak,
+        herkese \xFC\xE7 be\u015F sakal atar\u0131k. Olmad\u0131 sa\u011Fl\u0131k
+        olsun yhaa."
+  - faction: 0
+    line:
+      en: Ah'll cut short. We want tae mine iron an' silver. Tha' good sort only!
+        What ye say? We 'ave a deal?
+      tr: "Sen gel, bize \u015Fu s\xF6nm\xFC\u015F yanarda\u011F\u0131 ayarla. Zaten
+        s\xF6nm\xFC\u015F. Daa napcan? Tur\u015Fu kurars\u0131n en fazla."
+  - faction: 2
+    line:
+      en: Salutations, elder sage. I am the representative for Drakensmage, or Dragonbelly,
+        as everyone calls so. Dwarves want to dig our inactive volcano.
+      tr: "C\xFCceler s\xF6nm\xFC\u015F yanarda\u011Fda kaz\u0131 yapmak istiyor,
+        ancak bu \xE7ok tehlikeli."
+  - faction: 0
+    line:
+      en: But we think that this is dangerous, and should not occur. If the volcano
+        activates, there's no telling what will happen!
+      tr: "E\u011Fer yanarda\u011F patlarsa, kimse bizim k\xF6y\xFCm\xFCz\xFC koruyamaz!"
   aSummary:
-    faction: 0
+    faction: 5
     line:
-      en: 
-      tr: 
+      en: We want tae dig into tha volcano!
+      tr: "Biz yanarda\u011F\u0131n i\xE7ine gazacaz, ba\u015Fgan!"
   aDecision:
-    id: 
+    id: Round1_SideWithDwarves
     unlockingFlag: 
     text:
-      en: 
-      tr: 
+      en: It's just an inactive volcano. Digs should continue.
+      tr: "Sadece inaktif bir yanarda\u011F. Bence kaz\u0131lar devam edebilir."
     outcomes:
-      m_keys: 
-      m_values: 
+      m_keys: 0500000002000000
+      m_values: 0a000000f6ffffff
   bSummary:
-    faction: 0
+    faction: 2
     line:
-      en: 
-      tr: 
+      en: If they dig in there, they'll jeopardize our lives as well as theirs.
+      tr: "Yanarda\u011F\u0131n i\xE7ine kazarlarsa bizim ve kendilerinin hayatlar\u0131n\u0131
+        tehlikeye atacaklar."
   bDecision:
-    id: 
+    id: Round1_SideWithGnomes
     unlockingFlag: 
     text:
-      en: 
-      tr: 
+      en: If the volcano explodes, it will jeopardize every life on Eyikroth.
+      tr: "Yanarda\u011F patlarsa tehlikesi hepimiz i\xE7in b\xFCy\xFCk olur."
     outcomes:
-      m_keys: 
-      m_values: 
-  optionalDecisions: []
+      m_keys: 0200000005000000
+      m_values: 0a000000f6ffffff
+  optionalDecisions:
+  - id: Round1_LetMerfolkHandleIt
+    unlockingFlag: ElvesAndHumans_OptionalDecision_Round1
+    text:
+      en: Merfolk have rich materials as well. Maybe they could help you?
+      tr: "Merfolk'lar\u0131n denizinde demir ve g\xFCm\xFC\u015F bolca var. Oradan
+        sizin i\xE7in kaz\u0131 yapsalar olmaz m\u0131?"
+    outcomes:
+      m_keys: 0200000005000000
+      m_values: 0a0000000a000000
   outcomeDialogue:
-    m_keys: []
-    m_values: []
+    m_keys:
+    - Round1_SideWithDwarves
+    - Round1_SideWithGnomes
+    - Round1_LetMerfolkHandleIt
+    m_values:
+    - lines:
+      - faction: 5
+        line:
+          en: Tha's right, sage! Now lemme rally some o' me boys. We'll be out in
+            a jiffy.
+          tr: "Ha \u015F\xF6yle ba\u015Fgan! Ben bizim arkada\u015Flar\u0131 \xE7a\u011F\u0131r\u0131p
+            geliyom, kapama ha da\u011F\u0131, yanak al\u0131r\u0131m yoksa senden."
+      - faction: 2
+        line:
+          en: But... they are... you are throwing us all into danger!
+          tr: "Ama... ya yanarda\u011F patlarsa... sen hepimizi tehlikeye at\u0131yorsun!"
+    - lines:
+      - faction: 5
+        line:
+          en: Are ye shittin' me? We have pickaxes'n all! Why's the cold feet, ye
+            knoblicker?!
+          tr: "La garda\u015F kazma tak\u0131m taklavat haz\u0131rlam\u0131\u015F\u0131z,
+            sen de diyon ki \"kazma\". Ne korkaks\u0131n be..."
+      - faction: 2
+        line:
+          en: That is the most logical decision, elder sage. Our town is safe, thanks
+            to you.
+          tr: "Hah! Art\u0131k kasabam\u0131z tekrar g\xFCvende. Te\u015Fekk\xFCrler
+            y\xFCce bilge, en mant\u0131kl\u0131 karar\u0131 verdin!"
+    - lines:
+      - faction: 5
+        line:
+          en: We'd be free o' minin' and get more time fer drinkin'! Hah, already
+            like it!
+          tr: "Ooooo, kazmak yerine i\xE7meye vakit olur desene ba\u015Fgan!"
+      - faction: 2
+        line:
+          en: And our town would be safe from any risk!
+          tr: "Ve bizim k\xF6y\xFCm\xFCz de tehlikeden kurtulur!"
   regionalTips:
   - faction: 4
-    unlockingFlag: 
+    unlockingFlag: ElvesAndHumans_OptionalDecision_Round1
     line:
-      en: 
-      tr: 
+      en: Most of our underwater cliffs are full of iron and silver. Maybe we could
+        offer you some for all the good work you've one for us.
+      tr: "Sualt\u0131ndaki baz\u0131 yer \xE7\u0131k\u0131tlar\u0131nda demir ve
+        g\xFCm\xFC\u015F damarlar\u0131 bizde boldur. Belki size yard\u0131mlar\u0131n\u0131zdan
+        \xF6t\xFCr\xFC bir miktar mineral hediye edebiliriz!"
