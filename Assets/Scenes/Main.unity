@@ -2278,7 +2278,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: randomConflicts.Array.size
@@ -2298,7 +2298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.data[1].conflicts.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: factionRepresentatives.m_values.Array.size
@@ -2336,6 +2336,18 @@ PrefabInstance:
       propertyPath: stages.Array.data[0].conflicts.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 8eee1f91a9180a84698dbaeb95c0c4b8, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[1].conflicts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8eee1f91a9180a84698dbaeb95c0c4b8, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[1].conflicts.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 21aeb91ccc46bd54a8e15babafdaede5, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[1].conflicts.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: abf4db971125e254db6c357502f7ed99, type: 2}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: factionRepresentatives.m_values.Array.data[2]
       value: 

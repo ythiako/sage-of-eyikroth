@@ -15,6 +15,7 @@ public class GameController : Singleton<GameController>
         MainMenuBehaviour.Instance.gameObject.SetActive(true);
         DecisionPhaseController.Instance.Dispose();
         ConflictController.Instance.Dispose();
+        StageController.Initialize();
         ExplorationPhaseController.Instance.EndExplorationPhase();
         
         DecisionPhaseController.Completed += OnDecisionPhaseComplete;
@@ -104,19 +105,25 @@ public class GameController : Singleton<GameController>
 
     private void OnDecisionPhaseComplete()
     {
-        FadeTransition.Instance.FadeIn(() =>
+        if (StageController.NextConflict()) 
         {
-            DecisionPhaseController.Instance.Dispose();
-            if (StageController.NextConflict()) StageChangeBehaviour.Instance.DisplayStageSuccess(ToNextConflict);
-            else                                ToNextConflict();
-        });
+            StageChangeBehaviour.Instance.DisplayStageSuccess(ToNextConflict, ConflictController.Instance.PlayConflict);
+        }
+        else
+        {
+            FadeTransition.Instance.FadeIn(() =>
+            {
+                DecisionPhaseController.Instance.Dispose();
+                ToNextConflict();
+                FadeTransition.Instance.FadeOut(ConflictController.Instance.PlayConflict);
+            });
+        }
     }
 
     private void ToNextConflict()
     {
+        DecisionPhaseController.Instance.Dispose();
         ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
-
-        FadeTransition.Instance.FadeOut(() => { ConflictController.Instance.PlayConflict(); });
 
         ConflictController.Instance.PhaseFinished = OnConflictPhaseFinished;
     }

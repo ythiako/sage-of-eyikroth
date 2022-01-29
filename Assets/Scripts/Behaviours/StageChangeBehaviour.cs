@@ -21,7 +21,7 @@ public class StageChangeBehaviour : Singleton<StageChangeBehaviour>
     }
 
     [Button]
-    public void DisplayStageSuccess(Action onComplete)
+    public void DisplayStageSuccess(Action onDisplay, Action onComplete)
     {
         gameObject.SetActive(true);
         
@@ -39,6 +39,7 @@ public class StageChangeBehaviour : Singleton<StageChangeBehaviour>
 
         background.DOFade(1, 2).SetEase(Ease.Linear).OnComplete(() =>
         {
+            onDisplay?.Invoke();
             textMessage.transform.DOScale(Vector3.one, 1).SetEase(Ease.OutSine);
             textMessage.DOFade(1, 1).SetEase(Ease.Linear).SetDelay(1).OnComplete(() =>
             {

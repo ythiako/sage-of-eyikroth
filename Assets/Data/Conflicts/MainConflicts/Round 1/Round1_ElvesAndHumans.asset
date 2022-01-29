@@ -140,28 +140,3 @@ MonoBehaviour:
       tr: "Topraklar\u0131m\u0131z avlanacak hayvanla doludur. Kuvvetle ve d\xFCzenli
         avlanan avc\u0131lar nereden gelirlerse gelsinler bizim ba\u015F\u0131m\u0131z\u0131n
         tac\u0131d\u0131r."
-  - faction: 0
-    unlockingFlag: 
-    line:
-      en: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-      tr: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-  - faction: 1
-    unlockingFlag: 
-    line:
-      en: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-      tr: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-  - faction: 2
-    unlockingFlag: 
-    line:
-      en: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-      tr: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-  - faction: 4
-    unlockingFlag: 
-    line:
-      en: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-      tr: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-  - faction: 5
-    unlockingFlag: 
-    line:
-      en: Lorem ipsum dolor sit amet, consectetur edipiscing elit.
-      tr: Lorem ipsum dolor sit amet, consectetur edipiscing elit.

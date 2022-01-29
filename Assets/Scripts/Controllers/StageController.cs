@@ -8,10 +8,14 @@ public static class StageController
     private static int _index;
     private static int _conflictIndex;
     private static List<Conflict> _conflicts;
+
+    public static void Initialize()
+    {
+        _conflicts = AssetsController.Instance.GetStage(_index);
+    }
     
     public static void PrepareStage()
     {
-        _conflicts = AssetsController.Instance.GetStage(_index);
         _conflictIndex = 0;
         PlayerData.StageIndex = _index;
         PlayerData.ConflictIndex = _conflictIndex;
