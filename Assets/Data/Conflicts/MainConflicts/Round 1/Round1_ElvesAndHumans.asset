@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round1_ElvesAndHumans
+  m_EditorClassIdentifier: 
+  id: Round1_ElvesAndHumans
+  genericConflict: 0
+  descriptionLines:
+  - faction: 0
+    line:
+      en: Greetings elder sage! I represent the people of Glad Rammas and arrived
+        here with grim news from our borders.
+      tr: "Selam sana b\xFCy\xFCk bilge. Ben elf \u015Fehri Glad Rammas'\u0131 temsil
+        etmek i\xE7in  burday\u0131m ve insanlar\u0131m ad\u0131na vermem gereken
+        k\xF6t\xFC bir haber var."
+  - faction: 0
+    line:
+      en: Our borders are violated by humans, hunting for game and sport, killing
+        our animal friends. We would like you to stop them from attacking so.
+      tr: "\u0130nsanlar s\u0131n\u0131rlar\u0131m\u0131z\u0131 ge\xE7erek hayvan
+        dostlar\u0131m\u0131z\u0131 spor olsun diye \xF6ld\xFCr\xFCyor, buna bir
+        dur demenizi rica etmek i\xE7in ben g\xF6nderildim."
+  - faction: 1
+    line:
+      en: Elder sage! Our people are hungry, and our hunters are being attacked by
+        elves. Their transgressions cause our people to die!
+      tr: "B\xFCy\xFCk bilge! Halk\u0131m\u0131z a\xE7, avc\u0131lar\u0131m\u0131za
+        da elfler sald\u0131r\u0131yor. Toprak korumak i\xE7in avc\u0131lar\u0131m\u0131z\u0131
+        yaralay\u0131p tebam\u0131z\u0131 a\xE7 b\u0131rak\u0131yorlar."
+  - faction: 0
+    line:
+      en: Nature belongs to all of us! As the representitive of Gronstead, I demand
+        for all humans to be allowed for hunting in elven lands. It's only animals,
+        surely nature belongs to all of us!
+      tr: "Do\u011Fan\u0131n nimetleri hepimizin. Gronstead temsilcisi olarak insanlar\u0131n
+        elf topraklar\u0131nda avlanabilmesini talep ediyorum. Bir ka\xE7 hayvan
+        avlamak eminim kimseye zarar vermez."
+  aSummary:
+    faction: 0
+    line:
+      en: Humans are hunting our forest friends. They need to stop.
+      tr: "\u0130nsanlar ormandaki hayvan arkada\u015Flar\u0131m\u0131z\u0131 avl\u0131yorlar.
+        Buna bir dur demek laz\u0131m!"
+  aDecision:
+    id: Round1_SideWithElves
+    unlockingFlag: 
+    text:
+      en: It's wrong to hunt where you're not welcome.
+      tr: "\u0130stenmedi\u011Finiz topraklarda avlanmay\u0131n."
+    outcomes:
+      m_keys: 0000000001000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 1
+    line:
+      en: Winter is getting close, and elven forests are bustling with food. We will
+        hunt only some of them.
+      tr: "K\u0131\u015F yakla\u015Ft\u0131\u011F\u0131 i\xE7in bir yerde av bulmam\u0131z
+        laz\u0131m! Elflerin ormanlar\u0131 av kayn\u0131yor."
+  bDecision:
+    id: Round1_SideWithHumans
+    unlockingFlag: 
+    text:
+      en: Hunger is more urgent than safety of animals.
+      tr: "\u0130nsanlar\u0131n a\xE7l\u0131\u011F\u0131, hayvanlar\u0131n hayatta
+        kalmas\u0131ndan daha \xF6nemli."
+    outcomes:
+      m_keys: 0000000001000000
+      m_values: f6ffffff0a000000
+  optionalDecisions: []
+  outcomeDialogue:
+    m_keys:
+    - Round1_SideWithHumans
+    - Round1_SideWithElves
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: These savages could not hunt properly! They'll dishonor the animals
+            on our land.
+          tr: "\u0130nsanlar d\xFCzg\xFCn avlanamaz bile! Bizim topraklar\u0131m\u0131z\u0131
+            hayvan cesetleri ile kirletecekler!"
+      - faction: 1
+        line:
+          en: We'll begin our preparations immediately, thank you for your wisdom,
+            elder sage!
+          tr: "Haz\u0131rl\u0131klara hemen ba\u015Fl\u0131yoruz. Bilgeli\u011Finiz
+            i\xE7in te\u015Fekk\xFCrler, y\xFCce bilge!"
+    - lines:
+      - faction: 0
+        line:
+          en: Thank you. I know you'd show emphaty for our lands and animal friends.
+          tr: "Sa\u011Folun. Topraklar\u0131m\u0131z ve hayvan dostlar\u0131m\u0131z
+            i\xE7in empati g\xF6sterece\u011Finizi tahmin etmekle yan\u0131lmam\u0131\u015F\u0131m."
+      - faction: 1
+        line:
+          en: What? Where will we find food?! We'll surely starve. Blood of famished
+            people are upon your hands.
+          tr: "Peki biz yeme\u011Fi nerden bulaca\u011F\u0131z? Halk\u0131m\u0131z
+            kesinlikle a\xE7 kal\u0131r! A\xE7l\u0131ktan \xF6lenlerin kan\u0131
+            senin elinde!"
