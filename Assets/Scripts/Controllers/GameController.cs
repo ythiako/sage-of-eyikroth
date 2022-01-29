@@ -32,11 +32,11 @@ public class GameController : Singleton<GameController>
     {
         PlayerData.CanLoadGame = true;
         
-        MainMenuBehaviour.Instance.gameObject.SetActive(false);
         SageStandingController.StartNew();
         GlobalFlagsController.NewFlagCollection();
         FadeTransition.Instance.FadeIn(() =>
         {
+            MainMenuBehaviour.Instance.gameObject.SetActive(false);
             StageController.Reset();
             StageController.PrepareStage();
             ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
