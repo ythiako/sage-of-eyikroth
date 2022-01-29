@@ -82,8 +82,8 @@ public class GameTextDisplay : MonoBehaviour
     {
         _isAnimating = true;
         
-        transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
+        transform.localScale = Vector3.one;
+        transform.DOScale(Vector3.zero, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
         {
             _isOpen = false;
             _isAnimating = false;
