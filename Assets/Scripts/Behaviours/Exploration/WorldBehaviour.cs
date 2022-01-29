@@ -10,32 +10,38 @@ namespace Behaviours.Exploration
 {
     public class WorldBehaviour : MonoBehaviour
     {
-        public static event Action KingdomSelected;
+        public static event Action<Faction> KingdomSelected;
         
         [SerializeField] private List<KingdomMapElement> _kingdoms;
+
         private KingdomMapElement _currentKingdom;
 
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Vector3 mousePos = Input.mousePosition;
-                mousePos.z = 10;
-
-                Vector3 screenPos = CameraController.Instance.MainCamera.ScreenToWorldPoint(mousePos);
-
-                RaycastHit2D hit = Physics2D.Raycast(screenPos, Vector3.zero);
-
-                if (hit)
-                {
-                    Debug.Log("Hit. Name: " + hit.collider.transform.parent.name );
-
-                    SelectKingdom(hit.collider.gameObject);
-                }
+                SelectKingdom();
             }
+            
+            
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 10;
+
+            Vector3 screenPos = CameraController.Instance.MainCamera.ScreenToWorldPoint(mousePos);
+            RaycastHit2D hit = Physics2D.Raycast(screenPos, Vector3.zero);
+
+            if (hit)
+            {
+                HighlightKingdom(hit.collider.gameObject);
+            }
+            else
+            {
+                Deselect();
+            }
+            
         }
 
-        private void SelectKingdom(GameObject colliderGameObject)
+        private void HighlightKingdom(GameObject colliderGameObject)
         {
             KingdomMapElement mapElement = colliderGameObject.GetComponentInParent<KingdomMapElement>();
 
@@ -49,21 +55,31 @@ namespace Behaviours.Exploration
             {
                 if (_currentKingdom._factionType == mapElement._factionType)
                 {
-                    Deselect(_currentKingdom);
-                    return;
+                    return;                                                 
                 }
                 
-                Deselect(_currentKingdom);
+                Deselect();
             }
             
             _currentKingdom = mapElement;
             mapElement.Highlight();
         }
 
-        private void Deselect(KingdomMapElement currentKingdom)
+        private void SelectKingdom()
         {
-            currentKingdom.StopHighlight();
-            _currentKingdom = null;
+            if (_currentKingdom != null)
+            {
+                KingdomSelected?.Invoke(_currentKingdom._factionType);
+            }
+        }
+
+        private void Deselect()
+        {
+            if (_currentKingdom != null)
+            {
+                _currentKingdom.StopHighlight();
+                _currentKingdom = null;    
+            }
         }
     }
 }

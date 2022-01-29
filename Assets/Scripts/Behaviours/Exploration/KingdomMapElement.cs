@@ -11,7 +11,7 @@ namespace Behaviours.Exploration
         private Tweener _highlightTweener;
         public void Highlight()
         {
-            _highlightTweener = _outline.DOFade(1, 1f)
+            _highlightTweener = _outline.DOFade(0.5f, 0.5f)
                 .From(0)
                 .SetLoops(-1, LoopType.Yoyo);
         }
