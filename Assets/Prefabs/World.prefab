@@ -332,7 +332,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777382, y: 1}
+    m_SensorSize: {x: 1.7784492, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5733fc753ec1c4b1b8affcd697dafdc0, type: 3}
+    - target: {fileID: 997305015445471147, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: _factionType
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -662,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b831495dfce2a465d879b17e8186feb3, type: 3}
+    - target: {fileID: 997305015445471147, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: _factionType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1152,6 +1160,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: abc1fd6c3864c44428e5ab45d34fc813, type: 3}
+    - target: {fileID: 997305015445471147, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: _factionType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1427,6 +1439,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f408c41de37d9432e9287280970645e5, type: 3}
+    - target: {fileID: 997305015445471147, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: _factionType
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1755,6 +1771,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0727b0e6e472e4587b73c95366eb8f7b, type: 3}
+    - target: {fileID: 997305015445471147, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: _factionType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
