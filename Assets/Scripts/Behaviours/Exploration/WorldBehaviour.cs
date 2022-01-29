@@ -22,25 +22,25 @@ namespace Behaviours.Exploration
 
         [SerializeField] private Button _doneButton;
 
-        private bool _explorationPhaseActive = false;
+        public bool CanSelectRegion = false;
         private KingdomMapElement _currentKingdom;
 
         public void EnableWorld()
         {
             _container.gameObject.SetActive(true);
-            _explorationPhaseActive = true;
+            CanSelectRegion = true;
             _doneButton.gameObject.SetActive(false);
         }
 
         public void DisableWorld()
         {
             _container.gameObject.SetActive(false);
-            _explorationPhaseActive = false;
+            CanSelectRegion = false;
         }
 
         private void Update()
         {
-            if (_explorationPhaseActive == false)
+            if (CanSelectRegion == false)
                 return;
             
             if (Input.GetMouseButtonDown(0))
@@ -60,7 +60,6 @@ namespace Behaviours.Exploration
             {
                 Deselect();
             }
-            
         }
 
         public void OnDoneButtonClicked()
@@ -98,17 +97,17 @@ namespace Behaviours.Exploration
             if (sprite != null)
                 _leftSprite.sprite = sprite;
 
-            _leftSprite.transform.DOLocalMoveX(-8.5f, 0.5f)
+            _leftSprite.transform.DOLocalMoveX(-8.5f, 1f)
                 .SetEase(Ease.InOutElastic);
-            _rightSprite.transform.DOLocalMoveX(8.5f, 0.5f)
+            _rightSprite.transform.DOLocalMoveX(8.5f, 1f)
                 .SetEase(Ease.InOutElastic);
         }
 
         public void TweenOutCharacters()
         {
-            _leftSprite.transform.DOLocalMoveX(-12f, 0.5f)
+            _leftSprite.transform.DOLocalMoveX(-12f, 1f)
                 .SetEase(Ease.InOutElastic);
-            _rightSprite.transform.DOLocalMoveX(12f, 0.5f)
+            _rightSprite.transform.DOLocalMoveX(12f, 1f)
                 .SetEase(Ease.InOutElastic);
         }
 
@@ -127,6 +126,11 @@ namespace Behaviours.Exploration
                 _currentKingdom.StopHighlight();
                 _currentKingdom = null;    
             }
+        }
+
+        public void ShowButton()
+        {
+            _doneButton.gameObject.SetActive(true);
         }
     }
 }

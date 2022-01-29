@@ -9,7 +9,7 @@ public class AssetsController : Singleton<AssetsController>
     [SerializeField] private List<Conflict> randomConflicts;
     [SerializeField] private SerializableDictionary<Faction, FactionRepresentativeBehaviour> factionRepresentatives;
     [SerializeField] private SerializableDictionary<Faction, Sprite> factionLeaderSprites;
-    [SerializeField] private List<DialogueLine> defaultRegionalTips;
+    [SerializeField] private List<LocalizedText> defaultRegionalTips;
 
     public List<Conflict> GetStage(int index)
     {
@@ -32,9 +32,9 @@ public class AssetsController : Singleton<AssetsController>
         return default;
     }
 
-    public List<DialogueLine> GetDefaultRegionalTips()
+    public LocalizedText GetDefaultRegionalTips()
     {
-        return defaultRegionalTips;
+        return defaultRegionalTips[Random.Range(0, defaultRegionalTips.Count)];
     }
 
     

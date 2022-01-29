@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57dec53fc7b7434e86d0ebfa17b20830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stages: []
+  randomConflicts: []
   factionRepresentatives:
     m_keys: 0000000001000000
     m_values:
@@ -85,3 +87,15 @@ MonoBehaviour:
     - {fileID: 21300000, guid: dcf547a7413a54eaa9f4ff72cc56defd, type: 3}
     - {fileID: 21300000, guid: 8f055a7e442834118b7e3b61cff3bd43, type: 3}
     - {fileID: 21300000, guid: 9042acf68add947538afc829d4a1d4b6, type: 3}
+  defaultRegionalTips:
+  - en: It is all going well, sage. Thanks for stopping by.
+    tr: "Her \u015Fey yolunda bilgemiz. Geldi\u011Fin i\xE7in te\u015Fekk\xFCrler."
+  - en: Thank you for checking us. All is well.
+    tr: "Halimizi sordu\u011Fun i\xE7in te\u015Fekk\xFCrler, bir sorun yok."
+  - en: Our grain silos are full, we have kindle to burn. Cannot complain.
+    tr: "Tah\u0131l depolar\u0131m\u0131z dolu, yakacak odunlar\u0131m\u0131z var.
+      Derdimiz yok."
+  - en: The council awaits me, your highness. I am sorry but I have to go.
+    tr: "Konseyim beni bekliyor y\xFCce bilge. \xD6z\xFCr dilerim ama gitmek zorunday\u0131m."
+  - en: Excuse me but I cannot talk right now. I am sorry.
+    tr: "\xDCzg\xFCn\xFCm ama \u015Fu anda konu\u015Famam. Kusura bakma."

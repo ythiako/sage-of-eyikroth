@@ -102,8 +102,14 @@ namespace Controllers
                     rightText.Next = () => { };
                     leftText.Next = () =>
                     {
-                        if (index < _conflict.descriptionLines.Count - 1)   ShowDialogue();
-                        else                                                OnDialoguesFinished();
+                        if (index < _conflict.descriptionLines.Count - 1)
+                        {
+                            ShowDialogue();
+                        }
+                        else
+                        {
+                            OnDialoguesFinished();
+                        }
                     };
                 }
                 else if (_conflict.descriptionLines[_dialogueIndex].faction == _conflict.bSummary.faction)

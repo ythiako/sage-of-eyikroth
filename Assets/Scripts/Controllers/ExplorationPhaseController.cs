@@ -1,8 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Behaviours.Exploration;
 using Models;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Controllers
@@ -39,28 +39,74 @@ namespace Controllers
 
         private void OnKingdomSelected(Faction faction)
         {
-            var flag = StageController.GetCurrentConflict().regionalTips.First(rt => rt.faction == faction).unlockingFlag;
+            var flag = StageController.GetCurrentConflict().regionalTips.FirstOrDefault(rt => rt.faction == faction)?.unlockingFlag;
             if (!string.IsNullOrWhiteSpace(flag))
             {
                 GlobalFlagsController.SetFlag(flag);
             }
-            
-            var tip = GetRegionTip(faction);
-            _textDisplay.DisplayText(tip);
-            _world.TweenInCharacters(faction);
+
+            _world.CanSelectRegion = false;
+            DisplayTips(faction);
+
+            _textDisplay.Closed += () =>
+            {
+                _world.CanSelectRegion = true;
+            };
         }
 
-        private LocalizedText GetRegionTip(Faction faction)
+        private void DisplayTips(Faction faction)
         {
+            _world.TweenInCharacters(faction);
+            List<LocalizedText> tips = GetRegionTip(faction);
+            if (tips.Count == 0)
+            {
+                tips.Add(AssetsController.Instance.GetDefaultRegionalTips());
+            }
+            
+            int _dialogueIndex = 0;
+            ShowDialogue();
+            
+            void ShowDialogue()
+            {
+                var index = _dialogueIndex;
+
+                _textDisplay.DisplayText(tips[index]);
+                _textDisplay.Next = () =>
+                {
+                    if (index < tips.Count - 1)
+                    {
+                        ShowDialogue();
+                    }
+                    else
+                    {
+                        OnDialoguesFinished();
+                    }
+                };
+                    
+                _dialogueIndex++;
+            }        
+        }
+
+        private void OnDialoguesFinished()
+        {
+            _textDisplay.Close();
+            _world.TweenOutCharacters();
+
+            _world.ShowButton();
+        }
+
+        private List<LocalizedText> GetRegionTip(Faction faction)
+        {
+            List<LocalizedText> tipList = new List<LocalizedText>();
             foreach (OptionalDialogueTips regionalTip in _currentConflict.regionalTips)
             {
                 if (regionalTip.faction == faction)
                 {
-                    return regionalTip.line;
+                    tipList.Add(regionalTip.line);
                 }
             }
 
-            return null;
+            return tipList;
         }
     }
 }
