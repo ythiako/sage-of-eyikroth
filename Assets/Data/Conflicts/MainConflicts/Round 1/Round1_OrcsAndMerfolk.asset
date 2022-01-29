@@ -139,7 +139,7 @@ MonoBehaviour:
         Zaman\u0131nda atalar\u0131m\u0131z g\xFCney k\u0131y\u0131 \u015Feridinde
         ya\u015Fard\u0131."
   - faction: 0
-    unlockingFlag: 
+    unlockingFlag: OrcsAndMerfolk_OptionalDecision_Round1
     line:
       en: Orcs and Merfolk reside in that border now. I wonder if we failed our ancestors,
         but it's not easy to say.
