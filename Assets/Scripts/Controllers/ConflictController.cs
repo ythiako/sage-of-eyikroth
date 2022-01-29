@@ -21,7 +21,6 @@ namespace Controllers
         [SerializeField] private Button exploreButton;
 
         [Title("Cameras")] 
-        [SerializeField] private CinemachineVirtualCamera initialCamera;
         [SerializeField] private CinemachineVirtualCamera stageCamera;
 
         [Title("Characters")] 
@@ -65,21 +64,13 @@ namespace Controllers
             textInput.gameObject.SetActive(false);
             exploreButton.gameObject.SetActive(false);
 
-            stageCamera.Priority = 0;
-            initialCamera.Priority = 10;
+            stageCamera.Priority = 10;
         }
 
         [Button(ButtonSizes.Large)]
         public void PlayConflict()
         {
             director.Play();
-        }
-
-        public void OnActorsBegunMoving()
-        {
-            stageCamera.Priority = 10;
-            initialCamera.Priority = 0;
-
         }
 
         public void OnActorsInPlace()
