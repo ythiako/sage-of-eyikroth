@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round4_HumansAndDwarves
+  m_EditorClassIdentifier: 
+  id: Round4_HumansAndDwarves
+  genericConflict: 0
+  descriptionLines:
+  - faction: 1
+    line:
+      en: Our tools are getting old and useless. We cannot meet our fuel quota for
+        winter.
+      tr: 
+  - faction: 1
+    line:
+      en: We can't let our homesteads freezing to death, help us!
+      tr: 
+  - faction: 2
+    line:
+      en: Humans tried to break into our storage and steal our tools! This is outrageous.
+      tr: 
+  - faction: 2
+    line:
+      en: They even stole our high powered crossbows. They should be put in their
+        places
+      tr: 
+  aSummary:
+    faction: 1
+    line:
+      en: Let us get new tools from gnomes!
+      tr: 
+  aDecision:
+    id: Round3_SideWithHumans
+    unlockingFlag: 
+    text:
+      en: Stealing is bad.
+      tr: 
+    outcomes:
+      m_keys: 0100000002000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 2
+    line:
+      en: These tools are ours!
+      tr: 
+  bDecision:
+    id: Round3_SideWithGnomes
+    unlockingFlag: 
+    text:
+      en: But humans need help.
+      tr: 
+    outcomes:
+      m_keys: 0100000002000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round3_LetElvesHandle
+    unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
+    text:
+      en: Elves can teach magic
+      tr: 
+    outcomes:
+      m_keys: 0100000002000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round3_SideWithGnomes
+    - Round3_SideWithHumans
+    - Round3_LetElvesHandle
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 0
+        line:
+          en: 
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 0
+        line:
+          en: 
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: 
+          tr: 
+      - faction: 0
+        line:
+          en: 
+          tr: 
+  regionalTips:
+  - faction: 0
+    unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
+    line:
+      en: How are our lands easy to maintain? We can modify our wooden houses to
+        our will, and heal them at will.
+      tr: 

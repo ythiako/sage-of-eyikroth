@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round4_ElvesAndOrcs
+  m_EditorClassIdentifier: 
+  id: Round4_ElvesAndOrcs
+  genericConflict: 0
+  descriptionLines:
+  - faction: 0
+    line:
+      en: Our cliffs are attacked by vicious wolves, wearing plate armor!
+      tr: 
+  - faction: 0
+    line:
+      en: No wonder that it's the doing of orcs! You need to kill their wolves!
+      tr: 
+  - faction: 3
+    line:
+      en: Elves are brewing some sort of off-smelling potion in their forests that
+        causes our games and wolves run to it.
+      tr: 
+  - faction: 3
+    line:
+      en: Stop them from stealing our hunt and save our wolves!
+      tr: 
+  aSummary:
+    faction: 0
+    line:
+      en: Stop orcs from sending their wolves to us!
+      tr: 
+  aDecision:
+    id: Round4_SideWithElves
+    unlockingFlag: 
+    text:
+      en: Kill the wolves
+      tr: 
+    outcomes:
+      m_keys: 0000000003000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 3
+    line:
+      en: Elves are stealing our hunt and wolves!
+      tr: 
+  bDecision:
+    id: Round4_SideWithOrcs
+    unlockingFlag: 
+    text:
+      en: Stop elves from brewing
+      tr: 
+    outcomes:
+      m_keys: 0000000003000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round4_LetMerfolkHandle
+    unlockingFlag: ElvesAndOrcs_OptionalDecision_Round4
+    text:
+      en: Use seaweed
+      tr: 
+    outcomes:
+      m_keys: 0000000003000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round4_LetMerfolkHandle
+    - Round4_SideWithElves
+    - Round4_SideWithOrcs
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: Huh? Is it because our potion? Well, I think we owe orcs an apology...
+          tr: 
+      - faction: 3
+        line:
+          en: Seaweed... don't think our wolves will like the smell, but we'll take
+            it.
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: Finally! We can rest well knowing we're safe!
+          tr: 
+      - faction: 3
+        line:
+          en: Wolves are our companions! How dare you offer that?!
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: But those potions are health potions! They are medicine!
+          tr: 
+      - faction: 3
+        line:
+          en: Serves you elves right for stealing our hunt!
+          tr: 
+  regionalTips:
+  - faction: 4
+    unlockingFlag: ElvesAndOrcs_OptionalDecision_Round4
+    line:
+      en: Sometimes, our seahorses get drawn to deeper places by smell. So we stuff
+        some seaweed up their gills to make them stop from smelling that fragrance.
+      tr: 
