@@ -15,12 +15,28 @@ namespace Controllers
         {
             SageStandingController.StartNew();
             GlobalFlagsController.NewFlagCollection();
+            FadeTransition.Instance.FadeIn(() =>
+            {
+                // Load conflict phase
+                FadeTransition.Instance.FadeOut(() =>
+                {
+                    // Start conflict phase
+                });
+            });
         }
 
         public void ContinueGame()
         {
             SageStandingController.Load();
             GlobalFlagsController.LoadFlagCollection();
+            FadeTransition.Instance.FadeIn(() =>
+            {
+                // Load conflict phase
+                FadeTransition.Instance.FadeOut(() =>
+                {
+                    // Start conflict phase
+                });
+            });
         }
 
         public void ShowCredits()
