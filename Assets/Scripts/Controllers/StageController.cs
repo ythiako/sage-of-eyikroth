@@ -5,8 +5,6 @@ using UnityEngine;
 
 public static class StageController
 {
-    public static Action StageFinished;
-    
     private static int _index;
     private static int _conflictIndex;
     private static List<Conflict> _conflicts;
@@ -19,19 +17,18 @@ public static class StageController
         PlayerData.ConflictIndex = _conflictIndex;
     }
 
-    public static void NextConflict()
+    public static bool NextConflict()
     {
         if (_conflictIndex >= _conflicts.Count - 1)
         {
             _index++;
             PrepareStage();
-            StageFinished?.Invoke();
+            return true;
         }
-        else
-        {
-            _conflictIndex++;
-            PlayerData.ConflictIndex = _conflictIndex;
-        }
+        
+        _conflictIndex++;
+        PlayerData.ConflictIndex = _conflictIndex;
+        return false;
     }
 
     public static void Reset()
@@ -46,5 +43,10 @@ public static class StageController
     public static Conflict GetCurrentConflict()
     {
         return _conflicts[_conflictIndex];
+    }
+
+    public static int GetCurrentStageNo()
+    {
+        return _index + 1;
     }
 }

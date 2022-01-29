@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class GameController : Singleton<GameController>
 {
+    [SerializeField] private float minimumThreshold;
+    [SerializeField] private float maximumThreshold;
+    
     private void Awake()
     {
         MainMenuBehaviour.Instance.gameObject.SetActive(true);
@@ -70,14 +73,14 @@ public class GameController : Singleton<GameController>
 
     public void QuitGame()
     {
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         if (UnityEditor.EditorApplication.isPlaying)
         {
             UnityEditor.EditorApplication.ExitPlaymode();
         }
-#else
-            Application.Quit();
-#endif
+        #else
+        Application.Quit();
+        #endif
     }
 
     private void OnConflictPhaseFinished()
@@ -104,15 +107,17 @@ public class GameController : Singleton<GameController>
         FadeTransition.Instance.FadeIn(() =>
         {
             DecisionPhaseController.Instance.Dispose();
-            StageController.NextConflict();
-            ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
-            
-            FadeTransition.Instance.FadeOut(() =>
-            {
-                ConflictController.Instance.PlayConflict();
-            });
-
-            ConflictController.Instance.PhaseFinished = OnConflictPhaseFinished;
+            if (StageController.NextConflict()) StageChangeBehaviour.Instance.DisplayStageSuccess(ToNextConflict);
+            else                                ToNextConflict();
         });
+    }
+
+    private void ToNextConflict()
+    {
+        ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
+
+        FadeTransition.Instance.FadeOut(() => { ConflictController.Instance.PlayConflict(); });
+
+        ConflictController.Instance.PhaseFinished = OnConflictPhaseFinished;
     }
 }
