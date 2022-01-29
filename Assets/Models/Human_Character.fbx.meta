@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0ae71452fb3f4145917195f086f1d4e
+guid: e943416def5515c4297eded833768e2c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: blinn2
-    second: {fileID: 2100000, guid: 33ec412318dd3c64694272a8a7e97f5f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: c2ac24b25beaf11408195b57ad366398, type: 2}
+    second: {fileID: 2100000, guid: e17b8da62a3cad3449e390f868c15c14, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -95,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.12
+    globalScale: 12
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
