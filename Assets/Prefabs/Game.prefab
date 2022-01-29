@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,10 +71,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57dec53fc7b7434e86d0ebfa17b20830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conflicts:
-  - {fileID: 11400000, guid: 0d93f812de362a549975330e673317e0, type: 2}
   factionRepresentatives:
     m_keys: 0000000001000000
     m_values:
     - {fileID: -1862892627363376244, guid: a04b281731f168e4696b5ad16d7df9c7, type: 3}
     - {fileID: 7126220742337712513, guid: d3cc73d9880b7bc468fc631d6e56730a, type: 3}
+  factionLeaderSprites:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values:
+    - {fileID: 21300000, guid: 3b2bc5210f0334acdba952deb8e0141a, type: 3}
+    - {fileID: 21300000, guid: 7916fb946ab2d4c7da6ecda1627d115a, type: 3}
+    - {fileID: 21300000, guid: c39c19fcc9e934e7993f4a14400aa6f3, type: 3}
+    - {fileID: 21300000, guid: dcf547a7413a54eaa9f4ff72cc56defd, type: 3}
+    - {fileID: 21300000, guid: 8f055a7e442834118b7e3b61cff3bd43, type: 3}
+    - {fileID: 21300000, guid: 9042acf68add947538afc829d4a1d4b6, type: 3}
