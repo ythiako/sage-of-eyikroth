@@ -76,7 +76,15 @@ MonoBehaviour:
     outcomes:
       m_keys: 0000000001000000
       m_values: f6ffffff0a000000
-  optionalDecisions: []
+  optionalDecisions:
+  - id: 
+    unlockingFlag: 
+    text:
+      en: 
+      tr: 
+    outcomes:
+      m_keys: 
+      m_values: 
   outcomeDialogue:
     m_keys:
     - Round1_SideWithHumans
@@ -108,3 +116,11 @@ MonoBehaviour:
           tr: "Peki biz yeme\u011Fi nerden bulaca\u011F\u0131z? Halk\u0131m\u0131z
             kesinlikle a\xE7 kal\u0131r! A\xE7l\u0131ktan \xF6lenlerin kan\u0131
             senin elinde!"
+  regionalTips:
+  - faction: 3
+    unlockingFlag: ElvesAndHumans_OptionalDecision
+    line:
+      en: Our human neighbors can hunt in our barren lands. Hunt here is harder than
+        hunting a deer, but the bounty's equally fulfilling.
+      tr: "\u0130nsan kom\u015Fular\u0131m\u0131z bizim topraklar\u0131m\u0131zda
+        avlanabilir. Burada avlanmak zordur, ama \xF6d\xFCl\xFC de pek bereketlidir."

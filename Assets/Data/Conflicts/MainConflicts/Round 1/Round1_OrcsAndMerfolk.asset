@@ -50,7 +50,7 @@ MonoBehaviour:
     faction: 3
     line:
       en: We are attacked by Merfolk, and wish to defend ourselves.
-      tr: 
+      tr: "Merfolk'lar bize sald\u0131r\u0131yor, biz de kendimizi savunmak istiyoruz."
   aDecision:
     id: Round1_SideWithOrcs
     unlockingFlag: 
@@ -64,7 +64,7 @@ MonoBehaviour:
     faction: 4
     line:
       en: We are attacked by Orcs, and wish to defend ourselves.
-      tr: 
+      tr: "Orklar bize sald\u0131r\u0131yor, biz de kendimizi savunmak istiyoruz."
   bDecision:
     id: Round1_SideWithMerfolk
     unlockingFlag: 
@@ -74,7 +74,15 @@ MonoBehaviour:
     outcomes:
       m_keys: 0300000004000000
       m_values: f6ffffff0a000000
-  optionalDecisions: []
+  optionalDecisions:
+  - id: 
+    unlockingFlag: 
+    text:
+      en: 
+      tr: 
+    outcomes:
+      m_keys: 
+      m_values: 
   outcomeDialogue:
     m_keys:
     - Round1_SideWithOrcs
@@ -85,22 +93,27 @@ MonoBehaviour:
         line:
           en: You speak with the wisdom of ancestors themselves. We are eternally
             grateful.
-          tr: 
+          tr: "Atalar\u0131m\u0131z\u0131n laflar\u0131 sizden bize aktar\u0131l\u0131yor.
+            Sonsuz te\u015Fekk\xFCrlerimizi sunar\u0131z."
       - faction: 4
         line:
           en: This one wishes to express... disappointment. If this is the path you
             lead us into, we will follow 'accordingly'.
-          tr: 
+          tr: "Bu kul memnuniyetsizli\u011Fini \xFCz\xFClerek sunar. E\u011Fer se\xE7ilen
+            yol buysa, biz de uygun ad\u0131mlar atmas\u0131n\u0131 biliriz."
     - lines:
       - faction: 4
         line:
           en: You are absolutely right, elder sage. We'll keep our peaceful relations.
-          tr: 
+          tr: "Bu kul hakl\u0131l\u0131\u011F\u0131n\u0131z\u0131 tebrik eder y\xFCce
+            bilge. Bar\u0131\u015F\xE7\u0131ll\u0131\u011F\u0131m\u0131z\u0131 korumaya
+            devam edece\u011Fiz."
       - faction: 3
         line:
           en: They are clearly to blame here, but we'll take your guidance... for
             now.
-          tr: 
+          tr: "Merfolk'lar a\xE7\u0131k olarak su\xE7lu, ama e\u011Fer d\xFC\u015F\xFCnceniz
+            buysa takip edece\u011Fiz... \u015Fimdilik."
   regionalTips:
   - faction: 0
     line:
@@ -108,4 +121,7 @@ MonoBehaviour:
         when they landed here in the first place. Their haunting state is on our
         responsibility. We will deal with this accordingly. Please inform Orcs and
         Merfolk on the matter for us.
-      tr: 
+      tr: "Y\xFCce bilge, orklara ve Merfolk'lara sald\u0131ranlar bizim eski atalar\u0131m\u0131z,
+        denizlerde bo\u011Fulan atalar\u0131m\u0131z. Onlar\u0131 onurland\u0131ramad\u0131\u011F\u0131m\u0131z
+        i\xE7in sorumluluk bizde. Orklara ve Merfolk'lara bu sorunu bizim \xE7\xF6zece\u011Fimizi
+        s\xF6yleyin l\xFCtfen."

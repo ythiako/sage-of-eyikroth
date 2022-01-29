@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round1_DwarvesAndGnomes
+  m_EditorClassIdentifier: 
+  id: 
+  genericConflict: 0
+  descriptionLines: []
+  aSummary:
+    faction: 0
+    line:
+      en: 
+      tr: 
+  aDecision:
+    id: 
+    unlockingFlag: 
+    text:
+      en: 
+      tr: 
+    outcomes:
+      m_keys: 
+      m_values: 
+  bSummary:
+    faction: 0
+    line:
+      en: 
+      tr: 
+  bDecision:
+    id: 
+    unlockingFlag: 
+    text:
+      en: 
+      tr: 
+    outcomes:
+      m_keys: 
+      m_values: 
+  optionalDecisions: []
+  outcomeDialogue:
+    m_keys: []
+    m_values: []
+  regionalTips:
+  - faction: 4
+    unlockingFlag: 
+    line:
+      en: 
+      tr: 

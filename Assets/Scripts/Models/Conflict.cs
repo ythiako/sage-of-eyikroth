@@ -42,6 +42,7 @@ namespace Models
     public class OptionalDialogueTips
     {
         public Faction faction;
+        public string unlockingFlag;
         
         [InlineProperty, HideLabel, BoxGroup("Regional Tip")]
         public LocalizedText line;
