@@ -51,7 +51,7 @@ public class GameController : Singleton<GameController>
         GlobalFlagsController.LoadFlagCollection();
         FadeTransition.Instance.FadeIn(() =>
         {
-            StageController.PrepareStage();
+            //StageController.PrepareStage();
             ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
             
             FadeTransition.Instance.FadeOut(() =>
