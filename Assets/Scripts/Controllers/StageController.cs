@@ -13,6 +13,12 @@ public static class StageController
     {
         _conflicts = AssetsController.Instance.GetStage(_index);
     }
+
+    public static void Load()
+    {
+        _index = PlayerData.StageIndex;
+        _conflictIndex = PlayerData.ConflictIndex;
+    }
     
     public static void PrepareStage()
     {
