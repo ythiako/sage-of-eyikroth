@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Behavoiurs;
 using Cinemachine;
 using Models;
@@ -10,12 +12,12 @@ using UnityEngine.Playables;
 public class DecisionPhaseController : Singleton<DecisionPhaseController>
 {
     public static event Action<Decision> DecisionMade;
+    public static event Action Completed;
 
     [SerializeField] private CinemachineVirtualCamera stageVirtualCamera;
     [SerializeField] private PlayableDirector director;
 
     [Title("Text Displays")] 
-    [SerializeField] private TextAnimatorInputBehaviour textInputMediator;
     [SerializeField] private GameTextDisplay leftTextDisplay;
     [SerializeField] private GameTextDisplay rightTextDisplay;
 
@@ -23,73 +25,70 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
     [SerializeField] private Transform leftCharacterRoot;
     [SerializeField] private Transform rightCharacterRoot;
 
-    [Title("Decisions")] 
-    [SerializeField] private DecisionBehaviour leftDecision;
-    [SerializeField] private DecisionBehaviour rightDecision;
-    [SerializeField] private List<DecisionBehaviour> optionalDecisions;
+    [SerializeField] private List<DecisionBehaviour> decisions;
 
     private Conflict _conflict;
-    private bool _rightSummaryShown;
-    private bool _leftSummaryShown;
+    private Decision _decision;
+    private bool _rightTextShown;
+    private bool _leftTextShown;
+    private int _currentOutcomeDialogueIndex;
 
     private FactionRepresentativeBehaviour _leftRepresentative;
     private FactionRepresentativeBehaviour _rightRepresentative;
 
+    [Button]
     public void BeginDecisionPhase(Conflict conflict)
     {
+        _decision = null;
         _conflict = conflict;
-        _leftSummaryShown = false;
-        _rightSummaryShown = false;
+        _leftTextShown = false;
+        _rightTextShown = false;
 
-        textInputMediator.enabled = false;
         leftTextDisplay.gameObject.SetActive(false);
         rightTextDisplay.gameObject.SetActive(false);
 
         _leftRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.aSummary.faction), leftCharacterRoot);
         _rightRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.bSummary.faction), rightCharacterRoot);
         
+        foreach (var decision in decisions)
+            decision.gameObject.SetActive(false);
+        
         director.Play();
     }
 
-    public void DisplayDialogues()
+    public void DisplaySummaries()
     {
+        director.Pause();
+        
         leftTextDisplay.DisplayText(_conflict.aSummary.line);
-        rightTextDisplay.DisplayText(_conflict.aSummary.line);
+        rightTextDisplay.DisplayText(_conflict.bSummary.line);
 
         leftTextDisplay.Shown = () =>
         {
-            _leftSummaryShown = true;
-            if (_leftSummaryShown && _rightSummaryShown)
+            _leftTextShown = true;
+            if (_leftTextShown && _rightTextShown)
             {
-                DisplayDecisions();
-                textInputMediator.enabled = true;
-
-                leftTextDisplay.Next = leftTextDisplay.Close;
-                rightTextDisplay.Next = rightTextDisplay.Close;
+                StartCoroutine(Delay(DisplayDecisions));
             }
         };
         
         rightTextDisplay.Shown = () =>
         {
-            _rightSummaryShown = true;
-            if (_leftSummaryShown && _rightSummaryShown)
+            _rightTextShown = true;
+            if (_leftTextShown && _rightTextShown)
             {
-                DisplayDecisions();
-                textInputMediator.enabled = true;
-
-                leftTextDisplay.Next = leftTextDisplay.Close;
-                rightTextDisplay.Next = rightTextDisplay.Close;
+                StartCoroutine(Delay(DisplayDecisions));
             }
         };
-
-        leftTextDisplay.Closed = DisplayDecisions;
     }
     
     public void MakeDecision(Decision decision)
     {
-        leftDecision.gameObject.SetActive(false);
-        rightDecision.gameObject.SetActive(false);
+        _decision = decision;
 
+        foreach (var d in decisions)
+            d.gameObject.SetActive(false);
+        
         foreach (var outcome in decision.outcomes)
         {
             var currentStanding = SageStandingController.GetStanding(outcome.Key);
@@ -99,6 +98,12 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
         SageStandingController.SaveStanding();
         GlobalFlagsController.SetFlag(decision.id);
         DecisionMade?.Invoke(decision);
+        DisplayDialogues();
+    }
+
+    public void OnRepresentativesQuitRoom()
+    {
+        Completed?.Invoke();
     }
 
     public void Dispose()
@@ -115,10 +120,95 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
 
     private void DisplayDecisions()
     {
-        leftDecision.gameObject.SetActive(true);
-        rightDecision.gameObject.SetActive(true);
+        decisions[0].gameObject.SetActive(true);
+        decisions[1].gameObject.SetActive(true);
         
-        leftDecision.Set(_conflict.aDecision);
-        rightDecision.Set(_conflict.bDecision);
+        decisions[0].Set(_conflict.aDecision);
+        decisions[1].Set(_conflict.bDecision);
+
+        var optionalDecisionCount = _conflict.optionalDecisions.Count(od => od.IsUnlocked);
+        
+        for (int i = 0; i < Mathf.Min(decisions.Count - 2, optionalDecisionCount); i++)
+        {
+            decisions[i + 2].gameObject.SetActive(true);
+            decisions[i + 2].Set(_conflict.optionalDecisions[i]);
+        }
+    }
+
+    private void DisplayDialogues()
+    {
+        var left = new List<LocalizedText>();
+        var right = new List<LocalizedText>();
+
+        foreach (var outcomeDialogue in _conflict.outcomeDialogue[_decision.id].lines)
+        {
+            if (outcomeDialogue.faction == _conflict.aSummary.faction)
+                left.Add(outcomeDialogue.line);
+            else if (outcomeDialogue.faction == _conflict.bSummary.faction)
+                right.Add(outcomeDialogue.line);
+        }
+
+        _currentOutcomeDialogueIndex = 0;
+        ShowDialogueOutcome();
+
+
+        void ShowDialogueOutcome()
+        {
+            if (_currentOutcomeDialogueIndex < left.Count)
+            {
+                _leftTextShown = false;
+                leftTextDisplay.DisplayText(left[_currentOutcomeDialogueIndex]);
+                leftTextDisplay.Shown = () =>
+                {
+                    _leftTextShown = true;
+                    if (_leftTextShown && _rightTextShown)
+                    {
+                        StartCoroutine(Delay(() =>
+                        {
+                            _currentOutcomeDialogueIndex++;
+                            ShowDialogueOutcome();
+                        }));
+                    }
+                };
+            }
+            else
+            {
+                _leftTextShown = true;
+            }
+
+            if (_currentOutcomeDialogueIndex < right.Count)
+            {
+                _rightTextShown = false;
+                rightTextDisplay.DisplayText(right[_currentOutcomeDialogueIndex]);
+                rightTextDisplay.Shown = () =>
+                {
+                    _rightTextShown = true;
+                    if (_leftTextShown && _rightTextShown)
+                    {
+                        StartCoroutine(Delay(() =>
+                        {
+                            _currentOutcomeDialogueIndex++;
+                            ShowDialogueOutcome();
+                        }));
+                    }
+                };
+            }
+
+            if (_leftTextShown && _rightTextShown)
+            {
+                StartCoroutine(Delay(() =>
+                {
+                    leftTextDisplay.Close();
+                    rightTextDisplay.Close();
+                    director.Resume();
+                }));
+            }
+        }
+    }
+
+    private IEnumerator Delay(Action callback)
+    {
+        yield return new WaitForSeconds(1);
+        callback?.Invoke();
     }
 }

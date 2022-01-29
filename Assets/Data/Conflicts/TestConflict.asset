@@ -18,30 +18,31 @@ MonoBehaviour:
   - faction: 1
     line:
       en: 
-      tr: 
+      tr: 'Merhaba ustad. Insan nufusu cok artti, oturacak ev kalmadi. '
   - faction: 1
     line:
       en: 
-      tr: 
+      tr: Sinirlarimiz icerisindeki agaclari kesip ev yapmak istiyoruz.
   - faction: 0
     line:
       en: 
-      tr: 
+      tr: Saygilarimizi sunariz ustad. Insanlar X ormaninin guneyindeki agaclari
+        kesmek istiyor.
   - faction: 0
     line:
       en: 
-      tr: 
+      tr: Bu agaclar biz elfler icin kutsaldir. Kesilmelerinikabul edemeyiz!
   aSummary:
     faction: 1
     line:
       en: 
-      tr: 
+      tr: Surlara yakin agaclari kesip sokaktaki insanlar icin ev yapmaliyiz!
   aDecision:
     id: testConflictSideWithHumans
     unlockingFlag: 
     text:
-      en: Humans should have it their way!
-      tr: Insanlar istediklerini yapabilirler
+      en: 
+      tr: Insanlar sokakta mi kalsin...
     outcomes:
       m_keys: 0000000001000000
       m_values: ecffffff0a000000
@@ -49,13 +50,13 @@ MonoBehaviour:
     faction: 0
     line:
       en: 
-      tr: 
+      tr: Insanlar bizim icin kutsal olan agaclari kesmemeli!
   bDecision:
     id: testConflictSideWithElves
     unlockingFlag: 
     text:
-      en: Elves should have it their way!
-      tr: Elfler istediklerini yapabilirler
+      en: 
+      tr: E kutsal diyorsaniz...
     outcomes:
       m_keys: 0000000001000000
       m_values: 0a000000ecffffff
@@ -79,30 +80,28 @@ MonoBehaviour:
       - faction: 0
         line:
           en: 
-          tr: 
+          tr: Ustadim, bilgeliginizin, insanlarin cahillikleriyle bulandigini goruyoruz...
       - faction: 1
         line:
           en: 
-          tr: 
+          tr: Minnetimiz sonsuz ustadim. Halkimiz kisin sokaklarda telef olmayacak
     - lines:
       - faction: 0
         line:
           en: 
-          tr: 
+          tr: Kutsal agaclarin onemini cahil insanlara gosterdiginiz icin minnettariz.
       - faction: 1
         line:
           en: 
-          tr: 
+          tr: Bu durumda insanlar sokaklarda telef olacak. Ustadim, bir grup agac,
+            biz insanlardan daha mi degerli...
     - lines:
       - faction: 0
         line:
           en: 
-          tr: 
+          tr: Aziz ustadimizin bu bilge kararindan memnuniyetimizi bildirmek isteriz
       - faction: 1
         line:
           en: 
-          tr: 
-      - faction: 3
-        line:
-          en: 
-          tr: 
+          tr: Bigeliginiz ile sorunumuzu cozmede bize yardimci oldugunuz icin tesekkur
+            ederiz

@@ -27,21 +27,13 @@ public class GameTextDisplay : MonoBehaviour
     private void OnEnable()
     {
         textPlayer.onTextShowed.AddListener(OnTextPlayerShowed);
-
-        _isAnimating = true;
-        
-        transform.localScale = Vector3.zero;
-        transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
-        {
-            _isOpen = true;
-            _isAnimating = false;
-            
-            textPlayer.ShowText(_currentText.GetText(LanguageController.GetCurrentCulture()));
-            textPlayer.StartShowingText();
-            Opened?.Invoke();
-        });
     }
-    
+
+    private void OnDisable()
+    {
+        textPlayer.onTextShowed.RemoveListener(OnTextPlayerShowed);
+    }
+
     public void DisplayText(LocalizedText text)
     {
         _isComplete = false;
@@ -54,7 +46,22 @@ public class GameTextDisplay : MonoBehaviour
         }
 
         if (!gameObject.activeSelf)
+        {
             gameObject.SetActive(true);
+            
+            _isAnimating = true;
+        
+            transform.localScale = Vector3.zero;
+            transform.DOScale(Vector3.one, 0.15f).SetEase(Ease.OutBack).OnComplete(() =>
+            {
+                _isOpen = true;
+                _isAnimating = false;
+            
+                textPlayer.ShowText(_currentText.GetText(LanguageController.GetCurrentCulture()));
+                textPlayer.StartShowingText();
+                Opened?.Invoke();
+            });
+        }
     }
 
     public void Continue()
@@ -73,8 +80,6 @@ public class GameTextDisplay : MonoBehaviour
 
     public void Close()
     {
-        textPlayer.onTextShowed.RemoveListener(OnTextPlayerShowed);
-
         _isAnimating = true;
         
         transform.localScale = Vector3.zero;

@@ -3,11 +3,17 @@ using System.Linq;
 
 public static class GlobalFlagsController
 {
-    private static List<string> _flags;
+    private static List<string> _flags = new List<string>();
     
-    public static void Initialize()
+    public static void LoadFlagCollection()
     {
         _flags = PlayerData.Flags.Split(',').ToList();
+    }
+
+    public static void NewFlagCollection()
+    {
+        _flags.Clear();
+        PlayerData.Flags = "";
     }
 
     public static void SetFlag(string flag)

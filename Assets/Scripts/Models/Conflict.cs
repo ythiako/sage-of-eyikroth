@@ -11,11 +11,11 @@ namespace Models
         [LabelWidth(120)] public bool genericConflict;
         public List<DialogueLine> descriptionLines;
         
-        [HorizontalGroup("Sides"), BoxGroup("Sides/Side A"), InlineProperty, HideLabel] public DialogueLine aSummary;
-        [HorizontalGroup("Sides"), BoxGroup("Sides/Side A"), InlineProperty, HideLabel] public Decision aDecision;
+        [HorizontalGroup("Sides"), BoxGroup("Sides/Side A"), FoldoutGroup("Sides/Side A/Summary"), InlineProperty, HideLabel] public DialogueLine aSummary;
+        [HorizontalGroup("Sides"), BoxGroup("Sides/Side A"), FoldoutGroup("Sides/Side A/Decision"), InlineProperty, HideLabel] public Decision aDecision;
         
-        [HorizontalGroup("Sides"), BoxGroup("Sides/Side B"), InlineProperty, HideLabel] public DialogueLine bSummary;
-        [HorizontalGroup("Sides"), BoxGroup("Sides/Side B"), InlineProperty, HideLabel] public Decision bDecision;
+        [HorizontalGroup("Sides"), BoxGroup("Sides/Side B"), FoldoutGroup("Sides/Side B/Summary"), InlineProperty, HideLabel] public DialogueLine bSummary;
+        [HorizontalGroup("Sides"), BoxGroup("Sides/Side B"), FoldoutGroup("Sides/Side B/Decision"), InlineProperty, HideLabel] public Decision bDecision;
         
         public List<Decision> optionalDecisions;
         public SerializableDictionary<string, DialogueLines> outcomeDialogue;
