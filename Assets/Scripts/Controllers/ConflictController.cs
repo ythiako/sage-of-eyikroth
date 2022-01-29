@@ -35,10 +35,10 @@ namespace Controllers
         private FactionRepresentativeBehaviour _leftRepresentative;
         private FactionRepresentativeBehaviour _rightRepresentative;
 
-        private bool _leftTextCompleted;
-        private bool _rightTextCompleted;
+        private int _dialogueIndex;
         private bool _allDialoguesFinished;
         
+        [Button]
         public void PrepareConflict(Conflict conflict)
         {
             _conflict = conflict;
@@ -56,6 +56,7 @@ namespace Controllers
             initialCamera.Priority = 10;
         }
 
+        [Button(ButtonSizes.Large)]
         public void PlayConflict()
         {
             director.Play();
@@ -71,62 +72,41 @@ namespace Controllers
         public void OnActorsInPlace()
         {
             director.Pause();
-            
-            var left = _conflict.descriptionLines.Where(dl => dl.faction == _conflict.aSummary.faction).ToList();
-            var right = _conflict.descriptionLines.Where(dl => dl.faction == _conflict.bSummary.faction).ToList();
-
+            _dialogueIndex = 0;
             ShowDialogue();
             
             
             void ShowDialogue()
             {
-                _leftTextCompleted = false;
-                _rightTextCompleted = false;
-                
                 textInput.gameObject.SetActive(true);
-                
-                leftText.DisplayText(left[0].line);
-                rightText.DisplayText(right[0].line);
-                
-                left.RemoveAt(0);
-                right.RemoveAt(0);
+                var index = _dialogueIndex;
 
-                leftText.Next = () =>
+                if (_conflict.descriptionLines[_dialogueIndex].faction == _conflict.aSummary.faction)
                 {
-                    if (left.Count > 0)
+                    var line = _conflict.descriptionLines[_dialogueIndex].line;
+                    leftText.DisplayText(line);
+                    
+                    rightText.Next = () => { };
+                    leftText.Next = () =>
                     {
-                        _leftTextCompleted = true;
-                        if (_leftTextCompleted && _rightTextCompleted)
-                        {
-                            ShowDialogue();
-                        }
-                    }
-                    else
-                    {
-                        _leftTextCompleted = true;
-                    }
-                };
-
-                rightText.Next = () =>
-                {
-                    if (right.Count > 0)
-                    {
-                        _rightTextCompleted = true;
-                        if (_leftTextCompleted && _rightTextCompleted)
-                        {
-                            ShowDialogue();
-                        }
-                    }
-                    else
-                    {
-                        _rightTextCompleted = true;
-                    }
-                };
-
-                if (_leftTextCompleted && _rightTextCompleted)
-                {
-                    OnDialoguesFinished();
+                        if (index < _conflict.descriptionLines.Count - 1)   ShowDialogue();
+                        else                                                OnDialoguesFinished();
+                    };
                 }
+                else if (_conflict.descriptionLines[_dialogueIndex].faction == _conflict.bSummary.faction)
+                {
+                    var line = _conflict.descriptionLines[_dialogueIndex].line;
+                    rightText.DisplayText(line);
+                    
+                    leftText.Next = () => { };
+                    rightText.Next = () =>
+                    {
+                        if (index < _conflict.descriptionLines.Count - 1)   ShowDialogue();
+                        else                                                OnDialoguesFinished();
+                    };
+                }
+                
+                _dialogueIndex++;
             }
         }
 

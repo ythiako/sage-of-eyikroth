@@ -22,7 +22,7 @@ public class GameTextDisplay : MonoBehaviour
 
     public bool ShownText => _isComplete;
 
-    public bool CanContinue => !_isComplete && _isOpen && !_isAnimating;
+    public bool CanContinue => _isOpen && !_isAnimating;
 
     private void OnEnable()
     {

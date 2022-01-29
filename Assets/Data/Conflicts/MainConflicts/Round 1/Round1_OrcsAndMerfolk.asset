@@ -50,7 +50,7 @@ MonoBehaviour:
     faction: 3
     line:
       en: We are attacked by Merfolk, and wish to defend ourselves.
-      tr: 
+      tr: "Merfolk'lar bize sald\u0131r\u0131yor, biz de kendimizi savunmak istiyoruz."
   aDecision:
     id: Round1_SideWithOrcs
     unlockingFlag: 
@@ -64,7 +64,7 @@ MonoBehaviour:
     faction: 4
     line:
       en: We are attacked by Orcs, and wish to defend ourselves.
-      tr: 
+      tr: "Orklar bize sald\u0131r\u0131yor, biz de kendimizi savunmak istiyoruz."
   bDecision:
     id: Round1_SideWithMerfolk
     unlockingFlag: 
@@ -74,38 +74,74 @@ MonoBehaviour:
     outcomes:
       m_keys: 0300000004000000
       m_values: f6ffffff0a000000
-  optionalDecisions: []
+  optionalDecisions:
+  - id: Round1_LetElvesHandleIt
+    unlockingFlag: OrcsAndMerfolk_OptionalDecision_Round1
+    text:
+      en: Elves mentioned of their ancestors living here once. Maybe you both are
+        to blame?
+      tr: "Elfler atalar\u0131n\u0131n eskiden burada oldu\u011Fundan bahsetti. Belki
+        sizlere sald\u0131ranlar hayaletlerdir."
+    outcomes:
+      m_keys: 0300000004000000
+      m_values: 0a0000000a000000
   outcomeDialogue:
     m_keys:
     - Round1_SideWithOrcs
     - Round1_SideWithMerfolk
+    - Round1_LetElvesHandleIt
     m_values:
     - lines:
       - faction: 3
         line:
           en: You speak with the wisdom of ancestors themselves. We are eternally
             grateful.
-          tr: 
+          tr: "Atalar\u0131m\u0131z\u0131n laflar\u0131 sizden bize aktar\u0131l\u0131yor.
+            Sonsuz te\u015Fekk\xFCrlerimizi sunar\u0131z."
       - faction: 4
         line:
           en: This one wishes to express... disappointment. If this is the path you
             lead us into, we will follow 'accordingly'.
-          tr: 
+          tr: "Bu kul memnuniyetsizli\u011Fini \xFCz\xFClerek sunar. E\u011Fer se\xE7ilen
+            yol buysa, biz de uygun ad\u0131mlar atmas\u0131n\u0131 biliriz."
     - lines:
       - faction: 4
         line:
           en: You are absolutely right, elder sage. We'll keep our peaceful relations.
-          tr: 
+          tr: "Bu kul hakl\u0131l\u0131\u011F\u0131n\u0131z\u0131 tebrik eder y\xFCce
+            bilge. Bar\u0131\u015F\xE7\u0131ll\u0131\u011F\u0131m\u0131z\u0131 korumaya
+            devam edece\u011Fiz."
       - faction: 3
         line:
           en: They are clearly to blame here, but we'll take your guidance... for
             now.
-          tr: 
+          tr: "Merfolk'lar a\xE7\u0131k olarak su\xE7lu, ama e\u011Fer d\xFC\u015F\xFCnceniz
+            buysa takip edece\u011Fiz... \u015Fimdilik."
+    - lines:
+      - faction: 3
+        line:
+          en: So, it is spirits that need release. Me and my clan will attend to
+            it, elder sage.
+          tr: "Demek elf ruhlar\u0131... bu konuyla ben ve klan\u0131m ilgilenecek,
+            y\xFCce iblge."
+      - faction: 4
+        line:
+          en: By the ocean... how could we be so naive? We'll help our orcish neighbors.
+          tr: "Okyanus ad\u0131na.... nas\u0131l bu kadar cahil olabildik? Ork kom\u015Fular\u0131m\u0131za
+            yard\u0131m edece\u011Fiz."
   regionalTips:
   - faction: 0
+    unlockingFlag: OrcsAndMerfolk_OptionalDecision_Round1
     line:
-      en: Both parties are actually attacked by forlorn spritis of our elven ancestors,
-        when they landed here in the first place. Their haunting state is on our
-        responsibility. We will deal with this accordingly. Please inform Orcs and
-        Merfolk on the matter for us.
-      tr: 
+      en: Our lands are ancient, but we didn't always live here. Our ancestors once
+        lived in eastern shores.
+      tr: "Topraklar\u0131m\u0131z eskidir, ancak her zaman bu ormanda ya\u015Famad\u0131k.
+        Zaman\u0131nda atalar\u0131m\u0131z g\xFCney k\u0131y\u0131 \u015Feridinde
+        ya\u015Fard\u0131."
+  - faction: 0
+    unlockingFlag: 
+    line:
+      en: Orcs and Merfolk reside in that border now. I wonder if we failed our ancestors,
+        but it's not easy to say.
+      tr: "\u015Eimdi oralarda orklar ve Merfolk ya\u015F\u0131yor. Bazen orada ya\u015Fayan
+        atalar\u0131m\u0131z\u0131 d\xFC\u015F\xFCnmeden edemiyorum."
