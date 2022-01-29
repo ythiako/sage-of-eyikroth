@@ -72,7 +72,7 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
             _leftTextShown = true;
             if (_leftTextShown && _rightTextShown)
             {
-                StartCoroutine(Delay(DisplayDecisions));
+                DisplayDecisions();
             }
         };
         
@@ -81,7 +81,7 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
             _rightTextShown = true;
             if (_leftTextShown && _rightTextShown)
             {
-                StartCoroutine(Delay(DisplayDecisions));
+                DisplayDecisions();
             }
         };
     }
