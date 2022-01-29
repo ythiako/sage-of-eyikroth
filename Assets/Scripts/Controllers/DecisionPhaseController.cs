@@ -7,12 +7,8 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class DecisionPhaseController : MonoBehaviour
+public class DecisionPhaseController : Singleton<DecisionPhaseController>
 {
-    private static DecisionPhaseController _instance;
-    public static DecisionPhaseController Instance =>
-        _instance ? _instance : FindObjectOfType<DecisionPhaseController>();
-    
     public static event Action<Decision> DecisionMade;
 
     [SerializeField] private CinemachineVirtualCamera stageVirtualCamera;

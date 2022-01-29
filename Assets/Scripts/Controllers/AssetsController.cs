@@ -4,12 +4,8 @@ using Behavoiurs;
 using Models;
 using UnityEngine;
 
-public class AssetsController : MonoBehaviour
+public class AssetsController : Singleton<AssetsController>
 {
-    private static AssetsController _instance;
-    public static AssetsController Instance =>
-        _instance ? _instance : FindObjectOfType<AssetsController>();
-    
     [SerializeField] private List<Conflict> conflicts;
     [SerializeField] private SerializableDictionary<Faction, FactionRepresentativeBehaviour> factionRepresentatives;
 
