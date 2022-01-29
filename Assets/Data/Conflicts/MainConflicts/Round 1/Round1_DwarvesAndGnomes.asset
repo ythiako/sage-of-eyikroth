@@ -22,7 +22,7 @@ MonoBehaviour:
       tr: "Ba\u015Fgan, biz isteriz ki, m\xFCcevher kaz\u0131p \xE7\u0131kartak,
         herkese \xFC\xE7 be\u015F sakal atar\u0131k. Olmad\u0131 sa\u011Fl\u0131k
         olsun yhaa."
-  - faction: 0
+  - faction: 5
     line:
       en: Ah'll cut short. We want tae mine iron an' silver. Tha' good sort only!
         What ye say? We 'ave a deal?
@@ -34,7 +34,7 @@ MonoBehaviour:
         as everyone calls so. Dwarves want to dig our inactive volcano.
       tr: "C\xFCceler s\xF6nm\xFC\u015F yanarda\u011Fda kaz\u0131 yapmak istiyor,
         ancak bu \xE7ok tehlikeli."
-  - faction: 0
+  - faction: 2
     line:
       en: But we think that this is dangerous, and should not occur. If the volcano
         activates, there's no telling what will happen!
