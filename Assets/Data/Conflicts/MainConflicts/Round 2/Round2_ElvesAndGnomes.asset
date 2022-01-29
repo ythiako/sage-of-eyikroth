@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round2_ElvesAndGnomes
+  m_EditorClassIdentifier: 
+  id: Round2_ElvesAndGnomes
+  genericConflict: 0
+  descriptionLines:
+  - faction: 0
+    line:
+      en: A thunderstorm's approaching! We need to stop it somehow and stop it from
+        hitting our trees!
+      tr: 
+  - faction: 0
+    line:
+      en: The lightning strikes would burn our forests and towns. You need to stop
+        it.
+      tr: 
+  - faction: 2
+    line:
+      en: There is a thunderstorm approaching from north. If we could get a read
+        on, our energy research would be complete.
+      tr: 
+  - faction: 2
+    line:
+      en: We could stop the threat of our volcano exploding. Even if not completely,
+        we could at least gain a great time to stall the inevitable
+      tr: 
+  aSummary:
+    faction: 0
+    line:
+      en: Lightning storm will decimate our forest if not stopped!
+      tr: 
+  aDecision:
+    id: Round2_SideWithElves
+    unlockingFlag: 
+    text:
+      en: Lives are at stake! I'll stop the storm with my magic.
+      tr: 
+    outcomes:
+      m_keys: 0000000002000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 2
+    line:
+      en: We can harness the lightning storm, and the energy will help us stop the
+        volcano!
+      tr: 
+  bDecision:
+    id: Round2_SideWithGnomes
+    unlockingFlag: 
+    text:
+      en: Progress requires sacrifice. Gnomes will wait for the storm and soak it
+        up.
+      tr: 
+    outcomes:
+      m_keys: 0000000002000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round2_LetMerfolkHandle
+    unlockingFlag: ElvesAndGnomes_OptionalDecision_Round2
+    text:
+      en: Merfolk elementalists can help you. They absorb lightning from north usually.
+      tr: 
+    outcomes:
+      m_keys: 0000000002000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round2_LetMerfolkHandle
+    - Round2_SideWithElves
+    - Round2_SideWithGnomes
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: Merfolk can face the storms far ahead, and absorb the lightnings before
+            they hits us!
+          tr: 
+      - faction: 2
+        line:
+          en: And we can use their harnessed energy for our research.
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: Thank you for seeing reason. My people will be thankful.
+          tr: 
+      - faction: 2
+        line:
+          en: You don't know how important this energy is for us! Hmph. Some 'elder
+            sage' you are...
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: But what will happen to our trees? What will happen to our people?!
+          tr: 
+      - faction: 2
+        line:
+          en: I feel sorry for elves, but nothing can be done if we want to advance
+            the technology.
+          tr: 
+  regionalTips:
+  - faction: 4
+    unlockingFlag: ElvesAndGnomes_OptionalDecision_Round2
+    line:
+      en: Our elementalists often swim north and try to absorb storms. They do it
+        as a rite of passage, but I never know what happens to the lightning they
+        steal.
+      tr: 

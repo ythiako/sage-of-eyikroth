@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round2_DwarvesAndMerfolk
+  m_EditorClassIdentifier: 
+  id: Round2_DwarvesAndMerfolk
+  genericConflict: 0
+  descriptionLines:
+  - faction: 5
+    line:
+      en: Some stone called "Leananstone" was found in shores of Merfolk. We took
+        'em but couldn't melt them down!
+      tr: 
+  - faction: 5
+    line:
+      en: This stuff's powerful, an' could help our house maintenance problem. Teach
+        us how tae melt it!
+      tr: 
+  - faction: 4
+    line:
+      en: There has been an explosion a couple days ago, making our control devices
+        for our Axolions disappear.
+      tr: 
+  - faction: 4
+    line:
+      en: If you could recover them, we'd avoid a crisis of being mauled by Axolions.
+      tr: 
+  aSummary:
+    faction: 5
+    line:
+      en: We want tae grab some Leananstone!
+      tr: 
+  aDecision:
+    id: Round2_SideWithDwarves
+    unlockingFlag: 
+    text:
+      en: If it's for research and upgrading...
+      tr: 
+    outcomes:
+      m_keys: 0500000004000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 4
+    line:
+      en: Those are Axolion control devices, we need them!
+      tr: 
+  bDecision:
+    id: Round2_SideWithMerfolk
+    unlockingFlag: 
+    text:
+      en: Can't leave Merfolks to die.
+      tr: 
+    outcomes:
+      m_keys: 0400000005000000
+      m_values: 0a000000f6ffffff
+  optionalDecisions:
+  - id: Round2_LetGnomesHandle
+    unlockingFlag: DwarvesAndMerfolk_OptionalDecision_Round2
+    text:
+      en: Gnomes have Leananstone too...
+      tr: 
+    outcomes:
+      m_keys: 0500000004000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round2_SideWithDwarves
+    - Round2_SideWithMerfolk
+    - Round2_LetGnomesHandle
+    m_values:
+    - lines:
+      - faction: 5
+        line:
+          en: As. It. Should be! Merfolk's only exaggeratin' these stuff!
+          tr: 
+      - faction: 4
+        line:
+          en: But Axolions will carve us up! We don't stand a chance!
+          tr: 
+    - lines:
+      - faction: 4
+        line:
+          en: You have given a logical choice, elder sage. This one is thankful for
+            it.
+          tr: 
+      - faction: 5
+        line:
+          en: Ach! Yer not so fun, lad. Maybe I oughta acquire that stuff 'forcefully',
+            eh?
+          tr: 
+    - lines:
+      - faction: 4
+        line:
+          en: Brilliant idea. We will have those control devices now...
+          tr: 
+      - faction: 5
+        line:
+          en: Ach! Such a good coincidence! Ah'll just visit those shortstacks now.
+          tr: 
+  regionalTips:
+  - faction: 2
+    unlockingFlag: DwarvesAndMerfolk_OptionalDecision_Round2
+    line:
+      en: We mine Leananstone out from outskirts of volcanic mountain. It's great
+        for making circuitry. Want to try some?
+      tr: 

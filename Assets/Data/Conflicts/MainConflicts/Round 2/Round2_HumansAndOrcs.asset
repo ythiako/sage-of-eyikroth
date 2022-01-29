@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round2_HumansAndOrcs
+  m_EditorClassIdentifier: 
+  id: Round2_HumansAndOrcs
+  genericConflict: 0
+  descriptionLines:
+  - faction: 3
+    line:
+      en: We've found an odd creature from our shores, most likely escaped our Merfolk
+        neighbors.
+      tr: 
+  - faction: 3
+    line:
+      en: The creature multiplies in live hosts as a parasite. We've been trying
+        to find the mother. Help us find the culprit!
+      tr: 
+  - faction: 1
+    line:
+      en: Our hunters have been ravaged by orcish hunting parties.
+      tr: 
+  - faction: 1
+    line:
+      en: We will send our armies if they do not appeal us into peace.
+      tr: 
+  aSummary:
+    faction: 1
+    line:
+      en: Orcs are killing our hunters!
+      tr: 
+  aDecision:
+    id: Round2_SideWithHumans
+    unlockingFlag: 
+    text:
+      en: Killing without proof...
+      tr: 
+    outcomes:
+      m_keys: 0100000003000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 3
+    line:
+      en: We kill infected people in our lands.
+      tr: 
+  bDecision:
+    id: Round2_SideWithOrcs
+    unlockingFlag: 
+    text:
+      en: No other way to contain.
+      tr: 
+    outcomes:
+      m_keys: 0300000001000000
+      m_values: 0a000000f6ffffff
+  optionalDecisions:
+  - id: Round2_LetElvesHandle
+    unlockingFlag: HumansAndOrcs_OptionalDecision_Round2
+    text:
+      en: I got this healing potion.
+      tr: 
+    outcomes:
+      m_keys: 0100000003000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round2_SideWithHumans
+    - Round2_SideWithOrcs
+    - Round2_LetElvesHandle
+    m_values:
+    - lines:
+      - faction: 1
+        line:
+          en: Elder sage speaks the truth! You cannot slaughter us without any proof.
+          tr: 
+      - faction: 3
+        line:
+          en: Leaving infected people out is a crime against every nation. I hope
+            your angle here is solid, elder sage.
+          tr: 
+    - lines:
+      - faction: 1
+        line:
+          en: How can you justify their bloodlust?! They're out for blood!
+          tr: 
+      - faction: 3
+        line:
+          en: We will do our best to minimize our harm to other hunters.
+          tr: 
+    - lines:
+      - faction: 3
+        line:
+          en: Ah, a healing potion. This might solve our problems.
+          tr: 
+      - faction: 1
+        line:
+          en: No longer our hunters will get killed out randomly. Thank you, elder
+            sage.
+          tr: 
+  regionalTips:
+  - faction: 0
+    unlockingFlag: HumansAndOrcs_OptionalDecision_Round2
+    line:
+      en: We've been working on a remedial potion that cleanses user from parasites.
+        Would you like a sample?
+      tr: 
