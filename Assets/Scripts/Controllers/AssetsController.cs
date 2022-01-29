@@ -9,6 +9,7 @@ public class AssetsController : Singleton<AssetsController>
     [SerializeField] private List<Conflict> randomConflicts;
     [SerializeField] private SerializableDictionary<Faction, FactionRepresentativeBehaviour> factionRepresentatives;
     [SerializeField] private SerializableDictionary<Faction, Sprite> factionLeaderSprites;
+    [SerializeField] private List<DialogueLine> defaultRegionalTips;
 
     public List<Conflict> GetStage(int index)
     {
@@ -29,6 +30,11 @@ public class AssetsController : Singleton<AssetsController>
         if (factionRepresentatives.TryGetValue(faction, out var representative))
             return representative;
         return default;
+    }
+
+    public List<DialogueLine> GetDefaultRegionalTips()
+    {
+        return defaultRegionalTips;
     }
 
     
