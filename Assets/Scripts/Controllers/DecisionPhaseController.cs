@@ -118,14 +118,16 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
 
     public void Dispose()
     {
-        Destroy(_leftRepresentative);
-        Destroy(_rightRepresentative);
+        if (_leftRepresentative)    Destroy(_leftRepresentative);
+        if (_rightRepresentative)   Destroy(_rightRepresentative);
         
         leftTextDisplay.Next = null;
         rightTextDisplay.Next = null;
         
         leftTextDisplay.Closed = null;
         rightTextDisplay.Closed = null;
+        
+        gameObject.SetActive(false);
     }
 
     private void DisplayDecisions()
