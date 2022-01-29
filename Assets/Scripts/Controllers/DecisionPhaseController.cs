@@ -40,6 +40,8 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
     [Button]
     public void BeginDecisionPhase(Conflict conflict)
     {
+        gameObject.SetActive(true);
+        
         _decision = null;
         _conflict = conflict;
         _leftTextShown = false;

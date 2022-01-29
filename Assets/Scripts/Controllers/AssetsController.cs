@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class AssetsController : Singleton<AssetsController>
 {
-    [SerializeField] private List<List<Conflict>> stages;
+    [SerializeField] private List<Stage> stages;
+    [SerializeField] private List<Conflict> randomConflicts;
     [SerializeField] private SerializableDictionary<Faction, FactionRepresentativeBehaviour> factionRepresentatives;
     [SerializeField] private SerializableDictionary<Faction, Sprite> factionLeaderSprites;
 
     public List<Conflict> GetStage(int index)
     {
-        return stages[index];
+        return stages[index].conflicts;
     }
 
     public Sprite GetLeaderSprite(Faction faction)
@@ -28,5 +29,12 @@ public class AssetsController : Singleton<AssetsController>
         if (factionRepresentatives.TryGetValue(faction, out var representative))
             return representative;
         return default;
+    }
+
+    
+    [System.Serializable]
+    public class Stage
+    {
+        public List<Conflict> conflicts;
     }
 }

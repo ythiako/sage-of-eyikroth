@@ -29,7 +29,7 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
 
     private void OnEnable()
     {
-        newGameButton.onClick.AddListener(GameController.Instance.ShowCredits);
+        newGameButton.onClick.AddListener(GameController.Instance.StartNewGame);
         continueGameButton.onClick.AddListener(GameController.Instance.ContinueGame);
         creditsButton.onClick.AddListener(GameController.Instance.ShowCredits);
         quitButton.onClick.AddListener(GameController.Instance.QuitGame);
@@ -39,7 +39,7 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
     {
         if (GameController.Instance)
         {
-            newGameButton.onClick.RemoveListener(GameController.Instance.ShowCredits);
+            newGameButton.onClick.RemoveListener(GameController.Instance.StartNewGame);
             continueGameButton.onClick.RemoveListener(GameController.Instance.ContinueGame);
             creditsButton.onClick.RemoveListener(GameController.Instance.ShowCredits);
             quitButton.onClick.RemoveListener(GameController.Instance.QuitGame);

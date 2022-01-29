@@ -105,3 +105,34 @@ MonoBehaviour:
           en: 
           tr: Bigeliginiz ile sorunumuzu cozmede bize yardimci oldugunuz icin tesekkur
             ederiz
+  regionalTips:
+  - faction: 0
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+  - faction: 1
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+  - faction: 2
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+  - faction: 3
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+  - faction: 4
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+  - faction: 5
+    unlockingFlag: 
+    line:
+      en: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '
+      tr: 'Lorem ipsum dolor sit amet, consectetur edipiscing elit. '

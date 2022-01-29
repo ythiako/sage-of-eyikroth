@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Behaviours.Exploration;
 using Models;
 using Sirenix.OdinInspector;
@@ -6,15 +7,13 @@ using UnityEngine;
 
 namespace Controllers
 {
-    public class ExplorationPhaseController : MonoBehaviour
+    public class ExplorationPhaseController : Singleton<ExplorationPhaseController>
     {
         public static event Action ExplorationPhaseEnded;
         
         [SerializeField] private WorldBehaviour _world;
         [SerializeField] private GameTextDisplay _textDisplay;
         private Conflict _currentConflict;
-
-        [SerializeField] private Conflict _testConflict;
         
         [Button("begin")]
         public void BeginExplorationPhase()
@@ -23,15 +22,14 @@ namespace Controllers
             WorldBehaviour.KingdomSelected += OnKingdomSelected;
             _world.ExplorationPhaseEnded += OnExplorationPhaseEnded;
 
-            //_currentConflict = StageController.GetCurrentConflict();
-            _currentConflict = _testConflict;
+            _currentConflict = StageController.GetCurrentConflict();
         }
 
         public void EndExplorationPhase()
         {
             _world.DisableWorld();
             WorldBehaviour.KingdomSelected -= OnKingdomSelected;
-            _world.ExplorationPhaseEnded += OnExplorationPhaseEnded;
+            _world.ExplorationPhaseEnded -= OnExplorationPhaseEnded;
         }
 
         private void OnExplorationPhaseEnded()
@@ -42,6 +40,12 @@ namespace Controllers
 
         private void OnKingdomSelected(Faction faction)
         {
+            var flag = StageController.GetCurrentConflict().regionalTips.First(rt => rt.faction == faction).unlockingFlag;
+            if (!string.IsNullOrWhiteSpace(flag))
+            {
+                GlobalFlagsController.SetFlag(flag);
+            }
+            
             var tip = GetRegionTip(faction);
             _textDisplay.DisplayText(tip);
             _world.TweenInCharacters(faction);

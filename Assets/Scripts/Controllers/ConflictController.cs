@@ -52,6 +52,8 @@ namespace Controllers
         [Button]
         public void PrepareConflict(Conflict conflict)
         {
+            gameObject.SetActive(true);
+            
             _conflict = conflict;
 
             _allDialoguesFinished = false;

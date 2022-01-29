@@ -14,6 +14,7 @@ public class FadeTransition : Singleton<FadeTransition>
     
     private void Awake()
     {
+        var a = Instance;
         gameObject.SetActive(false);
     }
 

@@ -13,7 +13,7 @@ public static class StageController
     
     public static void PrepareStage()
     {
-        var conflicts = AssetsController.Instance.GetStage(_index);
+        _conflicts = AssetsController.Instance.GetStage(_index);
         _conflictIndex = 0;
         PlayerData.StageIndex = _index;
         PlayerData.ConflictIndex = _conflictIndex;
@@ -21,7 +21,7 @@ public static class StageController
 
     public static void NextConflict()
     {
-        if (_conflictIndex >= _conflicts.Count)
+        if (_conflictIndex >= _conflicts.Count - 1)
         {
             _index++;
             PrepareStage();
