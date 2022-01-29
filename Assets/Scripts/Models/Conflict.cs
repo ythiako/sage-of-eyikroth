@@ -19,6 +19,7 @@ namespace Models
         
         public List<Decision> optionalDecisions;
         public SerializableDictionary<string, DialogueLines> outcomeDialogue;
+        public List<OptionalDialogueTips> regionalTips;
     }
 
     [System.Serializable]
@@ -35,5 +36,14 @@ namespace Models
     {
         [InlineProperty, HideLabel]
         public List<DialogueLine> lines;
+    }
+
+    [System.Serializable]
+    public class OptionalDialogueTips
+    {
+        public Faction faction;
+        
+        [InlineProperty, HideLabel, BoxGroup("Regional Tip")]
+        public LocalizedText line;
     }
 }

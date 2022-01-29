@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round1_OrcsAndMerfolk
+  m_EditorClassIdentifier: 
+  id: Round1_OrcsAndMerfolk
+  genericConflict: 0
+  descriptionLines:
+  - faction: 3
+    line:
+      en: Hail to you, elder sage. I have arrived to speak as Varok'mash orcs' shaman.
+        Our case is dire, and we seek a just action.
+      tr: "Selam sana y\xFCce bilge. Varok'mash orklar\u0131n\u0131n \u015Faman\u0131
+        olarak seninle konu\u015Fmaya geldim. Durumumuz k\xF6t\xFC, ve bu durumda
+        al\u0131nabilecek en iyi karar\u0131 ar\u0131yoruz."
+  - faction: 3
+    line:
+      en: Our shores are attacked by Merfolk. Until now, they kept it to themselves,
+        but now, they grow bold. Show us your guidance.
+      tr: "K\u0131y\u0131lar\u0131m\u0131z Merfolk sakinleri taraf\u0131ndan sald\u0131r\u0131
+        alt\u0131nda, \u015Fimdiye kadar kendi hallerinde ya\u015Fayan bu yarat\u0131klar,
+        \u015Fimdi cesaretlenip bize sald\u0131r\u0131rlar. Y\xFCce bilge, bize yol
+        g\xF6ster."
+  - faction: 4
+    line:
+      en: This one comes from the depths of Arselmalyr, elder sage. This one wishes
+        to express well manners and sadly, a reoccuring event so dire.
+      tr: "Bu kul Arselmalyr'in derinliklerinden sizi selamlar, y\xFCce bilge. Size
+        iyi dileklerimi getiririm. Ama \xFCz\xFClerek s\xFCrekli tekrarlayan bir
+        dramay\u0131 da aktarmak isterim."
+  - faction: 4
+    line:
+      en: Orc fishermen and scouts are mistaking our kin as food or something you
+        can kill. If they keep doing so, this one will rally the rest of Merfolk
+        to incite a battle.
+      tr: "Ork bal\u0131k\xE7\u0131lar\u0131 ve \xF6nc\xFCleri, bizi bal\u0131k san\u0131p
+        \xF6ld\xFCr\xFCyor, avl\u0131yor. E\u011Fer gidi\u015Fat bu \u015Fekilde
+        devam ederse, bu kul di\u011Fer Merfolk'lar\u0131 toparlayarak bir sava\u015F
+        ba\u015Flat\u0131r."
+  aSummary:
+    faction: 3
+    line:
+      en: We are attacked by Merfolk, and wish to defend ourselves.
+      tr: 
+  aDecision:
+    id: Round1_SideWithOrcs
+    unlockingFlag: 
+    text:
+      en: You are obviously violating orcs' trust
+      tr: "Orklar\u0131n g\xFCvenini suistimal ediyorsunuz"
+    outcomes:
+      m_keys: 0300000004000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 4
+    line:
+      en: We are attacked by Orcs, and wish to defend ourselves.
+      tr: 
+  bDecision:
+    id: Round1_SideWithMerfolk
+    unlockingFlag: 
+    text:
+      en: Merfolk lives matter too. Orcs should limit their hunting
+      tr: "Merfolk hayatlar\u0131 da \xF6nemli. Onlara hayvan ya da av olarak davran\u0131lmamal\u0131"
+    outcomes:
+      m_keys: 0300000004000000
+      m_values: f6ffffff0a000000
+  optionalDecisions: []
+  outcomeDialogue:
+    m_keys:
+    - Round1_SideWithOrcs
+    - Round1_SideWithMerfolk
+    m_values:
+    - lines:
+      - faction: 3
+        line:
+          en: You speak with the wisdom of ancestors themselves. We are eternally
+            grateful.
+          tr: 
+      - faction: 4
+        line:
+          en: This one wishes to express... disappointment. If this is the path you
+            lead us into, we will follow 'accordingly'.
+          tr: 
+    - lines:
+      - faction: 4
+        line:
+          en: You are absolutely right, elder sage. We'll keep our peaceful relations.
+          tr: 
+      - faction: 3
+        line:
+          en: They are clearly to blame here, but we'll take your guidance... for
+            now.
+          tr: 
+  regionalTips:
+  - faction: 0
+    line:
+      en: Both parties are actually attacked by forlorn spritis of our elven ancestors,
+        when they landed here in the first place. Their haunting state is on our
+        responsibility. We will deal with this accordingly. Please inform Orcs and
+        Merfolk on the matter for us.
+      tr: 
