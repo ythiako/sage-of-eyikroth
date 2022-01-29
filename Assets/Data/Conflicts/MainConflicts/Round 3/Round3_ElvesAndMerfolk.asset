@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round3_ElvesAndMerfolk
+  m_EditorClassIdentifier: 
+  id: Round3_ElvesAndMerfolk
+  genericConflict: 0
+  descriptionLines:
+  - faction: 0
+    line:
+      en: Some of our people start to fall from our cliffs to their deaths unexpectedly!
+        They all say that they hear a beautiful sound!
+      tr: 
+  - faction: 4
+    line:
+      en: A scouting party has spotted a siren! We need it alive so it can tell us
+        where she came from. If the source is not found, many will suffer.
+      tr: 
+  aSummary:
+    faction: 0
+    line:
+      en: Stop Merfolk from stealing our people!
+      tr: 
+  aDecision:
+    id: Round3_SideWithElves
+    unlockingFlag: 
+    text:
+      en: You should stop...
+      tr: 
+    outcomes:
+      m_keys: 0000000004000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 4
+    line:
+      en: There is a siren and we need help to kill it!
+      tr: 
+  bDecision:
+    id: Round3_SideWithMerfolk
+    unlockingFlag: 
+    text:
+      en: Killing the siren is important
+      tr: 
+    outcomes:
+      m_keys: 0000000004000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round3_LetDwarvesHandle
+    unlockingFlag: ElvesAndMerfolk_OptionalDecision_Round3
+    text:
+      en: Dwarves could sing
+      tr: 
+    outcomes:
+      m_keys: 0000000004000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round3_LetDwarvesHandle
+    - Round3_SideWithElves
+    - Round3_SideWithMerfolk
+    m_values:
+    - lines:
+      - faction: 0
+        line:
+          en: A cursed solution... but better than falling to our deaths every night.
+          tr: 
+      - faction: 4
+        line:
+          en: Unexpected. But this one is eager to try anything else before fighting
+            a creature.
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: A sound plan. We will gather the archers and hunt this siren!
+          tr: 
+      - faction: 4
+        line:
+          en: This only feeds the siren further! We should not give in that easily...
+          tr: 
+    - lines:
+      - faction: 0
+        line:
+          en: You mean to tell us to trust these while we get slaughtered?
+          tr: 
+      - faction: 4
+        line:
+          en: This one will gather up a searching party, and try to return surviving
+            elves back home.
+          tr: 
+  regionalTips:
+  - faction: 5
+    unlockingFlag: ElvesAndMerfolk_OptionalDecision_Round3
+    line:
+      en: Heh! They should've listen tae our songs! We play all nighters and make
+        them sirens run with tail between... uh... flippers?
+      tr: 
