@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6482241714259699407}
   - component: {fileID: 3120133367143159897}
   m_Layer: 5
-  m_Name: Button
+  m_Name: DoneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -977,6 +977,7 @@ MonoBehaviour:
   - {fileID: 7747616249408751693}
   _leftSprite: {fileID: 1778411475374510330}
   _rightSprite: {fileID: 8796385956802847191}
+  _doneButton: {fileID: 3120133367143159897}
 --- !u!1 &7106568604255983376
 GameObject:
   m_ObjectHideFlags: 0

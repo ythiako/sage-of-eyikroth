@@ -4,6 +4,7 @@ using System.Numerics;
 using Controllers;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -19,6 +20,8 @@ namespace Behaviours.Exploration
         [SerializeField] private SpriteRenderer _leftSprite;
         [SerializeField] private SpriteRenderer _rightSprite;
 
+        [SerializeField] private Button _doneButton;
+
         private bool _explorationPhaseActive = false;
         private KingdomMapElement _currentKingdom;
 
@@ -26,6 +29,7 @@ namespace Behaviours.Exploration
         {
             _container.gameObject.SetActive(true);
             _explorationPhaseActive = true;
+            _doneButton.gameObject.SetActive(false);
         }
 
         public void DisableWorld()
