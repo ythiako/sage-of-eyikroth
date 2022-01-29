@@ -14,7 +14,6 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
     public static event Action<Decision> DecisionMade;
     public static event Action Completed;
 
-    [SerializeField] private CinemachineVirtualCamera stageInitialVirtualCamera;
     [SerializeField] private CinemachineVirtualCamera stageVirtualCamera;
     [SerializeField] private PlayableDirector director;
 
@@ -47,8 +46,7 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
         _leftTextShown = false;
         _rightTextShown = false;
 
-        stageVirtualCamera.Priority = 0;
-        stageInitialVirtualCamera.Priority = 10;
+        stageVirtualCamera.Priority = 10;
 
         leftTextDisplay.gameObject.SetActive(false);
         rightTextDisplay.gameObject.SetActive(false);
@@ -105,12 +103,6 @@ public class DecisionPhaseController : Singleton<DecisionPhaseController>
         GlobalFlagsController.SetFlag(decision.id);
         DecisionMade?.Invoke(decision);
         DisplayDialogues();
-    }
-
-    public void OnRepresentativesMovingToSage()
-    {
-        stageVirtualCamera.Priority = 10;
-        stageInitialVirtualCamera.Priority = 0;
     }
 
     public void OnRepresentativesQuitRoom()

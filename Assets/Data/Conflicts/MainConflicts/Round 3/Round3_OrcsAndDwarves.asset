@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95c5c4bd2a147a29a8ac282868f481b, type: 3}
+  m_Name: Round3_OrcsAndDwarves
+  m_EditorClassIdentifier: 
+  id: Round3_OrcsAndDwarves
+  genericConflict: 0
+  descriptionLines:
+  - faction: 3
+    line:
+      en: A border outpost was ravaged and we found Dwarven tools and weapons on
+        site.
+      tr: 
+  - faction: 3
+    line:
+      en: This means war! We will attack them if no proof of safety is offered!
+      tr: 
+  - faction: 5
+    line:
+      en: Some o' our men went missing, telling tha' they want tae build a better
+        home.
+      tr: 
+  - faction: 5
+    line:
+      en: Our lads were pretty drunk by tha' time we spoke! You have tae find our
+        lads!
+      tr: 
+  aSummary:
+    faction: 3
+    line:
+      en: We want dwarven blood and a war!
+      tr: 
+  aDecision:
+    id: Round3_SideWithOrcs
+    unlockingFlag: 
+    text:
+      en: War you will get!
+      tr: 
+    outcomes:
+      m_keys: 0300000005000000
+      m_values: 0a000000f6ffffff
+  bSummary:
+    faction: 5
+    line:
+      en: Our men are missing, orcs have kidnapped them!
+      tr: 
+  bDecision:
+    id: Round3_SideWithDwarves
+    unlockingFlag: 
+    text:
+      en: We need to find them!
+      tr: 
+    outcomes:
+      m_keys: 0300000005000000
+      m_values: f6ffffff0a000000
+  optionalDecisions:
+  - id: Round3_LetMerfolkHandle
+    unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
+    text:
+      en: They're at the shores
+      tr: 
+    outcomes:
+      m_keys: 0500000003000000
+      m_values: 0a0000000a000000
+  outcomeDialogue:
+    m_keys:
+    - Round3_SideWithOrcs
+    - Round3_LetMerfolkHandle
+    - Round3_SideWithDwarves
+    m_values:
+    - lines:
+      - faction: 3
+        line:
+          en: The battle is upon us! Watch your back, little hairball!
+          tr: 
+      - faction: 5
+        line:
+          en: HAIRBALL? THAT DOES IT YE WRINKLED GREEN POT'O MEAT! AH'LL CUT THROUGH
+            YE SKULL!
+          tr: 
+    - lines:
+      - faction: 3
+        line:
+          en: Hah! What a joke! I apologize for our outburst. I will send them back
+            to their mountains safely.
+          tr: 
+      - faction: 5
+        line:
+          en: Ach! What a laugh! Those lads sure earned themselves a good whopping!
+          tr: 
+    - lines:
+      - faction: 3
+        line:
+          en: What?! How can you tell that? We have DEAD orcs on our border!
+          tr: 
+      - faction: 5
+        line:
+          en: Some sense, finally! Ah'm gonna gather up our lads an' form a search
+            party!
+          tr: 
+  regionalTips:
+  - faction: 4
+    unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
+    line:
+      en: This one doesn't know why, but there is an old shackle made of ale bottles
+        and beer kegs near our shores.
+      tr: 
