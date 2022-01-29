@@ -30,6 +30,8 @@ public class GameController : Singleton<GameController>
 
     public void StartNewGame()
     {
+        PlayerData.CanLoadGame = true;
+        
         MainMenuBehaviour.Instance.gameObject.SetActive(false);
         SageStandingController.StartNew();
         GlobalFlagsController.NewFlagCollection();

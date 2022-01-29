@@ -12,6 +12,16 @@ public static class PlayerData
             PlayerPrefs.Save();
         }
     }
+
+    public static bool CanLoadGame
+    {
+        get => PlayerPrefs.GetInt(nameof(CanLoadGame), 0) == 1;
+        set
+        {
+            PlayerPrefs.SetInt(nameof(CanLoadGame), value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
     
     public static string Flags
     {

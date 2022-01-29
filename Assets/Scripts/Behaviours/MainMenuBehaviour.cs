@@ -29,6 +29,12 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
 
     private void OnEnable()
     {
+        continueGameButton.interactable = PlayerData.CanLoadGame;
+        var tmpro = continueGameButton.GetComponentInChildren<TextMeshProUGUI>();
+        var c = tmpro.color;
+        c.a = continueGameButton.interactable ? 1 : 0.5f;
+        tmpro.color = c;
+        
         newGameButton.onClick.AddListener(GameController.Instance.StartNewGame);
         continueGameButton.onClick.AddListener(GameController.Instance.ContinueGame);
         creditsButton.onClick.AddListener(GameController.Instance.ShowCredits);
