@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 using Controllers;
@@ -9,7 +10,10 @@ namespace Behaviours.Exploration
 {
     public class WorldBehaviour : MonoBehaviour
     {
+        public static event Action KingdomSelected;
+        
         [SerializeField] private List<KingdomMapElement> _kingdoms;
+        private KingdomMapElement _currentKingdom;
 
         private void Update()
         {
@@ -25,22 +29,41 @@ namespace Behaviours.Exploration
                 if (hit)
                 {
                     Debug.Log("Hit. Name: " + hit.collider.transform.parent.name );
-                    Debug.DrawLine(hit.point, hit.point + Vector2.up, Color.red, 1f);
 
+                    SelectKingdom(hit.collider.gameObject);
                 }
-
-                /*
-                Ray ray = CameraController.Instance.MainCamera.ScreenPointToRay(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-                
-                if (hit.collider != null)
-                {
-                    Debug.Log(hit.point);                    
-                    Debug.DrawRay(ray.origin, ray.direction, Color.blue, 1f);
-                    Debug.DrawLine(hit.point, hit.point + Vector2.up, Color.red, 1f);
-                }
-                */
             }
+        }
+
+        private void SelectKingdom(GameObject colliderGameObject)
+        {
+            KingdomMapElement mapElement = colliderGameObject.GetComponentInParent<KingdomMapElement>();
+
+            if (mapElement == null)
+            {
+                Debug.LogError("Cannot find kingdom, this should not happen.");
+                return;
+            }
+
+            if (_currentKingdom != null)
+            {
+                if (_currentKingdom._factionType == mapElement._factionType)
+                {
+                    Deselect(_currentKingdom);
+                    return;
+                }
+                
+                Deselect(_currentKingdom);
+            }
+            
+            _currentKingdom = mapElement;
+            mapElement.Highlight();
+        }
+
+        private void Deselect(KingdomMapElement currentKingdom)
+        {
+            currentKingdom.StopHighlight();
+            _currentKingdom = null;
         }
     }
 }
