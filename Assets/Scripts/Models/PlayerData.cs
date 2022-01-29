@@ -32,4 +32,24 @@ public static class PlayerData
             PlayerPrefs.Save();
         }
     }
+
+    public static int StageIndex
+    {
+        get => PlayerPrefs.GetInt(nameof(StageIndex), 0);
+        set
+        {
+            PlayerPrefs.SetInt(nameof(StageIndex), value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int ConflictIndex
+    {
+        get => PlayerPrefs.GetInt(nameof(ConflictIndex), 0);
+        set
+        {
+            PlayerPrefs.SetInt(nameof(ConflictIndex), value);
+            PlayerPrefs.Save();
+        }
+    }
 }

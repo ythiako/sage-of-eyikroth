@@ -93,6 +93,13 @@ public class GameTextDisplay : MonoBehaviour
         });
     }
 
+    public void CloseImmediate()
+    {
+        _isOpen = false;
+        _isAnimating = false;
+        gameObject.SetActive(false);
+    }
+
     private void OnTextPlayerShowed()
     {
         _isComplete = true;

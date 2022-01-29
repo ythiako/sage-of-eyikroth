@@ -1,22 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Behavoiurs;
 using Models;
 using UnityEngine;
 
 public class AssetsController : Singleton<AssetsController>
 {
-    [SerializeField] private List<Conflict> conflicts;
+    [SerializeField] private List<List<Conflict>> stages;
     [SerializeField] private SerializableDictionary<Faction, FactionRepresentativeBehaviour> factionRepresentatives;
 
-    public List<Conflict> GetConflicts()
+    public List<Conflict> GetStage(int index)
     {
-        return conflicts;
-    }
-
-    public Conflict GetConflict(string id)
-    {
-        return conflicts.FirstOrDefault(c => c.id == id);
+        return stages[index];
     }
 
     public FactionRepresentativeBehaviour GetFactionRepresentativePrefab(Faction faction)
