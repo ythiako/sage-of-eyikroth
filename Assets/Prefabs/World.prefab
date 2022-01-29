@@ -246,7 +246,7 @@ Transform:
   - {fileID: 1499321815599001641}
   - {fileID: 1743279900311693806}
   m_Father: {fileID: 3786329191378953182}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3166454045757926192
 GameObject:
@@ -278,7 +278,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3786329191378953182}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5691158665125480995
 SpriteRenderer:
@@ -347,7 +347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3786329191378953182
 Transform:
   m_ObjectHideFlags: 0
@@ -360,10 +360,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5818403317364418164}
   - {fileID: 1835751500331356743}
   - {fileID: 3047342911681126531}
   - {fileID: 1717225994113745293}
   - {fileID: 8929145982267812765}
+  - {fileID: 6145631010695846034}
+  - {fileID: 6495489981754703047}
   m_Father: {fileID: 7790350214090085105}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -616,8 +619,8 @@ RectTransform:
   m_Children:
   - {fileID: 2673523867022276969}
   - {fileID: 2226453379673057311}
-  m_Father: {fileID: 7790350214090085105}
-  m_RootOrder: 1
+  m_Father: {fileID: 3786329191378953182}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -709,13 +712,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6387294751479753190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12, y: -3.93, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7790350214090085105}
-  m_RootOrder: 2
+  m_Father: {fileID: 3786329191378953182}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1778411475374510330
 SpriteRenderer:
@@ -935,9 +938,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3786329191378953182}
-  - {fileID: 5818403317364418164}
-  - {fileID: 6145631010695846034}
-  - {fileID: 6495489981754703047}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -955,7 +955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _world: {fileID: 8423671667185064353}
   _textDisplay: {fileID: 7240031244334356656}
-  _testConflict: {fileID: 11400000, guid: abf4db971125e254db6c357502f7ed99, type: 2}
 --- !u!114 &8423671667185064353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,7 +1006,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3786329191378953182}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7252986993999386277
 GameObject:
@@ -1287,13 +1286,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7397746203726570677}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12, y: -3.78, z: 0}
   m_LocalScale: {x: -2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7790350214090085105}
-  m_RootOrder: 3
+  m_Father: {fileID: 3786329191378953182}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8796385956802847191
 SpriteRenderer:
@@ -1444,7 +1443,7 @@ Transform:
   m_Children:
   - {fileID: 4215462568279158579}
   m_Father: {fileID: 3786329191378953182}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1252625430453835972
 MonoBehaviour:
@@ -1516,6 +1515,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -1534,7 +1537,7 @@ PrefabInstance:
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 4639658732690433492, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Name
       value: DwarvenKingdom
@@ -1545,11 +1548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Tough midgets
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
-      propertyPath: m_fontSize
-      value: 5.75
+      value: Taketefjell
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontAsset
@@ -1574,7 +1573,7 @@ PrefabInstance:
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
@@ -1798,6 +1797,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.101
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -1827,11 +1834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Likey me
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
-      propertyPath: m_fontSize
-      value: 5.75
+      value: Gronstead
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontAsset
@@ -1851,7 +1854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.75
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_sharedMaterial
@@ -2042,11 +2045,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.47
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.36
+      value: 0.116
       objectReference: {fileID: 0}
     - target: {fileID: 4639658732690433492, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Name
@@ -2054,11 +2057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Pointy Ears
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
-      propertyPath: m_fontSize
-      value: 5.75
+      value: Glad Rammas
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_lineSpacing
@@ -2066,7 +2065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.75
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9107249984426876424, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_RootOrder
@@ -2321,11 +2320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Long tooth lol
-      objectReference: {fileID: 0}
-    - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
-      propertyPath: m_fontSize
-      value: 5.75
+      value: Varok'mash
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontAsset
@@ -2571,6 +2566,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -2589,7 +2592,7 @@ PrefabInstance:
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 4639658732690433492, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Name
       value: MerfolkKingdom
@@ -2600,11 +2603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Fish guys
+      value: Aselmalyr
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSize
-      value: 5.75
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontAsset
@@ -2624,12 +2627,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.75
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
@@ -2903,6 +2906,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 160058055500099327, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -2921,7 +2932,7 @@ PrefabInstance:
     - target: {fileID: 1929022540041308036, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 4639658732690433492, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_Name
       value: GnomeKingdom
@@ -2932,11 +2943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_text
-      value: Weak midgets
+      value: Drakensmage
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSize
-      value: 5.75
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontAsset
@@ -2956,12 +2967,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.75
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -799337471189385713, guid: f24ee91ba407c44e7a4f1b58c4e90eb6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b6517b54ab9b4a70b4ffb80cdaba27c, type: 2}
     - target: {fileID: 6413812717924818790, guid: 086b548874d7c4732829432bf5a9e0c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295

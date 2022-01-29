@@ -15,7 +15,6 @@ namespace Controllers
         [SerializeField] private GameTextDisplay _textDisplay;
         private Conflict _currentConflict;
         
-        [Button("begin")]
         public void BeginExplorationPhase()
         {
             _world.EnableWorld();
