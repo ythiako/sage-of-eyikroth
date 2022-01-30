@@ -19,64 +19,62 @@ MonoBehaviour:
     line:
       en: Merfolk shores have best fishing spots. Now that the winter has settled
         in, we need new sources of food, and they have it.
-      tr: "Merfolk k\u0131y\u0131lar\u0131nda iyi bal\u0131k var diyorlar. \u015Eimdi
-        k\u0131\u015F geldi\u011Fi i\xE7in tarlayla mantarla beslenemeyiz. Bize yeni
-        bir kaynak laz\u0131m."
+      tr: "Merfolk sahillerinde \xE7ok g\xFCzel bal\u0131k\xE7\u0131l\u0131k noktalar\u0131
+        var. K\u0131\u015F da geldi art\u0131k, bize yemek laz\u0131m, onlarda da
+        yemek var."
   - faction: 1
     line:
       en: Problem is, they won't allow us get close to their shores.
-      tr: "Buradaki sorun, Merfolk'lar bizim orada bal\u0131k tutmam\u0131za izin
-        vermiyorlar."
+      tr: "Sorun \u015Fu ki, bizi sahillerine yana\u015Ft\u0131rm\u0131yorlar bile."
   - faction: 4
     line:
       en: Our shores are contaminated with a sea creature that kills others with
         their poison.
-      tr: "K\u0131y\u0131lar\u0131m\u0131zda bir deniz yarat\u0131\u011F\u0131 yuva
-        yapt\u0131. Zehri ile t\xFCm ya\u015Fam\u0131 tehdit ediyor."
+      tr: "Sahillerimiz, ba\u015Fkalar\u0131n\u0131 zehir ile \xF6ld\xFCren binlerce
+        yarat\u0131kla dolu."
   - faction: 4
     line:
       en: While we're resistant to this corruption, we can't let anyone else get
         close to our shores.
-      tr: "Biz bu zehre kar\u015F\u0131 dayan\u0131kl\u0131y\u0131z, ancak \xF6b\xFCr
-        \u0131rklar de\u011Filler. Bu sorunu \xE7\xF6z\xFCnceye kadar onlar\u0131
-        k\u0131y\u0131lar\u0131m\u0131za alamay\u0131z."
+      tr: "Bizde bu zehire kar\u015F\u0131 diren\xE7 var ama ba\u015Fkalar\u0131nda
+        olmad\u0131\u011F\u0131 i\xE7in gelmelerine izin veremeyiz."
   aSummary:
     faction: 1
     line:
       en: We want to fish on Merfolk shores.
-      tr: "Merfolk k\u0131y\u0131lar\u0131nda bal\u0131k tutmak istiyoruz."
+      tr: "Merfolk sahillerinde bal\u0131k yakalamal\u0131y\u0131z."
   aDecision:
     id: Round5_SideWithHumans
     unlockingFlag: 
     text:
       en: Settle down to shore
-      tr: "K\u0131y\u0131ya bal\u0131k\xE7\u0131 yerle\u015Ftirin"
+      tr: "Sahillere yerle\u015Febilirsiniz."
     outcomes:
       m_keys: 0100000004000000
-      m_values: 0a000000d8ffffff
+      m_values: 0a000000f6ffffff
   bSummary:
     faction: 4
     line:
       en: Humans are putting themselves in danger
-      tr: "\u0130nsanlar kendini tehlikeye at\u0131yor, buna bir dur demeliyiz"
+      tr: "\u0130nsanlar kendilerini tehlikeye at\u0131yorlar."
   bDecision:
     id: Round5_SideWithMerfolk
     unlockingFlag: 
     text:
       en: Humans are not allowed
-      tr: "\u0130nsanlar k\u0131y\u0131ya giremez"
+      tr: "\u0130nsanlar\u0131n sahilde ne i\u015Fi var?"
     outcomes:
       m_keys: 0100000004000000
-      m_values: d8ffffff0a000000
+      m_values: f6ffffff0a000000
   optionalDecisions:
   - id: Round5_LetGnomesHandle
     unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
     text:
       en: Fish under volcanic lake
-      tr: "Yanarda\u011F\u0131n alt\u0131nda bal\u0131k var"
+      tr: "Volkanik g\xF6lde bal\u0131k tutun?"
     outcomes:
-      m_keys: 010000000400000002000000
-      m_values: 0a0000000a000000d8ffffff
+      m_keys: 0100000004000000
+      m_values: 0a0000000a000000
   outcomeDialogue:
     m_keys:
     - Round5_SideWithMerfolk
@@ -87,44 +85,41 @@ MonoBehaviour:
       - faction: 1
         line:
           en: But this will doom us all... damn you!
-          tr: "Ama bu bizi a\xE7l\u0131ktan k\u0131rar... bu karar... yerin dibine
-            bat!"
+          tr: Ama bu bizim sonumuzu getirir... sana lanet olsun!
       - faction: 4
         line:
           en: This one's pleased to hear that you still care for all races, elder
             sage.
-          tr: "Denizin bu kulu, b\xFCy\xFCk resmi g\xF6rd\xFC\u011F\xFCn\xFCz i\xE7in
-            minnettar, y\xFCce bilge."
+          tr: "Bu adam, b\xFCt\xFCn halklar\u0131 d\xFC\u015F\xFCnd\xFC\u011F\xFCn\xFCz\xFC
+            duymaktan memnun, y\xFCce bilge."
     - lines:
       - faction: 1
         line:
           en: They would let us? Oh, they're so merciful...
-          tr: "Gnome'lar bize yard\u0131m eder mi? Ah, nas\u0131l da merhametliler..."
+          tr: "\u0130zin verirler mi? \xC7ok al\xE7akg\xF6n\xFCll\xFCler..."
       - faction: 4
         line:
           en: This one is glad that humans now can feast while we heal our waters.
-          tr: "Denizin bu kulu mutlu oldu. Hem insanlar a\xE7 de\u011Fil, hem de
-            k\u0131y\u0131lar\u0131m\u0131z\u0131 temizleyebiliriz."
+          tr: "Bu adam, biz denizlerimizi iyile\u015Ftirirken insanlar\u0131n yemek
+            yiyebilece\u011Fini bilmekten memnun."
     - lines:
       - faction: 1
         line:
           en: Thank you, merciful sage! Our people won't starve in winter, after
             all!
-          tr: "Ya\u015Fa, y\xFCce bilge! Halk\u0131m\u0131z bu k\u0131\u015F a\xE7
-            kalmayacak!"
+          tr: "Sa\u011Fol y\xFCce bilge! Halk\u0131m\u0131z k\u0131\u015F\u0131n
+            a\xE7l\u0131ktan \xF6lmeyecek."
       - faction: 4
         line:
           en: This one is worried that poison will kill humans, but you know the
             best, elder sage.
-          tr: "Denizin bu kulu insanlar\u0131n zehirlenece\u011Finden \xE7ekiniyor,
-            ama en iyisini siz bilirsiniz y\xFCce bilge."
+          tr: "Bu adam, insanlar\u0131n zehirden \xF6leceklerine kesin g\xF6z\xFCyle
+            bak\u0131yor ama siz daha iyi bilirsiniz."
   regionalTips:
   - faction: 2
     unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
     line:
       en: It's fortunate that there are a lot of newly opened fish pools under the
         volcanic mountain. But it's also problematic. There's too much fish now!
-      tr: "Ah, selamlar. Yeni bal\u0131k havuzlar\u0131m\u0131z\u0131 g\xF6rd\xFCn\xFCz
-        m\xFC? Yanarda kanallar\u0131n\u0131n alt\u0131nda bulduk. Baya bal\u0131k
-        var. Hepsini tutam\u0131yoruz. Ke\u015Fke daha fazla bal\u0131k\xE7\u0131m\u0131z
-        olsayd\u0131..."
+      tr: "Volkanik da\u011F\u0131n alt\u0131nda bir \xE7ok bal\u0131k havuzlar\u0131
+        a\xE7\u0131ld\u0131. Ama bu bir sorun, \xE7ok fazla bal\u0131k var\n!\n"

@@ -62,4 +62,14 @@ public static class PlayerData
             PlayerPrefs.Save();
         }
     }
+
+    public static bool LostGame
+    {
+        get => PlayerPrefs.GetInt(nameof(LostGame), 0) == 1;
+        set
+        {
+            PlayerPrefs.SetInt(nameof(LostGame), value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
 }

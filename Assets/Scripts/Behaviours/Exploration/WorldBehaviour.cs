@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
+using Behaviours.StandingIndicator;
 using Controllers;
 using DG.Tweening;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace Behaviours.Exploration
         [SerializeField] private SpriteRenderer _leftSprite;
         [SerializeField] private SpriteRenderer _rightSprite;
 
+        [SerializeField] private StandingIndicatorView _standingIndicatorView;
         [SerializeField] private Button _doneButton;
 
         public bool CanSelectRegion = false;
@@ -30,6 +32,8 @@ namespace Behaviours.Exploration
             _container.gameObject.SetActive(true);
             CanSelectRegion = true;
             _doneButton.gameObject.SetActive(false);
+            
+            _standingIndicatorView.UpdateIndicators();
         }
 
         public void DisableWorld()

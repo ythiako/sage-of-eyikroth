@@ -28,7 +28,7 @@ public class GameOverBehaviour : Singleton<GameOverBehaviour>
         gameObject.SetActive(false);
     }
 
-    public void BeginGameOver(Action gameOverComplete)
+    public float BeginGameOver(Action gameOverComplete)
     {
         var txtColor = textDisplay.color;
         txtColor.a = 1;
@@ -50,6 +50,7 @@ public class GameOverBehaviour : Singleton<GameOverBehaviour>
             textPlayer.ShowText(gameOverEvent[randomKey].GetText(LanguageController.GetCurrentCulture()));
             textPlayer.onTextShowed.AddListener(OnShownReason);
         });
+        return 0.5f;
     }
 
     [Button]

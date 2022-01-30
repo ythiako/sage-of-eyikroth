@@ -15,6 +15,7 @@ public class GameController : Singleton<GameController>
     
     private void Awake()
     {
+        AudioController.Instance.PlayMenuMusic();
         MainMenuBehaviour.Instance.gameObject.SetActive(true);
         DecisionPhaseController.Instance.Dispose();
         ConflictController.Instance.Dispose();
@@ -33,10 +34,12 @@ public class GameController : Singleton<GameController>
 
     public void StartNewGame()
     {
+        PlayerData.LostGame = false;
         PlayerData.CanLoadGame = true;
         
         SageStandingController.StartNew();
         GlobalFlagsController.NewFlagCollection();
+        AudioController.Instance.PlayGameMusic();
         FadeTransition.Instance.FadeIn(() =>
         {
             MainMenuBehaviour.Instance.gameObject.SetActive(false);
@@ -55,9 +58,11 @@ public class GameController : Singleton<GameController>
 
     public void ContinueGame()
     {
+        PlayerData.LostGame = false;
         StageController.Load();
         SageStandingController.Load();
         GlobalFlagsController.LoadFlagCollection();
+        AudioController.Instance.PlayGameMusic();
         FadeTransition.Instance.FadeIn(() =>
         {
             MainMenuBehaviour.Instance.gameObject.SetActive(false);
@@ -156,12 +161,13 @@ public class GameController : Singleton<GameController>
 
     private static void GameOver()
     {
+        PlayerData.LostGame = true;
         PlayerData.CanLoadGame = false;
         DecisionPhaseController.Instance.Dispose();
-        GameOverBehaviour.Instance.BeginGameOver(() =>
+        AudioController.Instance.PlayGameOverMusic(GameOverBehaviour.Instance.BeginGameOver(() =>
         {
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
-        });
+        }));
         StageController.Reset();
         SageStandingController.StartNew();
         GlobalFlagsController.NewFlagCollection();

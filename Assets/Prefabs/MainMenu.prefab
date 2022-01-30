@@ -594,8 +594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2323,8 +2323,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2671,8 +2671,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2702,7 +2702,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2978,7 +2978,6 @@ MonoBehaviour:
       getirecekler?"
   introText: {fileID: 7706426775208175623}
   introPlayer: {fileID: 7706426775208175621}
-  skipInput: {fileID: 0}
   ease: 1
   delay: 0
   duration: 1
@@ -2995,13 +2994,13 @@ MonoBehaviour:
     en: New Game
     tr: "Yeni Oyuna Ba\u015Fla"
   continueGameText:
-    en: Continue Game
+    en: "Cont\u0131nue Game"
     tr: Devam Et
   creditsText:
-    en: Credits
+    en: "Cred\u0131ts"
     tr: "Eme\u011Fi Ge\xE7enler"
   quitText:
-    en: Quit
+    en: "Qu\u0131t"
     tr: "\xC7\u0131k\u0131\u015F"
 --- !u!1 &7706426774400938753
 GameObject:
@@ -3114,8 +3113,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3145,7 +3144,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3451,8 +3450,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3482,7 +3481,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3920,8 +3919,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: of
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4389,8 +4388,8 @@ MonoBehaviour:
 
     Or will they wage war and bring their own end?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9515,8 +9514,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sage
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9651,8 +9650,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

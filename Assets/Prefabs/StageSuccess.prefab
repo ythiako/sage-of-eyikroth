@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ANOTHER MONTH PASSES BY...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -201,8 +201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MONTH 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
-  m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
+  m_sharedMaterial: {fileID: -3183167529485838922, guid: e0fdf90eaffe6874f842310192b27425, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
