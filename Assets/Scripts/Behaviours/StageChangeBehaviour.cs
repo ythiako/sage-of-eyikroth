@@ -50,6 +50,7 @@ public class StageChangeBehaviour : Singleton<StageChangeBehaviour>
                     textStageNo.DOFade(0, 2).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         onComplete?.Invoke();
+                        gameObject.SetActive(false);
                     });
                 });
             });

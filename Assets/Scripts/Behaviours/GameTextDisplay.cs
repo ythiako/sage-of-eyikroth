@@ -3,6 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using Febucci.UI;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,6 +37,7 @@ public class GameTextDisplay : MonoBehaviour
 
     public void DisplayText(LocalizedText text)
     {
+        textPlayer.GetComponent<TextMeshProUGUI>().text = "";
         _isComplete = false;
         _currentText = text;
 

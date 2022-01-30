@@ -55,6 +55,7 @@ namespace Controllers
             
             _conflict = conflict;
 
+            _dialogueIndex = 0;
             _allDialoguesFinished = false;
             _leftRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.aSummary.faction), leftCharacterRoot);
             _rightRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.bSummary.faction), rightCharacterRoot);
