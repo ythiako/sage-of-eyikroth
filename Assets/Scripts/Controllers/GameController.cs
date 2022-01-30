@@ -72,11 +72,6 @@ public class GameController : Singleton<GameController>
         });
     }
 
-    public void ShowCredits()
-    {
-        
-    }
-
     public void QuitGame()
     {
         #if UNITY_EDITOR
