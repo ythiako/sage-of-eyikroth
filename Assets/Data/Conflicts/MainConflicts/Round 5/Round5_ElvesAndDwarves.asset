@@ -19,23 +19,27 @@ MonoBehaviour:
     line:
       en: There is no end to dwarven greed! They are trying to dig under our sacred
         grounds, disturbing the dead! Please thwart them away.
-      tr: 
+      tr: "Bu c\xFCcelerin a\xE7l\u0131\u011F\u0131n\u0131n sonu yok! Mezarl\u0131klar\u0131m\u0131z\u0131n
+        alt\u0131n\u0131 kaz\u0131p \xF6l\xFClerimizi rahats\u0131z ediyorlar! L\xFCtfen
+        onlar\u0131 topraklar\u0131m\u0131zdan def edin!"
   - faction: 5
     line:
       en: JACKPOT! Elves 'ave been sittin' on some huge mineral beds, waiting tae
         be mined. You have tae allow us mine it. Their burial grounds be damned!
-      tr: 
+      tr: "Tam 12'den vurduk ba\u015Fgan! D\xF6nme elfler alt\u0131n\u0131n demirin
+        \xFCst\xFCne oturmu\u015F, bize \"gel beri, gel beri\" diyolar. \u0130zin
+        ver de bi kazak oralar\u0131. Mezarl\u0131k falan yalan diyolar kanka."
   aSummary:
     faction: 0
     line:
       en: Stop dwarves from desecrating our sacred grounds.
-      tr: 
+      tr: "C\xFCceleri mezarl\u0131klar\u0131m\u0131zdan uzak tutun!"
   aDecision:
     id: Round5_SideWithElves
     unlockingFlag: 
     text:
       en: Banish dwarven pickaxes
-      tr: 
+      tr: "C\xFCcelerin kazma kullanmas\u0131 yasak"
     outcomes:
       m_keys: 0000000005000000
       m_values: 0a000000f6ffffff
@@ -43,13 +47,13 @@ MonoBehaviour:
     faction: 5
     line:
       en: We want tae tap onto those mineral beds, and we will!
-      tr: 
+      tr: "Ba\u015Fgan, kaz\u0131yoz o zaman izninle. Kazak m\u0131?"
   bDecision:
     id: Round5_SideWithDwarves
     unlockingFlag: 
     text:
       en: Dwarves need more minerals
-      tr: 
+      tr: "C\xFCcelere mineral laz\u0131m"
     outcomes:
       m_keys: 0000000005000000
       m_values: f6ffffff0a000000
@@ -58,7 +62,7 @@ MonoBehaviour:
     unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
     text:
       en: Barrens have rich veins as well
-      tr: 
+      tr: "Bozk\u0131rda da demir alt\u0131n var"
     outcomes:
       m_keys: 0000000005000000
       m_values: 0a0000000a000000
@@ -73,31 +77,35 @@ MonoBehaviour:
         line:
           en: A sound decision, elder sage. I knew we always could count on your
             wisdom.
-          tr: 
+          tr: "Sayg\u0131l\u0131 bir karar, y\xFCce bilge. Sizin kararlar\u0131n\u0131za
+            g\xFCvenebilece\u011Fimizi biliyordum!"
       - faction: 4
         line:
           en: What the- what kind of ram shite is that? Where're we supposed tae
             get our iron, then?!
-          tr: 
+          tr: "Ba\u015Fgan ay\u0131p yap\u0131yon ama! \u015Eimdi biz demiri nerden
+            bulaca\u011Faz?"
     - lines:
       - faction: 0
         line:
           en: Those are our sacred catacombs, and you're letting dwarves trample
             all over!
-          tr: 
+          tr: "Onlar bizim mezarl\u0131klar\u0131m\u0131z, buna nas\u0131l onay verirsin!?"
       - faction: 4
         line:
           en: Hail tae tha king, baybe! We'll get nice an' cozy in there!
-          tr: 
+          tr: "Ba\u015Fgan\u0131m! Ver o m\xFCbarek elini \xF6pem! Ben bizim \xE7ocuklar\u0131
+            getirip kazmaya ba\u015Fl\u0131yom."
     - lines:
       - faction: 0
         line:
           en: There... hope your greed will settle down now!
-          tr: 
+          tr: "Tamam, umar\u0131z c\xFCcelere o bozk\u0131r yeter."
       - faction: 4
         line:
           en: Tha's grand news! If they be alright with it, we'll start diggin!
-          tr: 
+          tr: "Eyt be, ba\u015Fgan\u0131m gene \xE7\xF6zd\xFC durumu. Eyvallah garda\u015F,
+            biz tak\u0131mlar\u0131 al\u0131p kaz\u0131yoz!"
   regionalTips:
   - faction: 3
     unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
@@ -105,4 +113,7 @@ MonoBehaviour:
       en: These days, dust storms lift up new veins of iron and gold, but we have
         no tools to work the rocks. Such a shame. A dwarf would be at home in all
         these minerals.
-      tr: 
+      tr: "Bug\xFCnlerde kum f\u0131rt\u0131nalar\u0131 artt\u0131. E haliyle toz
+        kalk\u0131nca etrafta demir alt\u0131n damarlar\u0131 \xE7\u0131kmaya ba\u015Flad\u0131.
+        Yaz\u0131k, bizde bunlar\u0131 i\u015Fleyecek bir alet edevat yok. Bir c\xFCce
+        gelse ama, buray\u0131 evi gibi kullanabilirdi."

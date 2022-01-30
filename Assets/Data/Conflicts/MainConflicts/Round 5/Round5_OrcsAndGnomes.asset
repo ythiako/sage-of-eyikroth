@@ -19,31 +19,34 @@ MonoBehaviour:
     line:
       en: Gnomes have been working on something called 'gun'. Word is, it can kill
         any beast from a long distance.
-      tr: 
+      tr: "Ye\u015Fil cinler \"t\xFCfek\" ad\u0131nda bir alet geli\u015Ftirmi\u015F.
+        Diyorlar ki herhangi bir hayvan\u0131 tek at\u0131\u015Fta uzaktan \xF6ld\xFCrebilirsin."
   - faction: 3
     line:
       en: Our hunters could hunt much more with it. Let us get one from Gnomes.
-      tr: 
+      tr: "Avc\u0131lar\u0131m\u0131z b\xF6yle bir aletle daha fazla av getirebilir.
+        Ye\u015Fil cinleri ikna ederseniz bir t\xFCfek almak isteriz."
   - faction: 2
     line:
       en: We've been working to quell the volcano so it wouldn't explode.
-      tr: 
+      tr: "Yanarda\u011F\u0131n kanallar\u0131n\u0131 kapatmak i\xE7in \xE7ok \xE7al\u0131\u015Ft\u0131k."
   - faction: 2
     line:
       en: We need a lot of firepower to close some tunnels so we can safely channel
         the lava into open ocean.
-      tr: 
+      tr: "Kalan kanallar\u0131 kapatabilmek i\xE7in hala baruta ihtiyac\u0131m\u0131z
+        var. T\xFCfek \xFCretimimizi \u015Fimdilik durdurduk."
   aSummary:
     faction: 3
     line:
       en: A gun will increase our chances of survival
-      tr: 
+      tr: "Bir t\xFCfek bize daha fazla av getirir."
   aDecision:
     id: Round5_SideWithOrcs
     unlockingFlag: 
     text:
       en: Gnomes will provide
-      tr: 
+      tr: "Ye\u015Fil cinler bir t\xFCfek verecek"
     outcomes:
       m_keys: 0300000002000000
       m_values: 0a000000f6ffffff
@@ -51,13 +54,13 @@ MonoBehaviour:
     faction: 2
     line:
       en: We will need all the firepower to stop potential eruptions
-      tr: 
+      tr: "Elimizdeki t\xFCm barutu yanarda\u011F\u0131 durdurmak i\xE7in kullanmal\u0131y\u0131z."
   bDecision:
     id: Round5_SideWithGnomes
     unlockingFlag: 
     text:
       en: They are endangered
-      tr: 
+      tr: "Ye\u015Fil cinler barutu tutacak"
     outcomes:
       m_keys: 0300000002000000
       m_values: f6ffffff0a000000
@@ -66,7 +69,7 @@ MonoBehaviour:
     unlockingFlag: OrcsAndGnomes_OptionalDecision_Round5
     text:
       en: Humans have crossbows
-      tr: 
+      tr: "\u0130nsanlarda kurmal\u0131 yay var."
     outcomes:
       m_keys: 0200000003000000
       m_values: 0a0000000a000000
@@ -81,32 +84,37 @@ MonoBehaviour:
         line:
           en: Ah, a gun. I am already able to see the animals we've hunted with clean
             shots.
-          tr: 
+          tr: "Demek t\xFCfek bu. \u015Eimdiden temiz avlanm\u0131\u015F etlerimizi
+            g\xF6rebiliyorum."
       - faction: 2
         line:
           en: What were you thinking, giving those savages a weapon? Now we're all
             doomed!
-          tr: 
+          tr: "Bu barbarlara t\xFCfek vererek ne yapt\u0131\u011F\u0131n\u0131 zannediyorsun?
+            \u015Eimdi hepimiz tehlikedeyiz!"
     - lines:
       - faction: 3
         line:
           en: A crossbow? If it's faster than a bow, we certainly can use it.
-          tr: 
+          tr: "Kurmal\u0131 yay m\u0131? Hm, bir yaydan daha h\u0131zl\u0131ysa,
+            bunu da kullanabiliriz."
       - faction: 2
         line:
           en: And we're safe to conduct our research with gunpowder!
-          tr: 
+          tr: "Ve bizlerde barutu kanallar\u0131 kapatmak i\xE7in kullanabiliriz!"
     - lines:
       - faction: 3
         line:
           en: Elder sage, gnomes already have immense power! They should be balanced
             out!
-          tr: 
+          tr: "Y\xFCce bilge, ye\u015Fil cinler zaten yeterince g\xFC\xE7l\xFC, bu
+            t\xFCfekle kimse \xF6nlerine ge\xE7emez!"
       - faction: 2
         line:
           en: The gunpowder we've saved from some amateurs will do much better for
             everyone's safety.
-          tr: 
+          tr: "Saklad\u0131\u011F\u0131m\u0131z barutlar inan\u0131n herkesin i\u015Fine
+            daha \xE7ok yarayacak, y\xFCce bilge!"
   regionalTips:
   - faction: 1
     unlockingFlag: OrcsAndGnomes_OptionalDecision_Round5
@@ -114,4 +122,7 @@ MonoBehaviour:
       en: Our crossbows are the only thing that keeps us safe in winter. But because
         not many can use them, we can part ways with one. Maybe you'll find a use
         for it.
-      tr: 
+      tr: "Kurmal\u0131 yaylar\u0131m\u0131z bizi k\u0131\u015F\u0131n hayatta tutan
+        tek \u015Fey olabilir. Ancak n\xFCfusumuz azald\u0131\u011F\u0131 i\xE7in
+        san\u0131r\u0131m envanterden bir ka\xE7 tanesini \xE7\u0131karma vakti geldi.
+        Belki bir tanesi i\xE7in bir kullan\u0131m bulabilirsin, y\xFCce bilge."
