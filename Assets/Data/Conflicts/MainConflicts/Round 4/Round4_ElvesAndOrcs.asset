@@ -49,7 +49,7 @@ MonoBehaviour:
       tr: "Kurtlar\u0131 \xF6ld\xFCrmeliyiz."
     outcomes:
       m_keys: 0000000003000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ddffffff
   bSummary:
     faction: 3
     line:
@@ -64,7 +64,7 @@ MonoBehaviour:
       tr: "Elfler iksir yapmas\u0131nlar."
     outcomes:
       m_keys: 0000000003000000
-      m_values: f6ffffff0a000000
+      m_values: ddffffff0a000000
   optionalDecisions:
   - id: Round4_LetMerfolkHandle
     unlockingFlag: ElvesAndOrcs_OptionalDecision_Round4
@@ -72,8 +72,8 @@ MonoBehaviour:
       en: Use seaweed
       tr: "Deniz yosunu kullan\u0131n."
     outcomes:
-      m_keys: 0000000003000000
-      m_values: 0a0000000a000000
+      m_keys: 000000000300000004000000
+      m_values: 0a0000000a000000ddffffff
   outcomeDialogue:
     m_keys:
     - Round4_LetMerfolkHandle

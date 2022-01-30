@@ -52,7 +52,7 @@ MonoBehaviour:
       tr: "Bu ta\u015F ile b\xFCy\xFCr, geli\u015Firsiniz..."
     outcomes:
       m_keys: 0500000004000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e7ffffff
   bSummary:
     faction: 4
     line:
@@ -66,7 +66,7 @@ MonoBehaviour:
       tr: "Merfolk halk\u0131n\u0131 \xF6l\xFCme terkedemem."
     outcomes:
       m_keys: 0400000005000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e7ffffff
   optionalDecisions:
   - id: Round2_LetGnomesHandle
     unlockingFlag: DwarvesAndMerfolk_OptionalDecision_Round2
@@ -74,8 +74,8 @@ MonoBehaviour:
       en: Gnomes have Leananstone too...
       tr: "Ye\u015Fil cinlerde de Isl\u0131kta\u015F\u0131 yok muydu?"
     outcomes:
-      m_keys: 0500000004000000
-      m_values: 0a0000000a000000
+      m_keys: 050000000400000002000000
+      m_values: 0a0000000a000000e7ffffff
   outcomeDialogue:
     m_keys:
     - Round2_SideWithDwarves

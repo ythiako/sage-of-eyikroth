@@ -26,17 +26,15 @@ MonoBehaviour:
     line:
       en: Our shores are attacked by Merfolk. Until now, they kept it to themselves,
         but now, they grow bold. Show us your guidance.
-      tr: "K\u0131y\u0131lar\u0131m\u0131z Merfolk sakinleri taraf\u0131ndan sald\u0131r\u0131
-        alt\u0131nda, \u015Fimdiye kadar kendi hallerinde ya\u015Fayan bu yarat\u0131klar,
-        \u015Fimdi cesaretlenip bize sald\u0131r\u0131rlar. Y\xFCce bilge, bize yol
-        g\xF6ster."
+      tr: "Merfolklar bug\xFCne kadar s\xFCkunet i\xE7inde ya\u015F\u0131yordu. Ne
+        olduysa cesaretlenip sald\u0131rmaya ba\u015Flad\u0131lar. Bize yol g\xF6sterin."
   - faction: 4
     line:
       en: This one comes from the depths of Arselmalyr, elder sage. This one wishes
         to express well manners and sadly, a reoccuring event so dire.
-      tr: "Bu kul Arselmalyr'in derinliklerinden sizi selamlar, y\xFCce bilge. Size
-        iyi dileklerimi getiririm. Ama \xFCz\xFClerek s\xFCrekli tekrarlayan bir
-        dramay\u0131 da aktarmak isterim."
+      tr: "Bu kul Arselmalyr'in derinliklerinden iyi dileklerini sunar, y\xFCce bilge.
+        Size iyi dileklerimi getiririm. Ama \xFCz\xFClerek s\xFCrekli tekrarlayan
+        bir dramay\u0131 da aktarmak isterim."
   - faction: 4
     line:
       en: Orc fishermen and scouts are mistaking our kin as food or something you
@@ -55,11 +53,11 @@ MonoBehaviour:
     id: Round1_SideWithOrcs
     unlockingFlag: 
     text:
-      en: You are obviously violating orcs' trust
+      en: You are violating orcs' trust
       tr: "Orklar\u0131n g\xFCvenini suistimal ediyorsunuz"
     outcomes:
       m_keys: 0300000004000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ecffffff
   bSummary:
     faction: 4
     line:
@@ -69,17 +67,16 @@ MonoBehaviour:
     id: Round1_SideWithMerfolk
     unlockingFlag: 
     text:
-      en: Merfolk lives matter too. Orcs should limit their hunting
-      tr: "Merfolk hayatlar\u0131 da \xF6nemli. Onlara hayvan ya da av olarak davran\u0131lmamal\u0131"
+      en: Orcs should limit their hunting
+      tr: "Orklar daha az avlanmal\u0131"
     outcomes:
       m_keys: 0300000004000000
-      m_values: f6ffffff0a000000
+      m_values: ecffffff0a000000
   optionalDecisions:
   - id: Round1_LetElvesHandleIt
     unlockingFlag: OrcsAndMerfolk_OptionalDecision_Round1
     text:
-      en: Elves mentioned of their ancestors living here once. Maybe you both are
-        to blame?
+      en: Elves mentioned of their ancestors living here once.
       tr: "Elfler atalar\u0131n\u0131n eskiden burada oldu\u011Fundan bahsetti. Belki
         sizlere sald\u0131ranlar hayaletlerdir."
     outcomes:
@@ -123,7 +120,7 @@ MonoBehaviour:
           en: So, it is spirits that need release. Me and my clan will attend to
             it, elder sage.
           tr: "Demek elf ruhlar\u0131... bu konuyla ben ve klan\u0131m ilgilenecek,
-            y\xFCce iblge."
+            y\xFCce bilge."
       - faction: 4
         line:
           en: By the ocean... how could we be so naive? We'll help our orcish neighbors.

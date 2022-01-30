@@ -57,7 +57,7 @@ MonoBehaviour:
         durduraca\u011F\u0131m."
     outcomes:
       m_keys: 0000000002000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e7ffffff
   bSummary:
     faction: 2
     line:
@@ -75,7 +75,7 @@ MonoBehaviour:
         bekleyip kullans\u0131nlar."
     outcomes:
       m_keys: 0000000002000000
-      m_values: f6ffffff0a000000
+      m_values: e7ffffff0a000000
   optionalDecisions:
   - id: Round2_LetMerfolkHandle
     unlockingFlag: ElvesAndGnomes_OptionalDecision_Round2
@@ -85,8 +85,8 @@ MonoBehaviour:
       tr: "Merfolk \u015Famanlar\u0131 size yard\u0131mc\u0131 olabilir. Kuzeyden
         gelen elektri\u011Fi kendilerini kan\u0131tlamak i\xE7in kullan\u0131rlar."
     outcomes:
-      m_keys: 0000000002000000
-      m_values: 0a0000000a000000
+      m_keys: 000000000200000004000000
+      m_values: 0a0000000a000000e7ffffff
   outcomeDialogue:
     m_keys:
     - Round2_LetMerfolkHandle

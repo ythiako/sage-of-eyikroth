@@ -52,7 +52,7 @@ MonoBehaviour:
       tr: "Sadece inaktif bir yanarda\u011F. Bence kaz\u0131lar devam edebilir."
     outcomes:
       m_keys: 0500000002000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ecffffff
   bSummary:
     faction: 2
     line:
@@ -67,7 +67,7 @@ MonoBehaviour:
       tr: "Yanarda\u011F patlarsa tehlikesi hepimiz i\xE7in b\xFCy\xFCk olur."
     outcomes:
       m_keys: 0200000005000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ecffffff
   optionalDecisions:
   - id: Round1_LetMerfolkHandleIt
     unlockingFlag: ElvesAndHumans_OptionalDecision_Round1

@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class GameController : Singleton<GameController>
 {
+    public static event Action LanguageChanged;
+    
     [SerializeField] private float minimumThreshold;
     [SerializeField] private float maximumThreshold;
     
@@ -70,11 +72,6 @@ public class GameController : Singleton<GameController>
         });
     }
 
-    public void ShowCredits()
-    {
-        
-    }
-
     public void QuitGame()
     {
         #if UNITY_EDITOR
@@ -85,6 +82,18 @@ public class GameController : Singleton<GameController>
         #else
         Application.Quit();
         #endif
+    }
+
+    public void ToggleLanguage()
+    {
+        PlayerData.CurrentCulture = PlayerData.CurrentCulture switch
+        {
+            "en-US" => "tr-TR",
+            "tr-TR" => "en-US",
+            _       => ""
+        };
+        
+        LanguageChanged?.Invoke();
     }
 
     private void OnConflictPhaseFinished()

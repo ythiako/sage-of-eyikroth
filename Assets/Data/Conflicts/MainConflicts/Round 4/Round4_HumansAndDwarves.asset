@@ -40,7 +40,7 @@ MonoBehaviour:
       tr: "C\xFCceler size yard\u0131mc\u0131 olur"
     outcomes:
       m_keys: 0100000005000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ddffffff
   bSummary:
     faction: 5
     line:
@@ -54,7 +54,7 @@ MonoBehaviour:
       tr: "\xDCcretinizi alacaks\u0131n\u0131z"
     outcomes:
       m_keys: 0100000005000000
-      m_values: f6ffffff0a000000
+      m_values: ddffffff0a000000
   optionalDecisions:
   - id: Round4_LetGnomesHandle
     unlockingFlag: HumansAndDwarves_OptionalDecision_Round4
@@ -62,8 +62,8 @@ MonoBehaviour:
       en: Gnomes can clear the mines
       tr: "Ye\u015Fil cinler madenlerinizi a\xE7abilir"
     outcomes:
-      m_keys: 0100000005000000
-      m_values: 0a0000000a000000
+      m_keys: 010000000500000002000000
+      m_values: 0a0000000a000000ddffffff
   outcomeDialogue:
     m_keys:
     - Round4_LetGnomesHandle
