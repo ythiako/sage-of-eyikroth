@@ -230,6 +230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 978187316}
     m_Modifications:
+    - target: {fileID: 1252625430453835972, guid: 19de5a63367ec4562b328ac55ae1989d, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7777778
+      objectReference: {fileID: 0}
     - target: {fileID: 6839548426904277035, guid: 19de5a63367ec4562b328ac55ae1989d, type: 3}
       propertyPath: m_Name
       value: World
@@ -2403,14 +2407,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4734010672790331791, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010672790331791, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4734010673938724262, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2498,70 +2494,6 @@ PrefabInstance:
     - target: {fileID: 4734010673938724263, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724263, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: youWin.tr
-      value: KAZANDIN
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: victoryMessage.tr
-      value: "Bu zor zamanlarda Eyikroth halk\u0131 bilgenin tavsiyelerini dinledi.\n\nBilgenin
-        tavsiyeleri, \u0131rklar\u0131n birbirine girmesini \xF6nledi, Eyikroth'un
-        bar\u0131\u015F\u0131 korundu...\n\nEjderler geldi\u011Finde, Eyikroth bir
-        v\xFCcut oldu.\nBelay\u0131 ba\u015Far\u0131yla defettiler..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[0].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Elfler, tavsiyeleri
-        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
-        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
-        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
-        onlara dayanacak g\xFCce sahip de\u011Fildi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[1].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen \u0130nsanlar, tavsiyeleri
-        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
-        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
-        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
-        onlara dayanacak g\xFCce sahip de\u011Fildi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[2].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Ye\u015Fil Cinler,
-        tavsiyeleri dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu
-        kendileri belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa
-        zamanda kar\u0131\u015F\u0131kl\u0131klara, sonunda da sava\u015Fa sebep
-        oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse onlara dayanacak g\xFCce
-        sahip de\u011Fildi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[3].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Orklar, tavsiyeleri
-        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
-        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
-        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
-        onlara dayanacak g\xFCce sahip de\u011Fildi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[4].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Merfolk, tavsiyeleri
-        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
-        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
-        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
-        onlara dayanacak g\xFCce sahip de\u011Fildi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4734010673938724282, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: gameOverEvent.m_values.Array.data[5].tr
-      value: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen C\xFCceler, tavsiyeleri
-        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
-        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
-        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
-        onlara dayanacak g\xFCce sahip de\u011Fildi"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
