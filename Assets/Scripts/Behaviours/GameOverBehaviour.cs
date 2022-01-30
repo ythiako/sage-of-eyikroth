@@ -41,12 +41,11 @@ public class GameOverBehaviour : Singleton<GameOverBehaviour>
         bgColor.a = 0;
         background.color = bgColor;
         _onGameOverComplete = gameOverComplete;
+        var dict = SageStandingController.GetCriticalStandings();
+        var c = dict.Count;
+        var randomKey = dict.Keys.Skip(UnityEngine.Random.Range(0, c)).First();
         background.DOFade(1, 0.5f).SetEase(Ease.Linear).OnComplete(() =>
         {
-            var dict = SageStandingController.GetCriticalStandings();
-            var c = dict.Count;
-            var randomKey = dict.Keys.Skip(UnityEngine.Random.Range(0, c)).First();
-        
             textPlayer.enabled = true;
             textPlayer.ShowText(gameOverEvent[randomKey].GetText(LanguageController.GetCurrentCulture()));
             textPlayer.onTextShowed.AddListener(OnShownReason);

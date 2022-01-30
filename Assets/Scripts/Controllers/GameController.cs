@@ -147,28 +147,28 @@ public class GameController : Singleton<GameController>
 
     private static void GameOver()
     {
+        PlayerData.CanLoadGame = false;
         DecisionPhaseController.Instance.Dispose();
         GameOverBehaviour.Instance.BeginGameOver(() =>
         {
-            StageController.Reset();
-            SageStandingController.StartNew();
-            GlobalFlagsController.NewFlagCollection();
-            PlayerData.CanLoadGame = false;
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
+        StageController.Reset();
+        SageStandingController.StartNew();
+        GlobalFlagsController.NewFlagCollection();
     }
 
     private static void Victory()
     {
+        PlayerData.CanLoadGame = false;
         DecisionPhaseController.Instance.Dispose();
         GameOverBehaviour.Instance.BeginVictory(() =>
         {
-            StageController.Reset();
-            SageStandingController.StartNew();
-            GlobalFlagsController.NewFlagCollection();
-            PlayerData.CanLoadGame = false;
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
+        StageController.Reset();
+        SageStandingController.StartNew();
+        GlobalFlagsController.NewFlagCollection();
     }
 
     [Button(ButtonSizes.Large)]
