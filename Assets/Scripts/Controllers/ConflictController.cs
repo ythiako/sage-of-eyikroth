@@ -64,6 +64,8 @@ namespace Controllers
             textInput.gameObject.SetActive(false);
             exploreButton.gameObject.SetActive(false);
 
+            director.Stop();
+            director.time = 0;
             stageCamera.Priority = 10;
         }
 
