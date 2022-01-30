@@ -39,11 +39,13 @@ MonoBehaviour:
   - faction: 1
     line:
       en: Nature belongs to all of us! As the representitive of Gronstead, I demand
-        for all humans to be allowed for hunting in elven lands. It's only animals,
-        surely nature belongs to all of us!
+        for all humans to be allowed for hunting in elven lands.
       tr: "Do\u011Fan\u0131n nimetleri hepimizin. Gronstead temsilcisi olarak insanlar\u0131n
-        elf topraklar\u0131nda avlanabilmesini talep ediyorum. Bir ka\xE7 hayvan
-        avlamak eminim kimseye zarar vermez."
+        elf topraklar\u0131nda avlanabilmesini talep ediyorum."
+  - faction: 1
+    line:
+      en: It's only animals, surely nature belongs to all of us!
+      tr: "Bir ka\xE7 hayvan avlamak eminim kimseye zarar vermez."
   aSummary:
     faction: 0
     line:
@@ -54,8 +56,8 @@ MonoBehaviour:
     id: Round1_SideWithElves
     unlockingFlag: 
     text:
-      en: It's wrong to hunt where you're not welcome.
-      tr: "\u0130stenmedi\u011Finiz topraklarda avlanmay\u0131n."
+      en: Don't hurt elves's friends
+      tr: "Elflerin dostlar\u0131na zarar vermeyin"
     outcomes:
       m_keys: 0000000001000000
       m_values: 0a000000f6ffffff
@@ -70,9 +72,8 @@ MonoBehaviour:
     id: Round1_SideWithHumans
     unlockingFlag: 
     text:
-      en: Hunger is more urgent than safety of animals.
-      tr: "\u0130nsanlar\u0131n a\xE7l\u0131\u011F\u0131, hayvanlar\u0131n hayatta
-        kalmas\u0131ndan daha \xF6nemli."
+      en: Humans can't go hungry
+      tr: "\u0130nsanlar a\xE7 m\u0131 kals\u0131n?"
     outcomes:
       m_keys: 0000000001000000
       m_values: f6ffffff0a000000
@@ -80,10 +81,8 @@ MonoBehaviour:
   - id: Round1_LetOrcsHandleIt
     unlockingFlag: ElvesAndHumans_OptionalDecision_Round1
     text:
-      en: Humans can hunt in barrens, as it is a place bustling with game and they
-        respect anyone who hunts properly.
-      tr: "Orklar\u0131n topraklar\u0131 avc\u0131l\u0131k a\xE7\u0131s\u0131ndan
-        \xE7ok geni\u015F ve bereketli. \xDCstelik onlar avc\u0131lara onurlu yakla\u015F\u0131rlar."
+      en: Hunt in orcish lands...
+      tr: "Ork topraklar\u0131nda avlan\u0131n...."
     outcomes:
       m_keys: 0000000001000000
       m_values: 0a0000000a000000
