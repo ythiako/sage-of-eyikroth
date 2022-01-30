@@ -3,6 +3,7 @@ using Behaviours.Exploration;
 using Behavoiurs;
 using Controllers;
 using Models;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class GameController : Singleton<GameController>
@@ -107,9 +108,24 @@ public class GameController : Singleton<GameController>
 
     private void OnDecisionPhaseComplete()
     {
-        if (StageController.NextConflict()) 
+        if (StageController.NextConflict())
         {
-            StageChangeBehaviour.Instance.DisplayStageSuccess(ToNextConflict, ConflictController.Instance.PlayConflict);
+            var criticalStandings = SageStandingController.GetCriticalStandings();
+            if (criticalStandings.Count > 0)
+            {
+                GameOver();
+            }
+            else
+            {
+                if (StageController.IsComplete)
+                {
+                    Victory();
+                }
+                else
+                {
+                    StageChangeBehaviour.Instance.DisplayStageSuccess(ToNextConflict, ConflictController.Instance.PlayConflict);
+                }
+            }
         }
         else
         {
@@ -128,5 +144,36 @@ public class GameController : Singleton<GameController>
         ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
 
         ConflictController.Instance.PhaseFinished = OnConflictPhaseFinished;
+    }
+
+    private static void GameOver()
+    {
+        DecisionPhaseController.Instance.Dispose();
+        GameOverBehaviour.Instance.BeginGameOver(() =>
+        {
+            MainMenuBehaviour.Instance.gameObject.SetActive(true);
+        });
+    }
+
+    private static void Victory()
+    {
+        DecisionPhaseController.Instance.Dispose();
+        GameOverBehaviour.Instance.BeginVictory(() =>
+        {
+            MainMenuBehaviour.Instance.gameObject.SetActive(true);
+        });
+    }
+
+    [Button(ButtonSizes.Large)]
+    private void TestGameOver()
+    {
+        SageStandingController.SetStanding(Faction.Elves, 10);
+        GameOver();
+    }
+
+    [Button(ButtonSizes.Large)]
+    private void TestVictory()
+    {
+        Victory();
     }
 }

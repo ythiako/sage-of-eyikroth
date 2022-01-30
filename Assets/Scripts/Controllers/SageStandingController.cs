@@ -33,6 +33,21 @@ public static class SageStandingController
             return standing;
         return default;
     }
+    
+    public static Dictionary<Faction, int> GetCriticalStandings()
+    {
+        var dict = new Dictionary<Faction, int>();
+
+        foreach (var key in _standings.Keys)
+        {
+            if (_standings[key] <= 15)
+            {
+                dict.Add(key, _standings[key]);
+            }
+        }
+
+        return dict;
+    }
 
     public static void SetStanding(Faction faction, int standing)
     {
