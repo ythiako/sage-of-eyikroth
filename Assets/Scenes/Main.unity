@@ -1347,7 +1347,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: randomConflicts.Array.size
@@ -1367,6 +1367,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.data[1].conflicts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[2].conflicts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[3].conflicts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[4].conflicts.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
@@ -1408,15 +1420,51 @@ PrefabInstance:
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.data[1].conflicts.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 8eee1f91a9180a84698dbaeb95c0c4b8, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a48701dc0f6ce040acc5e09b26af867, type: 2}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.data[1].conflicts.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 21aeb91ccc46bd54a8e15babafdaede5, type: 2}
+      objectReference: {fileID: 11400000, guid: 80c0e4094bbf79b4f94240cd6b80d27b, type: 2}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: stages.Array.data[1].conflicts.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: abf4db971125e254db6c357502f7ed99, type: 2}
+      objectReference: {fileID: 11400000, guid: ecfede034fecbb648a58dd2f25c72410, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[2].conflicts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d967cd5688daaf5448d524405e585579, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[2].conflicts.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 69ac9c2ed20e4894398bea6c365890a7, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[2].conflicts.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 53dccf46c83481c4a90c6d9a0ae2d5b1, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[3].conflicts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 91b0b82cd4daea1428b6149d0575f0bc, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[3].conflicts.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: fcb4f17e6cce92049973bb8912465757, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[3].conflicts.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e5cfc1cab80a3d4a97f680d457e235e, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[4].conflicts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 00cb627e4ecdc7840b4cc5fcc81a96e7, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[4].conflicts.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: aa487a64b9b22fe4fb6cc2fcedd3797c, type: 2}
+    - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
+      propertyPath: stages.Array.data[4].conflicts.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5379e44ba47232543a87558bd519b1d3, type: 2}
     - target: {fileID: 913526892, guid: 3c3ab6866074b436da12a03de1318e4c, type: 3}
       propertyPath: factionRepresentatives.m_values.Array.data[2]
       value: 
