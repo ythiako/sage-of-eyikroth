@@ -56,11 +56,11 @@ MonoBehaviour:
     id: Round1_SideWithElves
     unlockingFlag: 
     text:
-      en: Don't hurt elves's friends
-      tr: "Elflerin dostlar\u0131na zarar vermeyin"
+      en: Don't hurt animals!
+      tr: Hayvanlara zarar vermeyin
     outcomes:
       m_keys: 0000000001000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ecffffff
   bSummary:
     faction: 1
     line:
@@ -76,7 +76,7 @@ MonoBehaviour:
       tr: "\u0130nsanlar a\xE7 m\u0131 kals\u0131n?"
     outcomes:
       m_keys: 0000000001000000
-      m_values: f6ffffff0a000000
+      m_values: ecffffff0a000000
   optionalDecisions:
   - id: Round1_LetOrcsHandleIt
     unlockingFlag: ElvesAndHumans_OptionalDecision_Round1

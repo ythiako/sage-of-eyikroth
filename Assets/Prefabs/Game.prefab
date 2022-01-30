@@ -29,7 +29,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9465289496e44310b8daff7e4f545c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumThreshold: 0
+  maximumThreshold: 0
 --- !u!114 &4764766262619725704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,13 +72,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57dec53fc7b7434e86d0ebfa17b20830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stages: []
+  stages:
+  - conflicts:
+    - {fileID: 11400000, guid: 8eee1f91a9180a84698dbaeb95c0c4b8, type: 2}
+    - {fileID: 11400000, guid: 21aeb91ccc46bd54a8e15babafdaede5, type: 2}
+    - {fileID: 11400000, guid: abf4db971125e254db6c357502f7ed99, type: 2}
+  - conflicts:
+    - {fileID: 11400000, guid: 9a48701dc0f6ce040acc5e09b26af867, type: 2}
+    - {fileID: 11400000, guid: 80c0e4094bbf79b4f94240cd6b80d27b, type: 2}
+    - {fileID: 11400000, guid: ecfede034fecbb648a58dd2f25c72410, type: 2}
+  - conflicts:
+    - {fileID: 11400000, guid: d967cd5688daaf5448d524405e585579, type: 2}
+    - {fileID: 11400000, guid: 69ac9c2ed20e4894398bea6c365890a7, type: 2}
+    - {fileID: 11400000, guid: 53dccf46c83481c4a90c6d9a0ae2d5b1, type: 2}
+  - conflicts:
+    - {fileID: 11400000, guid: 91b0b82cd4daea1428b6149d0575f0bc, type: 2}
+    - {fileID: 11400000, guid: fcb4f17e6cce92049973bb8912465757, type: 2}
+    - {fileID: 11400000, guid: 0e5cfc1cab80a3d4a97f680d457e235e, type: 2}
+  - conflicts:
+    - {fileID: 11400000, guid: 00cb627e4ecdc7840b4cc5fcc81a96e7, type: 2}
+    - {fileID: 11400000, guid: aa487a64b9b22fe4fb6cc2fcedd3797c, type: 2}
+    - {fileID: 11400000, guid: 5379e44ba47232543a87558bd519b1d3, type: 2}
   randomConflicts: []
   factionRepresentatives:
-    m_keys: 0000000001000000
+    m_keys: 000000000100000002000000030000000400000005000000
     m_values:
     - {fileID: -1862892627363376244, guid: a04b281731f168e4696b5ad16d7df9c7, type: 3}
     - {fileID: 7126220742337712513, guid: d3cc73d9880b7bc468fc631d6e56730a, type: 3}
+    - {fileID: -1862892627363376244, guid: 2a41992b38990ce49917c42ca2f2922c, type: 3}
+    - {fileID: -1862892627363376244, guid: 6b04cd0da7dbadd45858eb680e55adc8, type: 3}
+    - {fileID: -1862892627363376244, guid: 463e9de754f861146ae1894921ec8249, type: 3}
+    - {fileID: -1862892627363376244, guid: a220b92e30f65e546a78faa52487ff75, type: 3}
   factionLeaderSprites:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values:
@@ -99,3 +124,10 @@ MonoBehaviour:
     tr: "Konseyim beni bekliyor y\xFCce bilge. \xD6z\xFCr dilerim ama gitmek zorunday\u0131m."
   - en: Excuse me but I cannot talk right now. I am sorry.
     tr: "\xDCzg\xFCn\xFCm ama \u015Fu anda konu\u015Famam. Kusura bakma."
+  - en: I kid you not, he turns himself into a pickle, he's called pickle Rick.
+    tr: "\u015Eaka yapm\u0131yorum, kendisini bir tur\u015Fuya d\xF6nd\xFCr\xFCp
+      etrafta \"Tur\u015Fu Rick\" diye ba\u011F\u0131r\u0131yor."
+  - en: Do you get to the Cloud District very often? Oh, what am I saying, of course
+      you don't.
+    tr: "Bulut Soka\u011F\u0131na s\u0131k gelir misin? Ah, neler diyorum, tabi ki
+      gelmezsin."

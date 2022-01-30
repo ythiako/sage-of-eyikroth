@@ -49,7 +49,7 @@ MonoBehaviour:
       tr: "Ye\u015Fil cinler bir t\xFCfek verecek"
     outcomes:
       m_keys: 0300000002000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000d8ffffff
   bSummary:
     faction: 2
     line:
@@ -63,7 +63,7 @@ MonoBehaviour:
       tr: "Ye\u015Fil cinler barutu tutacak"
     outcomes:
       m_keys: 0300000002000000
-      m_values: f6ffffff0a000000
+      m_values: d8ffffff0a000000
   optionalDecisions:
   - id: Round5_LetHumansHandle
     unlockingFlag: OrcsAndGnomes_OptionalDecision_Round5
@@ -71,8 +71,8 @@ MonoBehaviour:
       en: Humans have crossbows
       tr: "\u0130nsanlarda kurmal\u0131 yay var."
     outcomes:
-      m_keys: 0200000003000000
-      m_values: 0a0000000a000000
+      m_keys: 020000000300000001000000
+      m_values: 0a0000000a000000d8ffffff
   outcomeDialogue:
     m_keys:
     - Round5_SideWithOrcs

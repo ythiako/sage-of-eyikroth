@@ -520,7 +520,7 @@ MonoBehaviour:
       tr: 
   gameOver:
     en: GAME OVER
-    tr: 
+    tr: "KAYBETT\u0130N"
   youWin:
     en: YOU WIN
     tr: 

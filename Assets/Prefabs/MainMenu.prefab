@@ -2978,6 +2978,7 @@ MonoBehaviour:
       getirecekler?"
   introText: {fileID: 7706426775208175623}
   introPlayer: {fileID: 7706426775208175621}
+  skipInput: {fileID: 0}
   ease: 1
   delay: 0
   duration: 1
@@ -4367,7 +4368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A world divided between 6 different peoples.
+  m_text: 'A world divided between 6 different nations.
 
     A realm in constant
     conflict, filled with clashing interests.
@@ -4377,16 +4378,16 @@ MonoBehaviour:
 
 
     There you lived,
-    a sage, with wast wisdom,
+    the elder sage, with wast wisdom,
 
-    Sworn to protect the peoples against the approaching
-    dragonoid crisis.
+    Sworn to protect the nations against the
+    approaching dragon crisis.
 
 
-    Will they listen to you and leave behind their petty
-    problems?
+    Will they listen to you and leave behind their
+    petty squabbles?
 
-    Or will they wage war and mark their own end?'
+    Or will they wage war and bring their own end?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
   m_sharedMaterial: {fileID: -799337471189385713, guid: cb3f4af073babd349a5a0b4244662022, type: 2}
