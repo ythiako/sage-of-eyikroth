@@ -488,41 +488,68 @@ MonoBehaviour:
       the dragons came, Eyikroth stood united.
 
       The menace was banished...'
-    tr: 
+    tr: "Bu zor zamanlarda Eyikroth halk\u0131 bilgenin tavsiyelerini dinledi.\n\nBilgenin
+      tavsiyeleri, \u0131rklar\u0131n birbirine girmesini \xF6nledi, Eyikroth'un
+      bar\u0131\u015F\u0131 korundu...\n\nEjderler geldi\u011Finde, Eyikroth bir
+      v\xFCcut oldu.\nBelay\u0131 ba\u015Far\u0131yla defettiler..."
   gameOverEvent:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values:
     - en: "Elves became too aggravated with your decisions, \ndecided to solve their
         problems on their own.\n\nTheir solutions soon resulted in a war that plunged
         \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Elfler, tavsiyeleri dinlemeyi
+        b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri belirlemeye
+        karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
     - en: "Humans became too aggravated with your decisions, \ndecided to solve their
         problems on their own.\n\nTheir solutions soon resulted in a war that plunged
         \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen \u0130nsanlar, tavsiyeleri
+        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
+        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
     - en: "Gnomes became too aggravated with your decisions, \ndecided to solve their
         problems on their own.\n\nTheir solutions soon resulted in a war that plunged
         \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Ye\u015Fil Cinler, tavsiyeleri
+        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
+        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
     - en: "Orcs became too aggravated with your decisions, \ndecided to solve their
         problems on their own.\n\nTheir solutions soon resulted in a war that plunged
         \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Orklar, tavsiyeleri dinlemeyi
+        b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri belirlemeye
+        karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
     - en: "Merfolk became too aggravated with your decisions, \ndecided to solve
         their problems on their own.\n\nTheir solutions soon resulted in a war that
         plunged \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one
         was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen Merfolk, tavsiyeleri
+        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
+        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
     - en: "Dwarves became too aggravated with your decisions, \ndecided to solve
         their problems on their own.\n\nTheir solutions soon resulted in a war that
         plunged \nEyikroth into chaos...\n\nAnd when the dragons came...\n...No one
         was ready"
-      tr: 
+      tr: "Bilgenin taraf tuttu\u011Funu d\xFC\u015F\xFCnen C\xFCceler, tavsiyeleri
+        dinlemeyi b\u0131rakt\u0131.\nKendileri i\xE7in en do\u011Frusunu kendileri
+        belirlemeye karar verdiler.\n\n\u0130zledikleri yol, k\u0131sa zamanda kar\u0131\u015F\u0131kl\u0131klara,
+        sonunda da sava\u015Fa sebep oldu...\n\nEjderler geldi\u011Finde ise...\n...Kimse
+        onlara dayanacak g\xFCce sahip de\u011Fildi"
   gameOver:
     en: GAME OVER
     tr: "KAYBETT\u0130N"
   youWin:
     en: YOU WIN
-    tr: 
+    tr: KAZANDIN
   textDisplay: {fileID: 4734010672790331790}
   textPlayer: {fileID: 4734010672790331779}

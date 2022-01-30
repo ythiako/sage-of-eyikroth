@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7215466407363524610}
   - component: {fileID: 4764766262619725704}
   - component: {fileID: 913526892}
+  - component: {fileID: 1894045282}
+  - component: {fileID: 1894045283}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -131,3 +133,30 @@ MonoBehaviour:
       you don't.
     tr: "Bulut Soka\u011F\u0131na s\u0131k gelir misin? Ah, neler diyorum, tabi ki
       gelmezsin."
+--- !u!114 &1894045282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764766262619725705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e1fbd815d74572b58467bef4f358aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1894045283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764766262619725705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b38666ebeeb4f1b975eb96c5e3f07e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuMusic: {fileID: 0}
+  gameMusic: {fileID: 0}
+  gameOverMusic: {fileID: 0}
