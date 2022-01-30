@@ -19,33 +19,42 @@ MonoBehaviour:
     line:
       en: A thunderstorm's approaching! We need to stop it somehow and stop it from
         hitting our trees!
-      tr: 
+      tr: "Y\u0131ld\u0131r\u0131m f\u0131rt\u0131nas\u0131 ba\u015Flamak \xFCzere.
+        A\u011Fa\xE7lar\u0131m\u0131z yanmadan bir an \xF6nce bu f\u0131rt\u0131na
+        durmal\u0131!"
   - faction: 0
     line:
       en: The lightning strikes would burn our forests and towns. You need to stop
         it.
-      tr: 
+      tr: "\u015Eim\u015Fekler d\xFC\u015Ferse ormanlar\u0131m\u0131z ve \u015Fehirlerimiz
+        k\xFCl olur, buna engel olmal\u0131s\u0131n."
   - faction: 2
     line:
       en: There is a thunderstorm approaching from north. If we could get a read
         on, our energy research would be complete.
-      tr: 
+      tr: "Kuzeyden yakla\u015Fan bir y\u0131ld\u0131r\u0131m f\u0131rt\u0131nas\u0131
+        var. Verileri analiz edersek, elektrik ara\u015Ft\u0131rmalar\u0131m\u0131z\u0131
+        nihayet bitirebiliriz."
   - faction: 2
     line:
       en: We could stop the threat of our volcano exploding. Even if not completely,
         we could at least gain a great time to stall the inevitable
-      tr: 
+      tr: "B\xF6ylece yanarda\u011F patlamas\u0131n\u0131 durdurabiliriz. Sorunu
+        \xE7\xF6zmese de, ka\xE7\u0131n\u0131lmaz sonu b\xFCy\xFCk bir miktar \xF6telemi\u015F
+        oluruz."
   aSummary:
     faction: 0
     line:
-      en: Lightning storm will decimate our forest if not stopped!
-      tr: 
+      en: Lightning storm will cripple our forest if not stopped!
+      tr: "Y\u0131ld\u0131r\u0131m f\u0131rt\u0131nas\u0131 engellenmezse ormanlar\u0131m\u0131z
+        zarar g\xF6recek."
   aDecision:
     id: Round2_SideWithElves
     unlockingFlag: 
     text:
       en: Lives are at stake! I'll stop the storm with my magic.
-      tr: 
+      tr: "Bir \xE7ok hayat s\xF6z konusu. F\u0131rt\u0131nay\u0131 b\xFCy\xFCyle
+        durduraca\u011F\u0131m."
     outcomes:
       m_keys: 0000000002000000
       m_values: 0a000000f6ffffff
@@ -54,14 +63,16 @@ MonoBehaviour:
     line:
       en: We can harness the lightning storm, and the energy will help us stop the
         volcano!
-      tr: 
+      tr: "Y\u0131ld\u0131r\u0131m f\u0131rt\u0131nas\u0131n\u0131 kullan\u0131p
+        bu enerjiyle yanarda\u011F\u0131n patlamas\u0131n\u0131 \xF6nleyebiliriz."
   bDecision:
     id: Round2_SideWithGnomes
     unlockingFlag: 
     text:
       en: Progress requires sacrifice. Gnomes will wait for the storm and soak it
         up.
-      tr: 
+      tr: "A\u015Fama katetmek fedakarl\u0131k gerektirir. Ye\u015Fil cinler f\u0131rt\u0131nay\u0131
+        bekleyip kullans\u0131nlar."
     outcomes:
       m_keys: 0000000002000000
       m_values: f6ffffff0a000000
@@ -69,8 +80,10 @@ MonoBehaviour:
   - id: Round2_LetMerfolkHandle
     unlockingFlag: ElvesAndGnomes_OptionalDecision_Round2
     text:
-      en: Merfolk elementalists can help you. They absorb lightning from north usually.
-      tr: 
+      en: Merfolk elementalists can help you. They absorb lightning from north as
+        a rite of passage.
+      tr: "Merfolk \u015Famanlar\u0131 size yard\u0131mc\u0131 olabilir. Kuzeyden
+        gelen elektri\u011Fi kendilerini kan\u0131tlamak i\xE7in kullan\u0131rlar."
     outcomes:
       m_keys: 0000000002000000
       m_values: 0a0000000a000000
@@ -85,31 +98,36 @@ MonoBehaviour:
         line:
           en: Merfolk can face the storms far ahead, and absorb the lightnings before
             they hits us!
-          tr: 
+          tr: "Merfolk \u015Famanlar\u0131 f\u0131rt\u0131nay\u0131 g\xF6\u011F\xFCsler
+            ve y\u0131ld\u0131r\u0131mlar\u0131 bize \xE7arpmadan da\u011F\u0131tabilir.."
       - faction: 2
         line:
           en: And we can use their harnessed energy for our research.
-          tr: 
+          tr: "Biz de toplanan enerjiyi ara\u015Ft\u0131rmalar\u0131m\u0131zda kullan\u0131r\u0131z."
     - lines:
       - faction: 0
         line:
           en: Thank you for seeing reason. My people will be thankful.
-          tr: 
+          tr: "Mant\u0131kl\u0131 olan\u0131 se\xE7ti\u011Finiz i\xE7in halk\u0131m
+            size minnettard\u0131r."
       - faction: 2
         line:
           en: You don't know how important this energy is for us! Hmph. Some 'elder
             sage' you are...
-          tr: 
+          tr: "Bu enerjinin bizim i\xE7in \xF6nemini anlamam\u0131\u015Fs\u0131n.
+            Pabucumun \"y\xFCce\" bilgesi.."
     - lines:
       - faction: 0
         line:
           en: But what will happen to our trees? What will happen to our people?!
-          tr: 
+          tr: "Peki a\u011Fa\xE7lar\u0131m\u0131za ne olacak? Ya \u015Fehirlerimize,
+            insanlar\u0131m\u0131za?"
       - faction: 2
         line:
           en: I feel sorry for elves, but nothing can be done if we want to advance
             the technology.
-          tr: 
+          tr: "Elflerin ba\u015F\u0131na gelecekler i\xE7in \xFCzg\xFCn\xFCm, ama
+            ba\u015Fka se\xE7ene\u011Fimiz yok..."
   regionalTips:
   - faction: 4
     unlockingFlag: ElvesAndGnomes_OptionalDecision_Round2
@@ -117,4 +135,7 @@ MonoBehaviour:
       en: Our elementalists often swim north and try to absorb storms. They do it
         as a rite of passage, but I never know what happens to the lightning they
         steal.
-      tr: 
+      tr: "\u015Eamanlar\u0131m\u0131z kuzeye y\xFCz\xFCp f\u0131rt\u0131nalar\u0131
+        da\u011F\u0131t\u0131rlar. Bu bir \u015Famanl\u0131k s\u0131nav\u0131d\u0131r,
+        ama toplad\u0131klar\u0131 y\u0131ld\u0131r\u0131mlar\u0131 ne yapt\u0131klar\u0131
+        hakk\u0131nda hi\xE7bir fikrim yok."

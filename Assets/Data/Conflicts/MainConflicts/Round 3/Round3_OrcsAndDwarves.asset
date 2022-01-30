@@ -19,32 +19,35 @@ MonoBehaviour:
     line:
       en: A border outpost was ravaged and we found Dwarven tools and weapons on
         site.
-      tr: 
+      tr: "S\u0131n\u0131r karakollar\u0131m\u0131zdan birisi ya\u011Fmaland\u0131
+        ve c\xFCcelerin silahlar\u0131n\u0131 enkazda bulduk."
   - faction: 3
     line:
       en: This means war! We will attack them if no proof of safety is offered!
-      tr: 
+      tr: "Bu sava\u015F demektir! Aksini kan\u0131tlayamazlarsa geri sald\u0131raca\u011F\u0131z."
   - faction: 5
     line:
       en: Some o' our men went missing, telling tha' they want tae build a better
         home.
-      tr: 
+      tr: "Garda\u015F\u0131m. Bizim bebelerden biraz\u0131 kafay\u0131 \xE7ekip
+        gul\xFCbe yap\u0131caz diyip gittiler."
   - faction: 5
     line:
       en: Our lads were pretty drunk by tha' time we spoke! You have tae find our
         lads!
-      tr: 
+      tr: "Gafalar\u0131 bi milyon olmu\u015F halde gitmi\u015Fler. Bizim bebeleri
+        bulursan hayra girersin."
   aSummary:
     faction: 3
     line:
       en: We want dwarven blood and a war!
-      tr: 
+      tr: "C\xFCcelerin kan\u0131n\u0131 d\xF6kmek istiyoruz."
   aDecision:
     id: Round3_SideWithOrcs
     unlockingFlag: 
     text:
       en: War you will get!
-      tr: 
+      tr: "Sava\u015F istiyorsan\u0131z, sizindir."
     outcomes:
       m_keys: 0300000005000000
       m_values: 0a000000f6ffffff
@@ -52,13 +55,13 @@ MonoBehaviour:
     faction: 5
     line:
       en: Our men are missing, orcs have kidnapped them!
-      tr: 
+      tr: "Bizim bebeler gay\u0131p, ba\u015Fgan bul la bizimkileri."
   bDecision:
     id: Round3_SideWithDwarves
     unlockingFlag: 
     text:
       en: We need to find them!
-      tr: 
+      tr: "Onlar\u0131 bulmal\u0131y\u0131z."
     outcomes:
       m_keys: 0300000005000000
       m_values: f6ffffff0a000000
@@ -67,7 +70,7 @@ MonoBehaviour:
     unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
     text:
       en: They're at the shores
-      tr: 
+      tr: "Merfolk k\u0131y\u0131lar\u0131ndalar."
     outcomes:
       m_keys: 0500000003000000
       m_values: 0a0000000a000000
@@ -81,36 +84,42 @@ MonoBehaviour:
       - faction: 3
         line:
           en: The battle is upon us! Watch your back, little hairball!
-          tr: 
+          tr: "Sava\u015F \xE7anlar\u0131 \xE7al\u0131yor! Arkan\u0131z\u0131 kollay\u0131n,
+            k\u0131l yumaklar\u0131!"
       - faction: 5
         line:
           en: HAIRBALL? THAT DOES IT YE WRINKLED GREEN POT'O MEAT! AH'LL CUT THROUGH
             YE SKULL!
-          tr: 
+          tr: GIL YUMAGI BABANDIR LA. GEL DE KELEBEGI GABA ETINE SAPLAYAM!
     - lines:
       - faction: 3
         line:
           en: Hah! What a joke! I apologize for our outburst. I will send them back
             to their mountains safely.
-          tr: 
+          tr: "Haha! \u015Eaka gibi! \xC7\u0131k\u0131\u015F\u0131m i\xE7in \xFCzg\xFCn\xFCm,
+            arkada\u015Flar\u0131m\u0131z\u0131 evlerine g\xF6nderece\u011Fim."
       - faction: 5
         line:
           en: Ach! What a laugh! Those lads sure earned themselves a good whopping!
-          tr: 
+          tr: "Valla m\u0131 diyon? Bizim bebeler iyi bi daya\u011F\u0131 haketti
+            demi?"
     - lines:
       - faction: 3
         line:
           en: What?! How can you tell that? We have DEAD orcs on our border!
-          tr: 
+          tr: "NE? Bunu nas\u0131l s\xF6ylersin? Topraklar\u0131m\u0131zda orc cesetleri
+            var!"
       - faction: 5
         line:
           en: Some sense, finally! Ah'm gonna gather up our lads an' form a search
             party!
-          tr: 
+          tr: "Akl\u0131na gurban olay\u0131m ba\u015Fgan! Bizim bebeleri toplay\u0131p
+            \u015Funlar\u0131 bulak."
   regionalTips:
   - faction: 4
     unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
     line:
       en: This one doesn't know why, but there is an old shackle made of ale bottles
         and beer kegs near our shores.
-      tr: 
+      tr: "Bu kulunuz niye bilmez ama, i\xE7ki \u015Fi\u015Feleri ve f\u0131\xE7\u0131lar\u0131n\u0131
+        k\u0131y\u0131lar\u0131m\u0131zda bir kul\xFCbede bulduk."

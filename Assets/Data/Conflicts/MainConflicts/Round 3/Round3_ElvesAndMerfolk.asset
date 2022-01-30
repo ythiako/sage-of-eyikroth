@@ -18,24 +18,27 @@ MonoBehaviour:
   - faction: 0
     line:
       en: Some of our people start to fall from our cliffs to their deaths unexpectedly!
-        They all say that they hear a beautiful sound!
-      tr: 
+        They all say that they hear a beautiful melody!
+      tr: "Halk\u0131m\u0131zdan baz\u0131lar\u0131 u\xE7urumdan a\u015Fa\u011F\u0131
+        atlayarak \xF6l\xFCyorlar. Denilen o ki, g\xFCzel bir melodiyi takip ediyorlar."
   - faction: 4
     line:
       en: A scouting party has spotted a siren! We need it alive so it can tell us
         where she came from. If the source is not found, many will suffer.
-      tr: 
+      tr: "Ke\u015Fif birli\u011Fimiz bir Deniz Perisi g\xF6rm\xFC\u015F. Onu yakalam\u0131z
+        laz\u0131m ki geldi\u011Fi yeri bilelim. E\u011Fer bilemezsek \xE7ok canlar
+        kaybolacak."
   aSummary:
     faction: 0
     line:
       en: Stop Merfolk from stealing our people!
-      tr: 
+      tr: "Halk\u0131m\u0131z\u0131 Merfolklardan korumal\u0131y\u0131z!"
   aDecision:
     id: Round3_SideWithElves
     unlockingFlag: 
     text:
       en: You should stop...
-      tr: 
+      tr: Merfolklar kuzeye gidemez.
     outcomes:
       m_keys: 0000000004000000
       m_values: 0a000000f6ffffff
@@ -43,7 +46,7 @@ MonoBehaviour:
     faction: 4
     line:
       en: There is a siren and we need help to kill it!
-      tr: 
+      tr: "Deniz Perisini \xF6ld\xFCrmek i\xE7in yard\u0131m\u0131n\u0131z laz\u0131m."
   bDecision:
     id: Round3_SideWithMerfolk
     unlockingFlag: 
@@ -58,7 +61,7 @@ MonoBehaviour:
     unlockingFlag: ElvesAndMerfolk_OptionalDecision_Round3
     text:
       en: Dwarves could sing
-      tr: 
+      tr: "C\xFCceler \u015Fark\u0131y\u0131 bast\u0131rabilir."
     outcomes:
       m_keys: 0000000004000000
       m_values: 0a0000000a000000
@@ -72,35 +75,40 @@ MonoBehaviour:
       - faction: 0
         line:
           en: A cursed solution... but better than falling to our deaths every night.
-          tr: 
+          tr: "Korkun\xE7 bir \xE7\xF6z\xFCm.. ama \xF6l\xFCme y\xFCr\xFCmemizden
+            iyidir."
       - faction: 4
         line:
           en: Unexpected. But this one is eager to try anything else before fighting
             a creature.
-          tr: 
+          tr: "\u0130lgin\xE7. Ancak denizin bu kulu sava\u015Fmadan bir \xE7\xF6z\xFCm
+            bulmaya s\u0131cak bak\u0131yor."
     - lines:
       - faction: 0
         line:
           en: A sound plan. We will gather the archers and hunt this siren!
-          tr: 
+          tr: "Mant\u0131kl\u0131 bir plan, ok\xE7u birli\u011Fimizle su\xE7luyu
+            etkisiz hale getirece\u011Fiz."
       - faction: 4
         line:
           en: This only feeds the siren further! We should not give in that easily...
-          tr: 
+          tr: Bu sadece Deniz perisine daha fazla kurban vermek olur!
     - lines:
       - faction: 0
         line:
           en: You mean to tell us to trust these while we get slaughtered?
-          tr: 
+          tr: "Biz \xF6l\xFCrken Merfolk'lara nas\u0131l g\xFCvenebiliriz?!"
       - faction: 4
         line:
           en: This one will gather up a searching party, and try to return surviving
             elves back home.
-          tr: 
+          tr: "Denizin bu kulu bir arama grubu olu\u015Fturarak hayatta kalan elfleri
+            geri getirmeye \xE7al\u0131\u015Facak."
   regionalTips:
   - faction: 5
     unlockingFlag: ElvesAndMerfolk_OptionalDecision_Round3
     line:
-      en: Heh! They should've listen tae our songs! We play all nighters and make
-        them sirens run with tail between... uh... flippers?
-      tr: 
+      en: Ach, welcome elder sage! We've just finished up our bagpipe sermon. It
+        was so loud, you'd 'ear yer brain beggin' fer mercy!
+      tr: "Ba\u015Fgan buyur gel ho\u015Fgelmi\u015Fsin. Gel dinle, garda\u015F\u0131m
+        bi yan\u0131g ba\u011Flama \xE7al\u0131yor, valla aglars\u0131n aglar."

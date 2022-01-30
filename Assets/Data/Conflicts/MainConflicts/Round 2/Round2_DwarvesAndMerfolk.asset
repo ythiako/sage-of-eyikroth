@@ -19,32 +19,37 @@ MonoBehaviour:
     line:
       en: Some stone called "Leananstone" was found in shores of Merfolk. We took
         'em but couldn't melt them down!
-      tr: 
+      tr: "Merfolk g\u0131\u0131y\u0131lar\u0131nda \"Isl\u0131kta\u015F\u0131\"
+        denen bir da\u015F bulduk. Ta\u015F\u0131 ald\u0131k da garda\u015F eritemiyok
+        la."
   - faction: 5
     line:
       en: This stuff's powerful, an' could help our house maintenance problem. Teach
         us how tae melt it!
-      tr: 
+      tr: "Bu ta\u015Fta i\u015F var la garda\u015F.. Ba\u015F\u0131n\u0131 yesinler
+        \xF6\u011Fret bize, nas\u0131 eritiliyo la bu?"
   - faction: 4
     line:
       en: There has been an explosion a couple days ago, making our control devices
         for our Axolions disappear.
-      tr: 
+      tr: "Bir ka\xE7 g\xFCn \xF6nce bir patlama oldu, Axolionlar\u0131 zaptetti\u011Fimiz
+        cihaz\u0131m\u0131z da bu patlamada kayboldu."
   - faction: 4
     line:
       en: If you could recover them, we'd avoid a crisis of being mauled by Axolions.
-      tr: 
+      tr: "Bu cihaz\u0131 bize geri verirsen, Axolionlar taraf\u0131ndan katletmemizi
+        \xF6nlersiniz."
   aSummary:
     faction: 5
     line:
       en: We want tae grab some Leananstone!
-      tr: 
+      tr: "\"Isl\u0131kta\u015F\u0131\"n\u0131 eritmeyi \xF6\u011Fretiyon mu?"
   aDecision:
     id: Round2_SideWithDwarves
     unlockingFlag: 
     text:
       en: If it's for research and upgrading...
-      tr: 
+      tr: "Bu ta\u015F ile b\xFCy\xFCr, geli\u015Firsiniz..."
     outcomes:
       m_keys: 0500000004000000
       m_values: 0a000000f6ffffff
@@ -52,13 +57,13 @@ MonoBehaviour:
     faction: 4
     line:
       en: Those are Axolion control devices, we need them!
-      tr: 
+      tr: "Axolionlar\u0131 zaptetmezsek hepimiz katledilece\u011Fiz!"
   bDecision:
     id: Round2_SideWithMerfolk
     unlockingFlag: 
     text:
       en: Can't leave Merfolks to die.
-      tr: 
+      tr: "Merfolk halk\u0131n\u0131 \xF6l\xFCme terkedemem."
     outcomes:
       m_keys: 0400000005000000
       m_values: 0a000000f6ffffff
@@ -67,7 +72,7 @@ MonoBehaviour:
     unlockingFlag: DwarvesAndMerfolk_OptionalDecision_Round2
     text:
       en: Gnomes have Leananstone too...
-      tr: 
+      tr: "Ye\u015Fil cinlerde de Isl\u0131kta\u015F\u0131 yok muydu?"
     outcomes:
       m_keys: 0500000004000000
       m_values: 0a0000000a000000
@@ -81,35 +86,41 @@ MonoBehaviour:
       - faction: 5
         line:
           en: As. It. Should be! Merfolk's only exaggeratin' these stuff!
-          tr: 
+          tr: "Hah \u015F\xF6yle yav. Merfolklar da r\xFCzgar esse \xF6lecekler yeminle.."
       - faction: 4
         line:
           en: But Axolions will carve us up! We don't stand a chance!
-          tr: 
+          tr: "Ama Axolionlar bizi diri diri y\xFCzecekler. Sonumuz geldi!"
     - lines:
       - faction: 4
         line:
           en: You have given a logical choice, elder sage. This one is thankful for
             it.
-          tr: 
+          tr: "Mant\u0131kl\u0131 bir karar verdiniz, y\xFCce bilge. Denizin bu kulu
+            sana minnettar."
       - faction: 5
         line:
           en: Ach! Yer not so fun, lad. Maybe I oughta acquire that stuff 'forcefully',
             eh?
-          tr: 
+          tr: "Garda\u015F senin dilin ne s\xF6yler? Gidip bi \"gonu\u015Fal\u0131m\"
+            \u015Fu sazanlarla.."
     - lines:
       - faction: 4
         line:
           en: Brilliant idea. We will have those control devices now...
-          tr: 
+          tr: "Harikulade bir fikir. Gidip onlar\u0131n kontrol cihaz\u0131n\u0131
+            alal\u0131m."
       - faction: 5
         line:
           en: Ach! Such a good coincidence! Ah'll just visit those shortstacks now.
-          tr: 
+          tr: "He la garda\u015F, \u015Feytan\u0131n akl\u0131na gelmez. Gidip \u015Fu
+            bebelere bi sorak biz."
   regionalTips:
   - faction: 2
     unlockingFlag: DwarvesAndMerfolk_OptionalDecision_Round2
     line:
       en: We mine Leananstone out from outskirts of volcanic mountain. It's great
         for making circuitry. Want to try some?
-      tr: 
+      tr: "Biz yanarda\u011F\u0131n eteklerinden bolca Isl\u0131kta\u015F\u0131 madeni
+        \xE7\u0131kar\u0131yoruz, devre kart\u0131nda i\u015Fe yar\u0131yorlar. Laz\u0131m
+        m\u0131 size?"

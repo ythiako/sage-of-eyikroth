@@ -19,23 +19,25 @@ MonoBehaviour:
     line:
       en: Our mines recently caved in because of some earthquake, although we don't
         know why. Our economy is plummeting because of it!
-      tr: 
+      tr: "Madenlerimiz yak\u0131n zamanda bir depremden dolay\u0131 \xE7\xF6kt\xFC,
+        ama neden \xE7\xF6kt\xFC bilmiyoruz. Ekonomimiz alt-\xFCst oldu!"
   - faction: 5
     line:
       en: Humans are cheating on trading. We ask o' them valuable gems and minerals,
         but all they feed tae us are brass and rubies!
-      tr: 
+      tr: "\u0130nsanlar ticarette hile yap\u0131yorlar ba\u015Fgan. Onlara g\u0131ymetli
+        da\u015Flar veriyoz ama bize \xE7er\xE7\xF6p verip duruyorlar valla."
   aSummary:
     faction: 1
     line:
       en: We need our mines cleared so we can mine it again!
-      tr: 
+      tr: "Madenlerimizi a\xE7 ki kazmaya devam edebilelim!"
   aDecision:
     id: Round4_SideWithHumans
     unlockingFlag: 
     text:
       en: Dwarves will help you
-      tr: 
+      tr: "C\xFCceler size yard\u0131mc\u0131 olur"
     outcomes:
       m_keys: 0100000005000000
       m_values: 0a000000f6ffffff
@@ -43,13 +45,13 @@ MonoBehaviour:
     faction: 5
     line:
       en: We demand payment NOW!
-      tr: 
+      tr: "Param\u0131z\u0131 verin la bebeler!"
   bDecision:
     id: Round4_SideWithDwarves
     unlockingFlag: 
     text:
       en: Receive compensation
-      tr: 
+      tr: "\xDCcretinizi alacaks\u0131n\u0131z"
     outcomes:
       m_keys: 0100000005000000
       m_values: f6ffffff0a000000
@@ -58,7 +60,7 @@ MonoBehaviour:
     unlockingFlag: HumansAndDwarves_OptionalDecision_Round4
     text:
       en: Gnomes can clear the mines
-      tr: 
+      tr: "Ye\u015Fil cinler madenlerinizi a\xE7abilir"
     outcomes:
       m_keys: 0100000005000000
       m_values: 0a0000000a000000
@@ -72,35 +74,41 @@ MonoBehaviour:
       - faction: 5
         line:
           en: There! Now ye won't step out o' trading with us, ya pansies!
-          tr: 
+          tr: "Ahanda b\xF6yle i\u015Fte.. \u015Eimdi deliganl\u0131 gibi ticaret
+            yapacan\u0131z."
       - faction: 1
         line:
           en: No need for harsh words, master dwarf. You'll get your minerals soon
             enough.
-          tr: 
+          tr: "Bu kadar hiddete gerek yok c\xFCce efendi. Borcumuzu k\u0131sa zamanda
+            \xF6deyece\u011Fiz."
     - lines:
       - faction: 5
         line:
           en: Hah, wha' 'bout it! Justice served, cold 'n hard!
-          tr: 
+          tr: "Aha, noldu la bebeler? Ba\u015Fgan\u0131m, adaletine gurban\u0131m."
       - faction: 1
         line:
           en: This is hardly fair, elder sage! We'll see you afterwards...
-          tr: 
+          tr: "Bunun neresi adil, y\xFCce bilge? Sizinle sonra g\xF6r\xFC\u015Fece\u011Fiz.."
     - lines:
       - faction: 5
         line:
           en: Wh-Wha' do you mean "we'll help them"?! They owe us!
-          tr: 
+          tr: "Nas\u0131 la ba\u015Fgan? Nas\u0131 onlara yard\u0131m edek? Bor\xE7lar\u0131
+            nolacak?"
       - faction: 1
         line:
           en: If you help us, you oaf, you'll get your minerals anyway. Some honorable
             dwarf you are...
-          tr: 
+          tr: "Bize yard\u0131m ederseniz, ta\u015F kafal\u0131lar, borcunuzu alacaks\u0131n\u0131z.
+            Kafan\u0131z\u0131n i\xE7inde ne var sizin..."
   regionalTips:
   - faction: 2
     unlockingFlag: HumansAndDwarves_OptionalDecision_Round4
     line:
       en: Our recent readings of the land tells us that some cave-ins have imbued
         iron in them. If we got them, it'd be a great addition to our research.
-      tr: 
+      tr: "Son ara\u015Ft\u0131rmalar\u0131m\u0131z, bu topraklarda demir damarlar\u0131
+        buldu. Demirleri al\u0131rsak ara\u015Ft\u0131rmalar\u0131mza faydal\u0131
+        olacakt\u0131r."

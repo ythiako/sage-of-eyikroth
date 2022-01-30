@@ -19,31 +19,35 @@ MonoBehaviour:
     line:
       en: Our tools are getting old and useless. We cannot meet our fuel quota for
         winter.
-      tr: 
+      tr: "Aletlerimiz eskidi ve i\u015Fe yaram\u0131yorlar. B\xF6yle giderse k\u0131\u015Fa
+        yakacak bulamayaca\u011F\u0131z."
   - faction: 1
     line:
       en: We can't let our homesteads freezing to death, help us!
-      tr: 
+      tr: "Vatanda\u015Flar\u0131m\u0131z\u0131 so\u011Fuktan donmaya terkedemezsin,
+        yard\u0131m et!"
   - faction: 2
     line:
       en: Humans tried to break into our storage and steal our tools! This is outrageous.
-      tr: 
+      tr: "\u0130nsanlar depolar\u0131m\u0131za girip aletlermizi \xE7ald\u0131lar.
+        Bu KABUL EDILEMEZ!"
   - faction: 2
     line:
       en: They even stole our high powered crossbows. They should be put in their
         places
-      tr: 
+      tr: "Hatta en iyi kurmal\u0131 yaylar\u0131m\u0131z\u0131 \xE7alm\u0131\u015Flar!
+        Hadlerini bildirece\u011Fiz."
   aSummary:
     faction: 1
     line:
       en: Let us get new tools from gnomes!
-      tr: 
+      tr: "Ye\u015Fil c\xFCcelerin aletlerine ihtiyac\u0131m\u0131z var!"
   aDecision:
     id: Round3_SideWithHumans
     unlockingFlag: 
     text:
       en: Stealing is bad.
-      tr: 
+      tr: "\xC7almak k\xF6t\xFCd\xFCr.."
     outcomes:
       m_keys: 0100000002000000
       m_values: 0a000000f6ffffff
@@ -51,13 +55,13 @@ MonoBehaviour:
     faction: 2
     line:
       en: These tools are ours!
-      tr: 
+      tr: "Bu e\u015Fyalar bizim!"
   bDecision:
     id: Round3_SideWithGnomes
     unlockingFlag: 
     text:
       en: But humans need help.
-      tr: 
+      tr: "Ama insanlar \xE7aresiz."
     outcomes:
       m_keys: 0100000002000000
       m_values: f6ffffff0a000000
@@ -66,7 +70,7 @@ MonoBehaviour:
     unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
     text:
       en: Elves can teach magic
-      tr: 
+      tr: "Elfler size b\xFCy\xFC \xF6\u011Fretebilir."
     outcomes:
       m_keys: 0100000002000000
       m_values: 0a0000000a000000
@@ -77,36 +81,43 @@ MonoBehaviour:
     - Round3_LetElvesHandle
     m_values:
     - lines:
-      - faction: 0
+      - faction: 1
         line:
-          en: 
-          tr: 
-      - faction: 0
+          en: This winter will be hard for us after all...
+          tr: "Bu k\u0131\u015F bizim i\xE7in \xE7etin ge\xE7ecek."
+      - faction: 2
         line:
-          en: 
-          tr: 
+          en: Justice is served! Thank you elder sage, we appreciate the help.
+          tr: "Sonunda adalet! Te\u015Fekk\xFCrler y\xFCce bilge, yard\u0131m\u0131n
+            bizim i\xE7in bir onurdur."
     - lines:
-      - faction: 0
+      - faction: 1
         line:
-          en: 
-          tr: 
-      - faction: 0
+          en: Thank you, sage! You've saved our children and women!
+          tr: "\xC7ok sa\u011Fol bilge! \xC7ocuklar\u0131m\u0131z\u0131 ve ailelerimizi
+            so\u011Fuktan kurtard\u0131n\u0131z."
+      - faction: 2
         line:
-          en: 
-          tr: 
+          en: But they're the burglars! They should be punished!
+          tr: "Ama onlar h\u0131rs\u0131z! Neden h\u0131rs\u0131zlar\u0131 destekliyorsunuz?ss"
     - lines:
-      - faction: 0
+      - faction: 1
         line:
-          en: 
-          tr: 
-      - faction: 0
+          en: If we could learn such magic, we'd never need to harm any trees whatsoever
+          tr: "B\xF6yle bir g\xFCc\xFC \xF6\u011Frenirsek ne h\u0131rs\u0131zl\u0131k
+            ne de odunculuk yapmam\u0131z gerekir!"
+      - faction: 2
         line:
-          en: 
-          tr: 
+          en: And we're happy to borrow our axes until humans learn magic. But they'll
+            return after that.
+          tr: "Bu g\xFC\xE7te ustala\u015F\u0131ncaya kadar baltalar\u0131m\u0131z\u0131
+            kullanabilirsiniz... geri getirme ko\u015Fuluyla!"
   regionalTips:
   - faction: 0
     unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
     line:
       en: How are our lands easy to maintain? We can modify our wooden houses to
         our will, and heal them at will.
-      tr: 
+      tr: "Evlerimizi nas\u0131l m\u0131 bak\u0131ml\u0131 tutuyoruz? Evlerimiz tahtadan
+        oldu\u011Fu i\xE7in b\xFCy\xFC ile ricalarda bulunup onlar\u0131 restore
+        edebiliyoruz."

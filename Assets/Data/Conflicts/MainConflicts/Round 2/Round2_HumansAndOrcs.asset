@@ -19,31 +19,33 @@ MonoBehaviour:
     line:
       en: We've found an odd creature from our shores, most likely escaped our Merfolk
         neighbors.
-      tr: 
+      tr: "Ge\xE7enlerde dostlar\u0131m\u0131zdan birisi birden \xF6ld\xFC. Cesedinde
+        zihnini kontrol eden su yarat\u0131klar\u0131 g\xF6rd\xFCk."
   - faction: 3
     line:
-      en: The creature multiplies in live hosts as a parasite. We've been trying
-        to find the mother. Help us find the culprit!
-      tr: 
+      en: The creature multiplies in live hosts as a parasite. Help us find the culprit!
+      tr: "Bu yarat\u0131klar t\xFCm canl\u0131lar aras\u0131nda \xE7o\u011Fal\u0131yor.
+        Kayna\u011F\u0131n\u0131 bulmam\u0131za yard\u0131m et."
   - faction: 1
     line:
       en: Our hunters have been ravaged by orcish hunting parties.
-      tr: 
+      tr: "Zihni kar\u0131\u015Fm\u0131\u015F orc gruplar\u0131, avc\u0131lar\u0131m\u0131z\u0131
+        katlediyorlar."
   - faction: 1
     line:
       en: We will send our armies if they do not appeal us into peace.
-      tr: 
+      tr: "Buna bir son vermezlerse ordular\u0131m\u0131z\u0131 \xFCzerlerine s\xFCrece\u011Fiz."
   aSummary:
     faction: 1
     line:
       en: Orcs are killing our hunters!
-      tr: 
+      tr: "Orclar avc\u0131lar\u0131m\u0131z\u0131 katlediyor."
   aDecision:
     id: Round2_SideWithHumans
     unlockingFlag: 
     text:
       en: Killing without proof...
-      tr: 
+      tr: Sebepsiz yere katletmek mi...
     outcomes:
       m_keys: 0100000003000000
       m_values: 0a000000f6ffffff
@@ -51,13 +53,13 @@ MonoBehaviour:
     faction: 3
     line:
       en: We kill infected people in our lands.
-      tr: 
+      tr: "Hastal\u0131kl\u0131 kim olursa \xF6ld\xFCrece\u011Fiz."
   bDecision:
     id: Round2_SideWithOrcs
     unlockingFlag: 
     text:
       en: No other way to contain.
-      tr: 
+      tr: "Hastal\u0131k ba\u015Fka nas\u0131l engellenir ki?"
     outcomes:
       m_keys: 0300000001000000
       m_values: 0a000000f6ffffff
@@ -66,7 +68,7 @@ MonoBehaviour:
     unlockingFlag: HumansAndOrcs_OptionalDecision_Round2
     text:
       en: I got this healing potion.
-      tr: 
+      tr: "\u015Eu \u015Fifa iksirini size takdim edeyim."
     outcomes:
       m_keys: 0100000003000000
       m_values: 0a0000000a000000
@@ -80,35 +82,39 @@ MonoBehaviour:
       - faction: 1
         line:
           en: Elder sage speaks the truth! You cannot slaughter us without any proof.
-          tr: 
+          tr: "Y\xFCce bilge ger\xE7e\u011Fi s\xF6yl\xFCyor! Bizi sebepsiz yere \xF6ld\xFCremezsiniz."
       - faction: 3
         line:
           en: Leaving infected people out is a crime against every nation. I hope
             your angle here is solid, elder sage.
-          tr: 
+          tr: "Parazitin yay\u0131lmas\u0131na izin vermek daha b\xFCy\xFCk bir su\xE7.
+            Umar\u0131m bu konuda hakl\u0131s\u0131n\u0131zd\u0131r, y\xFCce bilge."
     - lines:
       - faction: 1
         line:
           en: How can you justify their bloodlust?! They're out for blood!
-          tr: 
+          tr: "Bu kana susam\u0131\u015Fl\u0131\u011F\u0131 nas\u0131l kabullenirsiniz?
+            Bu \xE7\u0131lg\u0131nl\u0131k!"
       - faction: 3
         line:
           en: We will do our best to minimize our harm to other hunters.
-          tr: 
+          tr: "\u0130nsanlar\u0131 \xF6ld\xFCrmemek i\xE7in daha \xE7ok u\u011Fra\u015Faca\u011F\u0131z."
     - lines:
       - faction: 3
         line:
           en: Ah, a healing potion. This might solve our problems.
-          tr: 
+          tr: "Ah, bir \u015Fifa iksiri. Bu sorunlar\u0131m\u0131z\u0131 \xE7\xF6zebilir."
       - faction: 1
         line:
           en: No longer our hunters will get killed out randomly. Thank you, elder
             sage.
-          tr: 
+          tr: "\u0130nsanlar\u0131m\u0131z art\u0131k katledilmeyecekler. Sa\u011Folun,
+            y\xFCce bilge."
   regionalTips:
   - faction: 0
     unlockingFlag: HumansAndOrcs_OptionalDecision_Round2
     line:
       en: We've been working on a remedial potion that cleanses user from parasites.
         Would you like a sample?
-      tr: 
+      tr: "V\xFCcuttaki parazitleri temizleyen bir iksir \xFCzerinde u\u011Fra\u015F\u0131yorduk.
+        \xD6rnek bir \u015Fi\u015Fe ister misiniz?"

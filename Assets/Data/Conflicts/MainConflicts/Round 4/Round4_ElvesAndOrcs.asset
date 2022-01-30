@@ -18,31 +18,35 @@ MonoBehaviour:
   - faction: 0
     line:
       en: Our cliffs are attacked by vicious wolves, wearing plate armor!
-      tr: 
+      tr: "Yama\xE7lar\u0131m\u0131z z\u0131rhl\u0131 kurtlar taraf\u0131ndan sald\u0131r\u0131ya
+        u\u011Fruyor."
   - faction: 0
     line:
       en: No wonder that it's the doing of orcs! You need to kill their wolves!
-      tr: 
+      tr: "Bunun alt\u0131nda orclardan ba\u015Fkas\u0131 olamaz. Kurtlar\u0131n\u0131
+        \xF6ld\xFCrmelisin!"
   - faction: 3
     line:
       en: Elves are brewing some sort of off-smelling potion in their forests that
         causes our games and wolves run to it.
-      tr: 
+      tr: "Elfler bir \xE7e\u015Fit k\xF6t\xFC tuhaf iksir kaynat\u0131yorlar, avlar\u0131m\u0131z
+        ve kurtlar\u0131m\u0131z\u0131n kafas\u0131 kar\u0131\u015F\u0131yor."
   - faction: 3
     line:
       en: Stop them from stealing our hunt and save our wolves!
-      tr: 
+      tr: "Bizim avlar\u0131m\u0131z\u0131 \xE7almas\u0131n\u0131 \xF6nle ve kurtlar\u0131m\u0131z\u0131
+        kurtar!"
   aSummary:
     faction: 0
     line:
       en: Stop orcs from sending their wolves to us!
-      tr: 
+      tr: "Orklar\u0131 kurtlar\u0131n\u0131 bize g\xF6ndermelerini engelle!"
   aDecision:
     id: Round4_SideWithElves
     unlockingFlag: 
     text:
       en: Kill the wolves
-      tr: 
+      tr: "Kurtlar\u0131 \xF6ld\xFCrmeliyiz."
     outcomes:
       m_keys: 0000000003000000
       m_values: 0a000000f6ffffff
@@ -50,13 +54,14 @@ MonoBehaviour:
     faction: 3
     line:
       en: Elves are stealing our hunt and wolves!
-      tr: 
+      tr: "Elfler bizim avlar\u0131m\u0131z\u0131 ve kurtlar\u0131m\u0131z\u0131
+        \xE7al\u0131yorlar!"
   bDecision:
     id: Round4_SideWithOrcs
     unlockingFlag: 
     text:
       en: Stop elves from brewing
-      tr: 
+      tr: "Elfler iksir yapmas\u0131nlar."
     outcomes:
       m_keys: 0000000003000000
       m_values: f6ffffff0a000000
@@ -65,7 +70,7 @@ MonoBehaviour:
     unlockingFlag: ElvesAndOrcs_OptionalDecision_Round4
     text:
       en: Use seaweed
-      tr: 
+      tr: "Deniz yosunu kullan\u0131n."
     outcomes:
       m_keys: 0000000003000000
       m_values: 0a0000000a000000
@@ -79,34 +84,38 @@ MonoBehaviour:
       - faction: 0
         line:
           en: Huh? Is it because our potion? Well, I think we owe orcs an apology...
-          tr: 
+          tr: "Ne? Bizim iksirimiz mi buna sebep oluyor? Orklardan \xF6z\xFCr diliyoruz."
       - faction: 3
         line:
           en: Seaweed... don't think our wolves will like the smell, but we'll take
             it.
-          tr: 
+          tr: "Deniz yosunu.. kurtlar\u0131m\u0131z\u0131n bu kokuyu sevece\u011Fini
+            sanm\u0131yorum, ama olur."
     - lines:
       - faction: 0
         line:
           en: Finally! We can rest well knowing we're safe!
-          tr: 
+          tr: "Sonunda! G\xFCvende oldu\u011Fumuzu bilmek \xE7ok g\xFCzel."
       - faction: 3
         line:
           en: Wolves are our companions! How dare you offer that?!
-          tr: 
+          tr: "Kurtlar bizim yolda\u015Flar\u0131m\u0131zd\u0131r. Bunu ne c\xFCretle
+            s\xF6ylersin?!"
     - lines:
       - faction: 0
         line:
           en: But those potions are health potions! They are medicine!
-          tr: 
+          tr: "Ama bu iksirler \u015Fifa iksirleri.. \u0130la\xE7lar\u0131m\u0131z!"
       - faction: 3
         line:
           en: Serves you elves right for stealing our hunt!
-          tr: 
+          tr: "Bu size avlar\u0131m\u0131z\u0131 \xE7almamay\u0131 \xF6\u011Fretir!"
   regionalTips:
   - faction: 4
     unlockingFlag: ElvesAndOrcs_OptionalDecision_Round4
     line:
       en: Sometimes, our seahorses get drawn to deeper places by smell. So we stuff
         some seaweed up their gills to make them stop from smelling that fragrance.
-      tr: 
+      tr: "Bazen, denizatlar\u0131m\u0131z kokudan dolay\u0131 derine dal\u0131yorlar.
+        Biz de solunga\xE7lar\u0131na deniz yosunu t\u0131kay\u0131p koklamalar\u0131n\u0131
+        \xF6nl\xFCyoruz. B\xF6ylece derine dalm\u0131yorlar."
