@@ -60,7 +60,9 @@ namespace Controllers
             _rightRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.bSummary.faction), rightCharacterRoot);
 
             _leftRepresentative.transform.localRotation = Quaternion.Euler(0, -318, 0);
+            _leftRepresentative.transform.GetChild(0).localRotation = Quaternion.identity;
             _rightRepresentative.transform.localRotation = Quaternion.Euler(0, 318, 0);
+            _rightRepresentative.transform.GetChild(0).localRotation = Quaternion.identity;
 
             leftText.CloseImmediate();
             rightText.CloseImmediate();
