@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_fontSize: 25
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: asdasfsgsdf
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e075a0206084d0c48b15d1e94b3cf111, type: 2}
   m_sharedMaterial: {fileID: 7898765747113977232, guid: e075a0206084d0c48b15d1e94b3cf111, type: 2}
@@ -1510,10 +1510,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 72
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
