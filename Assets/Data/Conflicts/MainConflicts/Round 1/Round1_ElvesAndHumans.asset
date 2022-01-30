@@ -56,8 +56,8 @@ MonoBehaviour:
     id: Round1_SideWithElves
     unlockingFlag: 
     text:
-      en: Don't hurt elves's friends
-      tr: "Elflerin dostlar\u0131na zarar vermeyin"
+      en: Don't hurt animals!
+      tr: Hayvanlara zarar vermeyin
     outcomes:
       m_keys: 0000000001000000
       m_values: 0a000000ecffffff
