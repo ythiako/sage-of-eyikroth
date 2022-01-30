@@ -34,6 +34,7 @@ public class GameController : Singleton<GameController>
 
     public void StartNewGame()
     {
+        PlayerData.LostGame = false;
         PlayerData.CanLoadGame = true;
         
         SageStandingController.StartNew();
@@ -57,6 +58,7 @@ public class GameController : Singleton<GameController>
 
     public void ContinueGame()
     {
+        PlayerData.LostGame = false;
         StageController.Load();
         SageStandingController.Load();
         GlobalFlagsController.LoadFlagCollection();
@@ -159,6 +161,7 @@ public class GameController : Singleton<GameController>
 
     private static void GameOver()
     {
+        PlayerData.LostGame = true;
         PlayerData.CanLoadGame = false;
         DecisionPhaseController.Instance.Dispose();
         AudioController.Instance.PlayGameOverMusic(GameOverBehaviour.Instance.BeginGameOver(() =>

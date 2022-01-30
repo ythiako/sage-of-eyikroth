@@ -11,15 +11,17 @@ public class AudioController : Singleton<AudioController>
     
     public void PlayMenuMusic(float crossfade = 0.5f)
     {
+        var selectedMenuMusic = PlayerData.LostGame ? gameOverMusic : menuMusic;
+        
         if (_currentMusic)
         {
-            SoundUtility.Instance.Crossfade(_currentMusic, menuMusic, crossfade);
-            _currentMusic = menuMusic;
+            SoundUtility.Instance.Crossfade(_currentMusic, selectedMenuMusic, crossfade);
+            _currentMusic = selectedMenuMusic;
         }
         else
         {
-            _currentMusic = menuMusic;
-            menuMusic.Play();
+            _currentMusic = selectedMenuMusic;
+            selectedMenuMusic.Play();
         }
     }
 
