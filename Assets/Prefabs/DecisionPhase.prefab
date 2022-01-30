@@ -292,7 +292,7 @@ MonoBehaviour:
   effectIntensityMultiplier: 3
   appearancesContainer:
     tagsFallback_Appearances:
-    - size
+    - fade
     tagsFallback_Disappearances:
     - size
     values:
@@ -2599,7 +2599,7 @@ MonoBehaviour:
   effectIntensityMultiplier: 3
   appearancesContainer:
     tagsFallback_Appearances:
-    - size
+    - fade
     tagsFallback_Disappearances:
     - size
     values:

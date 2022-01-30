@@ -53,12 +53,12 @@ public class GameController : Singleton<GameController>
 
     public void ContinueGame()
     {
-        MainMenuBehaviour.Instance.gameObject.SetActive(false);
         StageController.Load();
         SageStandingController.Load();
         GlobalFlagsController.LoadFlagCollection();
         FadeTransition.Instance.FadeIn(() =>
         {
+            MainMenuBehaviour.Instance.gameObject.SetActive(false);
             ConflictController.Instance.PrepareConflict(StageController.GetCurrentConflict());
             
             FadeTransition.Instance.FadeOut(() =>
@@ -131,7 +131,6 @@ public class GameController : Singleton<GameController>
         {
             FadeTransition.Instance.FadeIn(() =>
             {
-                DecisionPhaseController.Instance.Dispose();
                 ToNextConflict();
                 FadeTransition.Instance.FadeOut(ConflictController.Instance.PlayConflict);
             });
