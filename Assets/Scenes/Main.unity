@@ -2097,10 +2097,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4734010672790331778, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
-      propertyPath: triggerAnimPlayerOnChange
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4734010672790331791, guid: 4fcc0b34735dd0c4793b091592038263, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
