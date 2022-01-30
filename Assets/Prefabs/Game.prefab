@@ -106,12 +106,12 @@ MonoBehaviour:
   factionLeaderSprites:
     m_keys: 000000000100000002000000030000000400000005000000
     m_values:
-    - {fileID: 21300000, guid: 3b2bc5210f0334acdba952deb8e0141a, type: 3}
-    - {fileID: 21300000, guid: 7916fb946ab2d4c7da6ecda1627d115a, type: 3}
-    - {fileID: 21300000, guid: c39c19fcc9e934e7993f4a14400aa6f3, type: 3}
-    - {fileID: 21300000, guid: dcf547a7413a54eaa9f4ff72cc56defd, type: 3}
-    - {fileID: 21300000, guid: 8f055a7e442834118b7e3b61cff3bd43, type: 3}
-    - {fileID: 21300000, guid: 9042acf68add947538afc829d4a1d4b6, type: 3}
+    - {fileID: 21300000, guid: b5019790143ec1e43b963f68d12248c8, type: 3}
+    - {fileID: 21300000, guid: ab70510992fd3a648b43348fb79fb0a8, type: 3}
+    - {fileID: 21300000, guid: ad02011c21666124193665f76e6f2196, type: 3}
+    - {fileID: 21300000, guid: 79fb18629be7fdd4ca025fde3882befc, type: 3}
+    - {fileID: 21300000, guid: 7259cb1d6e5f41547b945e1efd16dfec, type: 3}
+    - {fileID: 21300000, guid: e7e51ab3d1ad4d248b05e68a7e44a4fc, type: 3}
   defaultRegionalTips:
   - en: It is all going well, sage. Thanks for stopping by.
     tr: "Her \u015Fey yolunda bilgemiz. Geldi\u011Fin i\xE7in te\u015Fekk\xFCrler."
