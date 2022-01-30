@@ -13,6 +13,7 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
     [SerializeField] private LocalizedText intro;
     [SerializeField] private TextMeshProUGUI introText;
     [SerializeField] private TextAnimatorPlayer introPlayer;
+    [SerializeField] private TextAnimatorInputBehaviour skipInput;
 
     [Title("Menu Layout")]
     [SerializeField] private Ease ease;
@@ -23,6 +24,7 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
     [SerializeField] private Transform menu;
 
     [Title("References")]
+    [SerializeField] private Button languageButton;
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
     [SerializeField] private Button creditsButton;
@@ -62,11 +64,21 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
         c.a = continueGameButton.interactable ? 1 : 0.5f;
         tmpro.color = c;
         
+        languageButton.GetComponentInChildren<TextMeshProUGUI>().text = PlayerData.CurrentCulture switch
+        {
+            "en-US" => "EN",
+            "tr-TR" => "TR",
+            _       => ""
+        };
+        
         introPlayer.onTextShowed.AddListener(OnIntroPlayed);
         newGameButton.onClick.AddListener(GameController.Instance.StartNewGame);
         continueGameButton.onClick.AddListener(GameController.Instance.ContinueGame);
         creditsButton.onClick.AddListener(GameController.Instance.ShowCredits);
         quitButton.onClick.AddListener(GameController.Instance.QuitGame);
+        languageButton.onClick.AddListener(GameController.Instance.ToggleLanguage);
+        
+        GameController.LanguageChanged += OnLanguageChanged;
         
         if (!_playingIntro) AnimateMenuIn();
     }
@@ -83,11 +95,15 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
             continueGameButton.onClick.RemoveListener(GameController.Instance.ContinueGame);
             creditsButton.onClick.RemoveListener(GameController.Instance.ShowCredits);
             quitButton.onClick.RemoveListener(GameController.Instance.QuitGame);
+            languageButton.onClick.RemoveListener(GameController.Instance.ToggleLanguage);
         }
+        
+        GameController.LanguageChanged -= OnLanguageChanged;
     }
 
     private void OnIntroPlayed()
     {
+        skipInput.enabled = false;
         introText.DOFade(0, 1.5f).SetEase(Ease.Linear).SetDelay(2f).OnComplete(AnimateMenuIn);
     }
 
@@ -98,5 +114,21 @@ public class MainMenuBehaviour : Singleton<MainMenuBehaviour>
 
         if (delay > 0)
             tweener.SetDelay(delay);
+    }
+
+    private void OnLanguageChanged()
+    {
+        newGameButton.GetComponentInChildren<TextMeshProUGUI>().text = newGameText.GetText(LanguageController.GetCurrentCulture());
+        continueGameButton.GetComponentInChildren<TextMeshProUGUI>().text = continueGameText.GetText(LanguageController.GetCurrentCulture());
+        creditsButton.GetComponentInChildren<TextMeshProUGUI>().text = creditsText.GetText(LanguageController.GetCurrentCulture());
+        quitButton.GetComponentInChildren<TextMeshProUGUI>().text = quitText.GetText(LanguageController.GetCurrentCulture());
+        introText.text = intro.GetText(LanguageController.GetCurrentCulture());
+        
+        languageButton.GetComponentInChildren<TextMeshProUGUI>().text = PlayerData.CurrentCulture switch
+        {
+            "en-US" => "EN",
+            "tr-TR" => "TR",
+            _       => ""
+        };
     }
 }
