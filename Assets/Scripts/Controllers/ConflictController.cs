@@ -59,11 +59,16 @@ namespace Controllers
             _leftRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.aSummary.faction), leftCharacterRoot);
             _rightRepresentative = Instantiate(AssetsController.Instance.GetFactionRepresentativePrefab(_conflict.bSummary.faction), rightCharacterRoot);
 
+            _leftRepresentative.transform.localRotation = Quaternion.Euler(0, -318, 0);
+            _rightRepresentative.transform.localRotation = Quaternion.Euler(0, 318, 0);
+
             leftText.CloseImmediate();
             rightText.CloseImmediate();
             textInput.gameObject.SetActive(false);
             exploreButton.gameObject.SetActive(false);
 
+            director.Stop();
+            director.time = 0;
             stageCamera.Priority = 10;
         }
 

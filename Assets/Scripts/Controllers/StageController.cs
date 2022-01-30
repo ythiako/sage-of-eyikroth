@@ -9,6 +9,8 @@ public static class StageController
     private static int _conflictIndex;
     private static List<Conflict> _conflicts;
 
+    public static bool IsComplete => AssetsController.Instance.GetStage(_index) == null;
+
     public static void Initialize()
     {
         _conflicts = AssetsController.Instance.GetStage(_index);
