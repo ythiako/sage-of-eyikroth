@@ -50,7 +50,7 @@ MonoBehaviour:
       tr: "Sava\u015F istiyorsan\u0131z, sizindir."
     outcomes:
       m_keys: 0300000005000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e2ffffff
   bSummary:
     faction: 5
     line:
@@ -64,7 +64,7 @@ MonoBehaviour:
       tr: "Onlar\u0131 bulmal\u0131y\u0131z."
     outcomes:
       m_keys: 0300000005000000
-      m_values: f6ffffff0a000000
+      m_values: e2ffffff0a000000
   optionalDecisions:
   - id: Round3_LetMerfolkHandle
     unlockingFlag: OrcsAndDwarves_OptionalDecision_Round3
@@ -72,8 +72,8 @@ MonoBehaviour:
       en: They're at the shores
       tr: "Merfolk k\u0131y\u0131lar\u0131ndalar."
     outcomes:
-      m_keys: 0500000003000000
-      m_values: 0a0000000a000000
+      m_keys: 050000000300000004000000
+      m_values: 0a0000000a000000e2ffffff
   outcomeDialogue:
     m_keys:
     - Round3_SideWithOrcs

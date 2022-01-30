@@ -51,7 +51,7 @@ MonoBehaviour:
       tr: "Kay\u0131p Merfolklar\u0131 geri getirin!"
     outcomes:
       m_keys: 0400000002000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ddffffff
   bSummary:
     faction: 2
     line:
@@ -65,7 +65,7 @@ MonoBehaviour:
       tr: "Bombalar\u0131n\u0131z konu\u015Fsun!"
     outcomes:
       m_keys: 0400000002000000
-      m_values: f6ffffff0a000000
+      m_values: ddffffff0a000000
   optionalDecisions:
   - id: Round4_LetElvesHandle
     unlockingFlag: MerfolkAndGnomes_OptionalDecision_Round4
@@ -73,8 +73,8 @@ MonoBehaviour:
       en: Use the special potion
       tr: "\xD6zel iksir kullanal\u0131m?"
     outcomes:
-      m_keys: 0200000004000000
-      m_values: 0a0000000a000000
+      m_keys: 020000000400000000000000
+      m_values: 0a0000000a000000ddffffff
   outcomeDialogue:
     m_keys:
     - Round4_SideWithGnomes

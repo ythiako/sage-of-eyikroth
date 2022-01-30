@@ -41,7 +41,7 @@ MonoBehaviour:
       tr: Merfolklar kuzeye gidemez.
     outcomes:
       m_keys: 0000000004000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e2ffffff
   bSummary:
     faction: 4
     line:
@@ -55,7 +55,7 @@ MonoBehaviour:
       tr: 
     outcomes:
       m_keys: 0000000004000000
-      m_values: f6ffffff0a000000
+      m_values: e2ffffff0a000000
   optionalDecisions:
   - id: Round3_LetDwarvesHandle
     unlockingFlag: ElvesAndMerfolk_OptionalDecision_Round3
@@ -63,8 +63,8 @@ MonoBehaviour:
       en: Dwarves could sing
       tr: "C\xFCceler \u015Fark\u0131y\u0131 bast\u0131rabilir."
     outcomes:
-      m_keys: 0000000004000000
-      m_values: 0a0000000a000000
+      m_keys: 000000000400000005000000
+      m_values: 0a0000000a000000e2ffffff
   outcomeDialogue:
     m_keys:
     - Round3_LetDwarvesHandle

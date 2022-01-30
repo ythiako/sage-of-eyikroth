@@ -61,7 +61,7 @@ MonoBehaviour:
       tr: "Orklar\u0131n g\xFCvenini suistimal ediyorsunuz"
     outcomes:
       m_keys: 0300000004000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000ecffffff
   bSummary:
     faction: 4
     line:
@@ -75,7 +75,7 @@ MonoBehaviour:
       tr: "Merfolk hayatlar\u0131 da \xF6nemli. Onlara hayvan ya da av olarak davran\u0131lmamal\u0131"
     outcomes:
       m_keys: 0300000004000000
-      m_values: f6ffffff0a000000
+      m_values: ecffffff0a000000
   optionalDecisions:
   - id: Round1_LetElvesHandleIt
     unlockingFlag: OrcsAndMerfolk_OptionalDecision_Round1

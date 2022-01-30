@@ -50,7 +50,7 @@ MonoBehaviour:
       tr: "\xC7almak k\xF6t\xFCd\xFCr.."
     outcomes:
       m_keys: 0100000002000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e2ffffff
   bSummary:
     faction: 2
     line:
@@ -64,7 +64,7 @@ MonoBehaviour:
       tr: "Ama insanlar \xE7aresiz."
     outcomes:
       m_keys: 0100000002000000
-      m_values: f6ffffff0a000000
+      m_values: e2ffffff0a000000
   optionalDecisions:
   - id: Round3_LetElvesHandle
     unlockingFlag: HumansAndGnomes_OptionalDecision_Round3
@@ -72,8 +72,8 @@ MonoBehaviour:
       en: Elves can teach magic
       tr: "Elfler size b\xFCy\xFC \xF6\u011Fretebilir."
     outcomes:
-      m_keys: 0100000002000000
-      m_values: 0a0000000a000000
+      m_keys: 010000000200000000000000
+      m_values: 0a0000000a000000e2ffffff
   outcomeDialogue:
     m_keys:
     - Round3_SideWithGnomes

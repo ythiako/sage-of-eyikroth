@@ -48,7 +48,7 @@ MonoBehaviour:
       tr: Sebepsiz yere katletmek mi...
     outcomes:
       m_keys: 0100000003000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e7ffffff
   bSummary:
     faction: 3
     line:
@@ -62,7 +62,7 @@ MonoBehaviour:
       tr: "Hastal\u0131k ba\u015Fka nas\u0131l engellenir ki?"
     outcomes:
       m_keys: 0300000001000000
-      m_values: 0a000000f6ffffff
+      m_values: 0a000000e7ffffff
   optionalDecisions:
   - id: Round2_LetElvesHandle
     unlockingFlag: HumansAndOrcs_OptionalDecision_Round2
@@ -70,8 +70,8 @@ MonoBehaviour:
       en: I got this healing potion.
       tr: "\u015Eu \u015Fifa iksirini size takdim edeyim."
     outcomes:
-      m_keys: 0100000003000000
-      m_values: 0a0000000a000000
+      m_keys: 010000000300000000000000
+      m_values: 0a0000000a000000e7ffffff
   outcomeDialogue:
     m_keys:
     - Round2_SideWithHumans
