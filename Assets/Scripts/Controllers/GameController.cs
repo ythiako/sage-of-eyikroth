@@ -154,6 +154,7 @@ public class GameController : Singleton<GameController>
             StageController.Reset();
             SageStandingController.StartNew();
             GlobalFlagsController.NewFlagCollection();
+            PlayerData.CanLoadGame = false;
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
     }
@@ -166,6 +167,7 @@ public class GameController : Singleton<GameController>
             StageController.Reset();
             SageStandingController.StartNew();
             GlobalFlagsController.NewFlagCollection();
+            PlayerData.CanLoadGame = false;
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
     }
