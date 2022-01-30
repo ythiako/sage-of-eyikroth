@@ -151,6 +151,9 @@ public class GameController : Singleton<GameController>
         DecisionPhaseController.Instance.Dispose();
         GameOverBehaviour.Instance.BeginGameOver(() =>
         {
+            StageController.Reset();
+            SageStandingController.StartNew();
+            GlobalFlagsController.NewFlagCollection();
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
     }
@@ -160,6 +163,9 @@ public class GameController : Singleton<GameController>
         DecisionPhaseController.Instance.Dispose();
         GameOverBehaviour.Instance.BeginVictory(() =>
         {
+            StageController.Reset();
+            SageStandingController.StartNew();
+            GlobalFlagsController.NewFlagCollection();
             MainMenuBehaviour.Instance.gameObject.SetActive(true);
         });
     }
