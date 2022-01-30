@@ -19,23 +19,27 @@ MonoBehaviour:
     line:
       en: There is no end to dwarven greed! They are trying to dig under our sacred
         grounds, disturbing the dead! Please thwart them away.
-      tr: 
+      tr: "Bu c\xFCcelerin a\xE7g\xF6zl\xFCl\xFC\u011F\xFC hayatta bitmez! Kutsal
+        topraklar\u0131m\u0131zda kaz\u0131 yapmak istiyorlar, \xF6l\xFClerimizin
+        dinlendikleri yerde! Hayatta olmaz! "
   - faction: 5
     line:
       en: JACKPOT! Elves 'ave been sittin' on some huge mineral beds, waiting tae
         be mined. You have tae allow us mine it. Their burial grounds be damned!
-      tr: 
+      tr: "Y\u0131rtt\u0131k la garda\u015F\u0131m! Az \xF6temizde ileride b\xFCy\xFCk
+        maden yataklar\u0131 varm\u0131\u015F olum! B\u0131rak gazal\u0131m \u015Fu
+        madeni ba\u015Fgan, sahte yat\u0131r bunlar\u0131n dedikleri."
   aSummary:
     faction: 0
     line:
       en: Stop dwarves from desecrating our sacred grounds.
-      tr: 
+      tr: "C\xFCcelerin kutsal alanlar\u0131m\u0131z\u0131 bozmas\u0131n\u0131 engelle."
   aDecision:
     id: Round5_SideWithElves
     unlockingFlag: 
     text:
       en: Banish dwarven pickaxes
-      tr: 
+      tr: "C\xFCce kazma-k\xFCreklerini yok et"
     outcomes:
       m_keys: 0000000005000000
       m_values: 0a000000f6ffffff
@@ -43,13 +47,13 @@ MonoBehaviour:
     faction: 5
     line:
       en: We want tae tap onto those mineral beds, and we will!
-      tr: 
+      tr: "\u015Eu madenleri gazacaz ba\u015Fgan, ka\xE7ar\u0131 yok!"
   bDecision:
     id: Round5_SideWithDwarves
     unlockingFlag: 
     text:
       en: Dwarves need more minerals
-      tr: 
+      tr: "C\xFCceler madeni kullanabilirler"
     outcomes:
       m_keys: 0000000005000000
       m_values: f6ffffff0a000000
@@ -58,7 +62,7 @@ MonoBehaviour:
     unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
     text:
       en: Barrens have rich veins as well
-      tr: 
+      tr: "D\xFCzl\xFCklerde de zengin damarlar var"
     outcomes:
       m_keys: 0000000005000000
       m_values: 0a0000000a000000
@@ -73,31 +77,37 @@ MonoBehaviour:
         line:
           en: A sound decision, elder sage. I knew we always could count on your
             wisdom.
-          tr: 
-      - faction: 4
+          tr: "Mant\u0131kl\u0131 bir karar, y\xFCce bilge. Sizin bilgeli\u011Finize
+            g\xFCvenebilece\u011Fimi biliyordum."
+      - faction: 5
         line:
           en: What the- what kind of ram shite is that? Where're we supposed tae
             get our iron, then?!
-          tr: 
+          tr: "NE diyon ba\u015Fgan, ne z\u0131rval\u0131yon la sen? Demiri nerden
+            bulacaz biz \u015Fimdik ha?"
     - lines:
       - faction: 0
         line:
           en: Those are our sacred catacombs, and you're letting dwarves trample
             all over!
-          tr: 
-      - faction: 4
+          tr: "Bunlar bizim mezarl\u0131klar\u0131m\u0131z, sen de c\xFCcelerin oralar\u0131
+            kazmas\u0131na izin verdin!"
+      - faction: 5
         line:
           en: Hail tae tha king, baybe! We'll get nice an' cozy in there!
-          tr: 
+          tr: "La valla a\u011Fz\u0131n bal yesin ba\u015Fgan! Gidip gazal\u0131m
+            hemencecik!"
     - lines:
       - faction: 0
         line:
           en: There... hope your greed will settle down now!
-          tr: 
-      - faction: 4
+          tr: "\u0130\u015Fte, al\u0131n.. umar\u0131m a\xE7g\xF6zl\xFCl\xFC\u011F\xFCn\xFCz
+            yat\u0131\u015Fm\u0131\u015Ft\u0131r."
+      - faction: 5
         line:
           en: Tha's grand news! If they be alright with it, we'll start diggin!
-          tr: 
+          tr: "La valla a\u011Fz\u0131n bal yesin ba\u015Fgan! Gidip gazal\u0131m
+            hemencecik."
   regionalTips:
   - faction: 3
     unlockingFlag: ElvesAndDwarves_OptionalDecision_Round5
@@ -105,4 +115,6 @@ MonoBehaviour:
       en: These days, dust storms lift up new veins of iron and gold, but we have
         no tools to work the rocks. Such a shame. A dwarf would be at home in all
         these minerals.
-      tr: 
+      tr: "\u015Eu g\xFCnlerde, toz f\u0131rt\u0131nalar\u0131 yeni demir ve alt\u0131n
+        damarlar\u0131 ortaya \xE7\u0131kar\u0131yor, ama ta\u015Flar\u0131 kazacak
+        kazmam\u0131z yok malesef. Bi c\xFCce bunlar\u0131 kazabilir."

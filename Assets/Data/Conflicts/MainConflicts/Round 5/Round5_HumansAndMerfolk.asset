@@ -19,32 +19,36 @@ MonoBehaviour:
     line:
       en: Merfolk shores have best fishing spots. Now that the winter has settled
         in, we need new sources of food, and they have it.
-      tr: 
+      tr: "Merfolk sahillerinde \xE7ok g\xFCzel bal\u0131k\xE7\u0131l\u0131k noktalar\u0131
+        var. K\u0131\u015F da geldi art\u0131k, bize yemek laz\u0131m, onlarda da
+        yemek var."
   - faction: 1
     line:
       en: Problem is, they won't allow us get close to their shores.
-      tr: 
+      tr: "Sorun \u015Fu ki, bizi sahillerine yana\u015Ft\u0131rm\u0131yorlar bile."
   - faction: 4
     line:
       en: Our shores are contaminated with a sea creature that kills others with
         their poison.
-      tr: 
+      tr: "Sahillerimiz, ba\u015Fkalar\u0131n\u0131 zehir ile \xF6ld\xFCren binlerce
+        yarat\u0131kla dolu."
   - faction: 4
     line:
       en: While we're resistant to this corruption, we can't let anyone else get
         close to our shores.
-      tr: 
+      tr: "Bizde bu zehire kar\u015F\u0131 diren\xE7 var ama ba\u015Fkalar\u0131nda
+        olmad\u0131\u011F\u0131 i\xE7in gelmelerine izin veremeyiz."
   aSummary:
     faction: 1
     line:
       en: We want to fish on Merfolk shores.
-      tr: 
+      tr: "Merfolk sahillerinde bal\u0131k yakalamal\u0131y\u0131z."
   aDecision:
     id: Round5_SideWithHumans
     unlockingFlag: 
     text:
       en: Settle down to shore
-      tr: 
+      tr: "Sahillere yerle\u015Febilirsiniz."
     outcomes:
       m_keys: 0100000004000000
       m_values: 0a000000f6ffffff
@@ -52,13 +56,13 @@ MonoBehaviour:
     faction: 4
     line:
       en: Humans are putting themselves in danger
-      tr: 
+      tr: "\u0130nsanlar kendilerini tehlikeye at\u0131yorlar."
   bDecision:
     id: Round5_SideWithMerfolk
     unlockingFlag: 
     text:
       en: Humans are not allowed
-      tr: 
+      tr: "\u0130nsanlar\u0131n sahilde ne i\u015Fi var?"
     outcomes:
       m_keys: 0100000004000000
       m_values: f6ffffff0a000000
@@ -67,7 +71,7 @@ MonoBehaviour:
     unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
     text:
       en: Fish under volcanic lake
-      tr: 
+      tr: "Volkanik g\xF6lde bal\u0131k tutun?"
     outcomes:
       m_keys: 0100000004000000
       m_values: 0a0000000a000000
@@ -81,36 +85,41 @@ MonoBehaviour:
       - faction: 1
         line:
           en: But this will doom us all... damn you!
-          tr: 
+          tr: Ama bu bizim sonumuzu getirir... sana lanet olsun!
       - faction: 4
         line:
           en: This one's pleased to hear that you still care for all races, elder
             sage.
-          tr: 
+          tr: "Bu adam, b\xFCt\xFCn halklar\u0131 d\xFC\u015F\xFCnd\xFC\u011F\xFCn\xFCz\xFC
+            duymaktan memnun, y\xFCce bilge."
     - lines:
       - faction: 1
         line:
           en: They would let us? Oh, they're so merciful...
-          tr: 
+          tr: "\u0130zin verirler mi? \xC7ok al\xE7akg\xF6n\xFCll\xFCler..."
       - faction: 4
         line:
           en: This one is glad that humans now can feast while we heal our waters.
-          tr: 
+          tr: "Bu adam, biz denizlerimizi iyile\u015Ftirirken insanlar\u0131n yemek
+            yiyebilece\u011Fini bilmekten memnun."
     - lines:
       - faction: 1
         line:
           en: Thank you, merciful sage! Our people won't starve in winter, after
             all!
-          tr: 
+          tr: "Sa\u011Fol y\xFCce bilge! Halk\u0131m\u0131z k\u0131\u015F\u0131n
+            a\xE7l\u0131ktan \xF6lmeyecek."
       - faction: 4
         line:
           en: This one is worried that poison will kill humans, but you know the
             best, elder sage.
-          tr: 
+          tr: "Bu adam, insanlar\u0131n zehirden \xF6leceklerine kesin g\xF6z\xFCyle
+            bak\u0131yor ama siz daha iyi bilirsiniz."
   regionalTips:
   - faction: 2
     unlockingFlag: HumansAndMerfolk_OptionalDecision_Round5
     line:
       en: It's fortunate that there are a lot of newly opened fish pools under the
         volcanic mountain. But it's also problematic. There's too much fish now!
-      tr: 
+      tr: "Volkanik da\u011F\u0131n alt\u0131nda bir \xE7ok bal\u0131k havuzlar\u0131
+        a\xE7\u0131ld\u0131. Ama bu bir sorun, \xE7ok fazla bal\u0131k var\n!\n"
